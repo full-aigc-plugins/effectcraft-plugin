@@ -1,0 +1,56 @@
+{
+  "schema": "craft-documentation-evidence/v1",
+  "observedAt": "2026-10-05T07:37:55.385823+00:00",
+  "platform": "darwin-arm64",
+  "scope": "Installed upstream CLI and headless MCP smoke checks only; not plugin or creative workflow acceptance",
+  "runtimes": [
+    {
+      "name": "effectcraft",
+      "identity": {
+        "name": "effectcraft",
+        "version": "0.2.0",
+        "url": "https://github.com/storytold/effectcraft/releases/download/v0.2.0/effectcraft-cli-0.2.0-macos-universal.zip",
+        "archiveSha256": "a90e19faf3c4aa427cc519298582f50e7c6c01a3c9f5578ef3287fffb3ad02fa",
+        "platform": "darwin-arm64",
+        "binarySha256": "74d44fc90018ac381dc4516edff939ab26eb6d900ae5c3f49d1eba5ac14105fe",
+        "source": "official-github-release"
+      },
+      "versionOutput": "effectcraft-cli 0.2.0",
+      "initializePassed": true,
+      "toolCount": 21,
+      "tools": [
+        "list_commands",
+        "describe_command",
+        "execute_command",
+        "run_script",
+        "get_project",
+        "get_comp",
+        "get_layer",
+        "get_property",
+        "set_property",
+        "add_keyframe",
+        "add_effect",
+        "list_effects",
+        "get_state",
+        "render_frame",
+        "open_project",
+        "save_project",
+        "undo",
+        "redo",
+        "history",
+        "script_ui",
+        "batch"
+      ],
+      "readOnlyToolCall": "get_project",
+      "readOnlyCallPassed": true
+    }
+  ],
+  "notVerified": [
+    "native-project-roundtrip",
+    "render-fidelity",
+    "host-plugin-installation",
+    "desktop-bridge",
+    "other-platforms",
+    "cross-plugin-orchestration"
+  ]
+}
