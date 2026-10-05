@@ -23,7 +23,7 @@
       ],
       "dest": "skills/",
       "sha256": {
-        "effectcraft-use": "66dbdf636a3e8c7d21336aace6de11dd99e33be53c7bfd84b7d1cd36200a7a5e",
+        "effectcraft-use": "ab5675bfae1da2a57eb008b5fc10b2be3b1ef29a80f4685154483ec585d3c250",
         "effectcraft-cli": "bf01a208403ed08e08594017bf4fe058aa04f7560c2d776ce64096fc8b851115",
         "effectcraft-cli-setup": "24d2c3e8bf118be4099d1da75063153f175ea8792df58f7a731ba470d427b2da",
         "effectcraft-cli-project": "137e2942bb1a744139cad9de216083bda5e67b805af1ce59268bab16cff1594f",
