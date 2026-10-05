@@ -4,14 +4,14 @@
     {
       "package": "effectcraft-skills",
       "repo": "https://github.com/full-aigc-skills/effectcraft-skills.git",
-      "ref": "v0.1.0-dev.0",
-      "sha": "f3439d6b4fa5082ac503905c48d86dd857710e94",
+      "ref": "v0.1.0-dev.1",
+      "sha": "2583810460def49f518f5e6759423e16a1978adc",
       "skills": [
         "effectcraft-use"
       ],
       "dest": "skills/",
       "sha256": {
-        "effectcraft-use": "952bf93770793acf1c006e43eea519fda5ecf3141b8eff74cb94626825e8ccb8"
+        "effectcraft-use": "16be346f69100967c224cb68f92956d85132fd2995e1aa8a8669f2cb9627d540"
       }
     }
   ]
