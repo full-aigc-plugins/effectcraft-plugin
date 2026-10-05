@@ -1,0 +1,37 @@
+{
+  "schema": "craft-development-publication/v1",
+  "observedAt": "2026-10-05T11:41:49.205714+00:00",
+  "status": "development-prerelease",
+  "sources": [
+    {
+      "package": "effectcraft-skills",
+      "repo": "https://github.com/full-aigc-skills/effectcraft-skills.git",
+      "ref": "v0.1.0-dev.0",
+      "sha": "f3439d6b4fa5082ac503905c48d86dd857710e94",
+      "skills": [
+        "effectcraft-use"
+      ],
+      "dest": "skills/",
+      "sha256": {
+        "effectcraft-use": "952bf93770793acf1c006e43eea519fda5ecf3141b8eff74cb94626825e8ccb8"
+      }
+    }
+  ],
+  "checks": {
+    "vendorUnitTests": {
+      "passed": 3,
+      "command": "python3 -B -m unittest discover -s tests -p test_skill_vendor.py"
+    },
+    "vendorOnlineCheck": {
+      "result": "passed",
+      "command": "python3 -B scripts/vendor/skill_vendor.py check"
+    }
+  },
+  "excludedEvidence": [
+    "plugin-host installation",
+    "GUI acceptance",
+    "full domain coverage",
+    "creative quality",
+    "production release"
+  ]
+}

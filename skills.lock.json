@@ -1,4 +1,18 @@
 {
   "version": 1,
-  "sources": []
+  "sources": [
+    {
+      "package": "effectcraft-skills",
+      "repo": "https://github.com/full-aigc-skills/effectcraft-skills.git",
+      "ref": "v0.1.0-dev.0",
+      "sha": "f3439d6b4fa5082ac503905c48d86dd857710e94",
+      "skills": [
+        "effectcraft-use"
+      ],
+      "dest": "skills/",
+      "sha256": {
+        "effectcraft-use": "952bf93770793acf1c006e43eea519fda5ecf3141b8eff74cb94626825e8ccb8"
+      }
+    }
+  ]
 }

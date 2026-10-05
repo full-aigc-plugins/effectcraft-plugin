@@ -1,0 +1,43 @@
+{
+  "observedAt": "2026-10-05",
+  "platform": "darwin-arm64",
+  "command": "CRAFT_LIVE_TEST=1 /opt/anaconda3/bin/python3 -m unittest discover -s tests -v",
+  "exitCode": 0,
+  "testCount": 14,
+  "resultTail": "Ran 14 tests in 11.992s\nOK",
+  "scope": [
+    "single-skill bootstrap",
+    "native project roundtrip",
+    "transparent PNG pixels",
+    "H264 ffprobe decoded 12 frames",
+    "text revision preserves unrelated layer and opacity keys",
+    "revision conflict rejection"
+  ],
+  "redPhase": "workflow module absent before implementation; first live MP4 export failed with no active composition when CLI received numeric ID; unique composition name fixes observed failure.",
+  "notVerified": [
+    "external media dependency packaging",
+    "mask acceptance",
+    "creative visual acceptance",
+    "full plugin Harness",
+    "plugin host installation",
+    "other platforms"
+  ],
+  "sourcePackage": "effectcraft-skills",
+  "sourceHashes": {
+    ".gitignore": "60c9bdd905fcf45ac485c680d32e9773962cf061b6f041dcddd033911558a672",
+    "LICENSE": "f51b5b32a3b7c3df50ef7153f4dd46233221574f07384d2cf99c6fae08c59f03",
+    "README.md": "7d912a868f94c6875fba74380e9ee9ac5b4fc24c5f590751752399fae201317b",
+    "README.zh-CN.md": "2170037ca4887bccf1eca843ea67df6adabf8fc36ef5032e1d23bf732ea16f67",
+    "skills/effectcraft-use/SKILL.md": "0b8d8898a595a6c4f4e8c5ac6812fb28a693794168ceb41c9e71a9d2e85150c2",
+    "skills/effectcraft-use/examples/brand-intro.json": "8d786356a69ba838cb9015175494e2d44c7ccd05e6cf6a7ced5d8395bba8c5f1",
+    "skills/effectcraft-use/references/workflow.md": "4e785f095aab631dad68d70e0a1ae2a55d8e53c7e308427356fcc4fb75d9e437",
+    "skills/effectcraft-use/scripts/bootstrap.py": "1c0867a919a7b81d0b971f817ba5287742c0e602cdd0b33377c65840963b856b",
+    "skills/effectcraft-use/scripts/mcp_session.py": "2f1e6de76d1fe12917933f4967a40c827ba80994a8441e47cb68f212b00160a4",
+    "skills/effectcraft-use/scripts/runtime.lock.json": "c3dc4d1443e9b74d0891904d7ec95167375cfb9a8457bfc4faa89208280d465d",
+    "skills/effectcraft-use/scripts/workflow.py": "0669dc943c36607d31fe73e0b387c7369c93f2fada695ecbea40d5512c90c865",
+    "tests/test_bootstrap.py": "0a1c2a3c4f686c665a8252bdbeeafc7801778dea6f258ba7fa18436cf2d0823a",
+    "tests/test_first_use.py": "8bdf24b4c705915707304fee9f7dcab5d19b8f30a170b4f7fe4d24b191caf28f",
+    "tests/test_native_workflow.py": "9f8fb3a6c87d32f33b92eaa70743b3b9cfe48cdc35ff27b06bcdb15dd6436c76",
+    "tests/test_workflow.py": "526e0597b776ce2300750894f88b47b78bb2e7cf4b85ca76586963b1b04b38b2"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "observedAt": "2026-10-05",
+  "platform": "darwin-arm64",
+  "command": "CRAFT_LIVE_TEST=1 python3 -m unittest discover -s tests -v",
+  "exitCode": 0,
+  "testCount": 8,
+  "unitTestCount": 7,
+  "liveTestCount": 1,
+  "resultTail": "ok\ntest_traversal_rejected_before_extract (test_bootstrap.BootstrapTests.test_traversal_rejected_before_extract) ... ok\ntest_unknown_platform_fails_without_download (test_bootstrap.BootstrapTests.test_unknown_platform_fails_without_download) ... ok\ntest_single_skill_without_plugin_or_siblings (test_first_use.FirstUseTests.test_single_skill_without_plugin_or_siblings) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 15.470s\n\nOK\n",
+  "redPhase": "Initial bootstrap module absent: FileNotFoundError. Pinned version metadata regression: runtime_version_mismatch before fix.",
+  "scope": "Single isolated skill installation and read-only CLI invocation only",
+  "notVerified": [
+    "full-domain-workflow",
+    "plugin-host-installation",
+    "cross-plugin-orchestration",
+    "other-platforms"
+  ],
+  "sourcePackage": "effectcraft-skills",
+  "sourceHashes": {
+    "README.md": "0ca3229d661fd528b3614d4bc615c99a509a0f9419a5ca25b5fa5b4e88519060",
+    "README.zh-CN.md": "744066274820e195c0ab8e19cbb8baac4243702394a72b3f95665be624a88fe4",
+    "tests/test_first_use.py": "8bdf24b4c705915707304fee9f7dcab5d19b8f30a170b4f7fe4d24b191caf28f",
+    "tests/test_bootstrap.py": "0a1c2a3c4f686c665a8252bdbeeafc7801778dea6f258ba7fa18436cf2d0823a",
+    "skills/effectcraft-use/SKILL.md": "f49f79e378786aae6120ddfab9b95625d8db4249660ff6d3c9d4dc4e99f9bc73",
+    "skills/effectcraft-use/scripts/bootstrap.py": "1c0867a919a7b81d0b971f817ba5287742c0e602cdd0b33377c65840963b856b",
+    "skills/effectcraft-use/scripts/runtime.lock.json": "c3dc4d1443e9b74d0891904d7ec95167375cfb9a8457bfc4faa89208280d465d"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "observedAt": "2026-10-05",
+  "platform": "darwin-arm64",
+  "command": "CRAFT_LIVE_TEST=1 /opt/anaconda3/bin/python3 -m unittest discover -s tests -v",
+  "exitCode": 0,
+  "testCount": 15,
+  "resultTail": "_and_replace_asset_without_changing_animation) ... ok\ntest_clean_install_and_reuse_without_network (test_bootstrap.BootstrapTests.test_clean_install_and_reuse_without_network) ... ok\ntest_corrupt_download_never_runs (test_bootstrap.BootstrapTests.test_corrupt_download_never_runs) ... ok\ntest_pinned_build_metadata_is_accepted (test_bootstrap.BootstrapTests.test_pinned_build_metadata_is_accepted) ... ok\ntest_symlink_archive_rejected (test_bootstrap.BootstrapTests.test_symlink_archive_rejected) ... ok\ntest_tampered_installed_binary_is_not_overwritten (test_bootstrap.BootstrapTests.test_tampered_installed_binary_is_not_overwritten) ... ok\ntest_traversal_rejected_before_extract (test_bootstrap.BootstrapTests.test_traversal_rejected_before_extract) ... ok\ntest_unknown_platform_fails_without_download (test_bootstrap.BootstrapTests.test_unknown_platform_fails_without_download) ... ok\ntest_single_skill_without_plugin_or_siblings (test_first_use.FirstUseTests.test_single_skill_without_plugin_or_siblings) ... ok\ntest_intro_roundtrip_and_text_revision (test_native_workflow.NativeWorkflowTests.test_intro_roundtrip_and_text_revision) ... ok\ntest_duplicate_alias_rejected (test_workflow.WorkflowTests.test_duplicate_alias_rejected) ... ok\ntest_export_range_and_format_rejected (test_workflow.WorkflowTests.test_export_range_and_format_rejected) ... ok\ntest_file_side_effect_commands_are_rejected (test_workflow.WorkflowTests.test_file_side_effect_commands_are_rejected) ... ok\ntest_resolve_only_explicit_references (test_workflow.WorkflowTests.test_resolve_only_explicit_references) ... ok\ntest_unknown_reference_is_an_error (test_workflow.WorkflowTests.test_unknown_reference_is_an_error) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 12.133s\n\nOK\n",
+  "redPhase": "asset.import rejected with unsupported_command before implementation",
+  "scope": [
+    "native registered PNG import and collection",
+    "move delivery and remove original file, then reopen and relink",
+    "replace footage while preserving native layer JSON and keyframes",
+    "verify changed render pixel and unchanged source project",
+    "reject wrong asset digest"
+  ],
+  "notVerified": [
+    "other external media formats",
+    "mask acceptance",
+    "creative visual acceptance",
+    "full plugin Harness",
+    "plugin host installation",
+    "other platforms"
+  ],
+  "sourceHashes": {
+    ".gitignore": "60c9bdd905fcf45ac485c680d32e9773962cf061b6f041dcddd033911558a672",
+    "LICENSE": "f51b5b32a3b7c3df50ef7153f4dd46233221574f07384d2cf99c6fae08c59f03",
+    "README.md": "cb2bd071e82c38f2c0cb5c6cc8cdc35772ce337843c8065d77fb491b96ace47c",
+    "README.zh-CN.md": "414d98dba12854ed30de7cbd29a3844db99a6e7c2d338cb829cbb6e5cd529239",
+    "skills/effectcraft-use/SKILL.md": "2d784b328e4a9332635cc1fdf94c4e02865c1b710609b6748aa0c40370bccfc3",
+    "skills/effectcraft-use/examples/brand-intro.json": "8d786356a69ba838cb9015175494e2d44c7ccd05e6cf6a7ced5d8395bba8c5f1",
+    "skills/effectcraft-use/references/workflow.md": "8391e1464ad00cc099af1480597d052268c6cab2c38ec3465c2e40aae0bb03e7",
+    "skills/effectcraft-use/scripts/bootstrap.py": "1c0867a919a7b81d0b971f817ba5287742c0e602cdd0b33377c65840963b856b",
+    "skills/effectcraft-use/scripts/mcp_session.py": "2f1e6de76d1fe12917933f4967a40c827ba80994a8441e47cb68f212b00160a4",
+    "skills/effectcraft-use/scripts/runtime.lock.json": "c3dc4d1443e9b74d0891904d7ec95167375cfb9a8457bfc4faa89208280d465d",
+    "skills/effectcraft-use/scripts/workflow.py": "352feb1fc96814090ad79613ce18aae6ce39271c7e3a707fbb6056b2c56f13e0",
+    "tests/test_assets.py": "9b2d6dfc042e1dbfe2e22460d8232430e7b19cff4a09fc45c758ab4d02933031",
+    "tests/test_bootstrap.py": "0a1c2a3c4f686c665a8252bdbeeafc7801778dea6f258ba7fa18436cf2d0823a",
+    "tests/test_first_use.py": "8bdf24b4c705915707304fee9f7dcab5d19b8f30a170b4f7fe4d24b191caf28f",
+    "tests/test_native_workflow.py": "9f8fb3a6c87d32f33b92eaa70743b3b9cfe48cdc35ff27b06bcdb15dd6436c76",
+    "tests/test_workflow.py": "526e0597b776ce2300750894f88b47b78bb2e7cf4b85ca76586963b1b04b38b2"
+  }
+}
