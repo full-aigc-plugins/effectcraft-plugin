@@ -1,12 +1,12 @@
 ---
 name: effectcraft-cli-camera
-description: 当需要设置已有合成中的摄像机、灯光和材质参数时使用 EffectCraft；本技能自带首次安装与公开 CLI 入口。
+description: 当需要建立或修改已有合成中的摄像机、灯光和材质，核对图层三维开关及视角前置条件时使用 EffectCraft；本技能自带首次安装与公开 CLI 入口。
 license: Apache-2.0
 ---
 
 # EffectCraft 三维图层与摄像机
 
-本技能负责设置已有合成中的摄像机、灯光和材质参数。与同包技能按名称交接，单独安装即可使用，不读取兄弟目录。调用固定官方 effectcraft-cli，保留原生编辑工程。
+本技能负责建立或修改已有合成中的摄像机、灯光和材质，核对图层三维开关及视角前置条件。与同包技能按名称交接，单独安装即可使用，不读取兄弟目录。调用固定官方 effectcraft-cli，保留原生编辑工程。
 
 ## 输入与交付
 
@@ -16,13 +16,16 @@ license: Apache-2.0
 
 定位当前 SKILL.md 的真实目录。当前支持 macOS arm64、Python 3.11+；固定 CLI 安装到用户数据目录。已有任务授权覆盖必要依赖时直接执行本技能安装器，不另造批准流程。
 
+将 `SKILL_DIR` 设置为宿主实际加载的本 `SKILL.md` 所在目录（绝对路径）。用户级安装可能位于 `~/.agents/skills/effectcraft-cli-camera`，项目级可能位于 `.agents/skills/effectcraft-cli-camera`，插件可能位于其 `skills/effectcraft-cli-camera` 或宿主缓存目录；以实际加载路径为准，不按当前工作目录猜测，也不搜索后随意选择重复版本。技能目录与 CLI 的用户数据安装目录是两个独立位置。
+
 ```bash
-python3 -I -B /mnt/skills/user/effectcraft-cli-camera/scripts/bootstrap.py
-python3 -I -B /mnt/skills/user/effectcraft-cli-camera/scripts/cli.py -- --version
-python3 -I -B /mnt/skills/user/effectcraft-cli-camera/scripts/cli.py -- commands --json
+: "${SKILL_DIR:?请先设置为本 SKILL.md 的实际所在目录}"
+python3 -I -B "$SKILL_DIR/scripts/bootstrap.py"
+python3 -I -B "$SKILL_DIR/scripts/cli.py" -- --version
+python3 -I -B "$SKILL_DIR/scripts/cli.py" -- commands --json
 ```
 
-`/mnt/skills/user/effectcraft-cli-camera` 是挂载示例，替换为实际加载目录；CLI argv 在 `--` 后，原生子命令必须放首位。安装参数放分隔符前；`--runtime-home` 可隔离缓存。锁定制品摘要失败、损坏安装或不支持平台时停止；不改 PATH、不执行浮动升级。原生帮助入口是 `--help`；launcher 自身 `--help` 只说明启动参数。
+CLI argv 在 `--` 后，原生子命令必须放首位。安装参数放分隔符前；`--runtime-home` 可隔离缓存。锁定制品摘要失败、损坏安装或不支持平台时停止；不改 PATH、不执行浮动升级。原生帮助入口是 `--help`；launcher 自身 `--help` 只说明启动参数。
 
 ## 场景操作
 
