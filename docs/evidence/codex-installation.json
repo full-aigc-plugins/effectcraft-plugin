@@ -1,0 +1,26 @@
+{
+  "schema": "craft-codex-host-evidence/v1",
+  "observedAt": "2026-10-05T11:51:21.093487+00:00",
+  "platform": "darwin-arm64",
+  "pluginId": "effectcraft",
+  "releaseTag": "v0.1.0-dev.0",
+  "releaseCommit": "317ec2fe32e5870dbcdb622df2edf0b5db3169d9",
+  "cliVersion": "codex-cli 0.153.4",
+  "appServerUserAgent": "Codex Desktop/0.147.0",
+  "result": "passed",
+  "scope": [
+    "temporary isolated host configuration and local test marketplace",
+    "install from public GitHub immutable tag",
+    "plugin list installed and enabled",
+    "app-server skills/list discovers enabled namespaced skill with zero errors",
+    "installed skill content matches source lock"
+  ],
+  "skillName": "effectcraft:effectcraft-use",
+  "marketplacePromotion": false,
+  "notVerified": [
+    "desktop GUI activation and interaction",
+    "other hosts or platforms",
+    "full domain and creative acceptance",
+    "production release"
+  ]
+}
