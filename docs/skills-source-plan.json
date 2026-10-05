@@ -1,5 +1,5 @@
 {
-  "status": "implementation-in-progress",
+  "status": "published-and-vendored",
   "package": "effectcraft-skills",
   "proposedRepository": "https://github.com/full-aigc-skills/effectcraft-skills",
   "skills": [
@@ -19,5 +19,7 @@
   ],
   "sourceOfTruth": "independent skills repository",
   "packaging": "immutable vendored snapshot with tag, commit and whole-tree checksums",
-  "suiteManifest": "https://github.com/full-aigc-skills/effectcraft-skills/blob/main/skill-suite.json"
+  "suiteManifest": "https://github.com/full-aigc-skills/effectcraft-skills/blob/main/skill-suite.json",
+  "sourceRef": "v0.1.0-dev.3",
+  "sourceSha": "e26921c0448e6506626b89c0e3c388a110c6e955"
 }
