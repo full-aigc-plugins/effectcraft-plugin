@@ -1,20 +1,23 @@
 {
-  "status": "planned-not-published",
+  "status": "implementation-in-progress",
   "package": "effectcraft-skills",
   "proposedRepository": "https://github.com/full-aigc-skills/effectcraft-skills",
   "skills": [
     "effectcraft-use",
-    "effectcraft-setup",
-    "effectcraft-inspect",
-    "effectcraft-composition",
-    "effectcraft-layers",
-    "effectcraft-animation",
-    "effectcraft-effects",
-    "effectcraft-masks",
-    "effectcraft-preview",
-    "effectcraft-export",
-    "effectcraft-recover"
+    "effectcraft-cli",
+    "effectcraft-cli-setup",
+    "effectcraft-cli-project",
+    "effectcraft-cli-footage",
+    "effectcraft-cli-composition",
+    "effectcraft-cli-layers",
+    "effectcraft-cli-animation",
+    "effectcraft-cli-effects",
+    "effectcraft-cli-masks",
+    "effectcraft-cli-expressions",
+    "effectcraft-cli-camera",
+    "effectcraft-cli-export"
   ],
   "sourceOfTruth": "independent skills repository",
-  "packaging": "immutable vendored snapshot with tag, commit and whole-tree checksums"
+  "packaging": "immutable vendored snapshot with tag, commit and whole-tree checksums",
+  "suiteManifest": "https://github.com/full-aigc-skills/effectcraft-skills/blob/main/skill-suite.json"
 }

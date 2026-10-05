@@ -4,14 +4,38 @@
     {
       "package": "effectcraft-skills",
       "repo": "https://github.com/full-aigc-skills/effectcraft-skills.git",
-      "ref": "v0.1.0-dev.2",
-      "sha": "08799a63429cce312ef254ad5085553629956dbf",
+      "ref": "v0.1.0-dev.3",
+      "sha": "e26921c0448e6506626b89c0e3c388a110c6e955",
       "skills": [
-        "effectcraft-use"
+        "effectcraft-use",
+        "effectcraft-cli",
+        "effectcraft-cli-setup",
+        "effectcraft-cli-project",
+        "effectcraft-cli-footage",
+        "effectcraft-cli-composition",
+        "effectcraft-cli-layers",
+        "effectcraft-cli-animation",
+        "effectcraft-cli-effects",
+        "effectcraft-cli-masks",
+        "effectcraft-cli-expressions",
+        "effectcraft-cli-camera",
+        "effectcraft-cli-export"
       ],
       "dest": "skills/",
       "sha256": {
-        "effectcraft-use": "d79a495f2b8fd91cb0fdcacc94b09213d83c0ad8c01acfbd55e15491acf8206c"
+        "effectcraft-use": "5536307cebd95fe34fed4f6923c7dadd7eba6c22b69717937accd818f7b1c021",
+        "effectcraft-cli": "16103fa203d517b39039952180d00f68569df4059ed44b9465e2bf05755ca56b",
+        "effectcraft-cli-setup": "07c78c8a1e16344ca6633600437102a54d2e79d7b2638f5d9e5ae5e927bfbb7f",
+        "effectcraft-cli-project": "9a09e19d36ae666c921cca04ee4e488a2bd37f101257665c2329895a16ad69b3",
+        "effectcraft-cli-footage": "388f3e3c61d33516317cda2d4c06ef8640c58207ca9fe997e3a4c6c0c553defe",
+        "effectcraft-cli-composition": "6c23e05ff5c090e4d27db2bbcdf10d2f839521dcd25ee543087df579122641d4",
+        "effectcraft-cli-layers": "ec9283ae45832273260dc45a2132d97ff773a1fd35e1690e9c764d11fc7b00f2",
+        "effectcraft-cli-animation": "b3196d7cf0d7f936c901d67974f9476f7a3dff50172169aa3b695bb7b6a22468",
+        "effectcraft-cli-effects": "21fbe23645b89c87ec9017cd84c4d34d67c3507c0bb64ba417264f5b51fbd18e",
+        "effectcraft-cli-masks": "688cc66002f6b4ee45eec80437c3db9ea01f7d246ffe12e01ebeff73814f7d99",
+        "effectcraft-cli-expressions": "79d482af753226a2f9eb2b656187a9c06c8f684352c2b5a558842a52ed18b56c",
+        "effectcraft-cli-camera": "4cf788c7bec75403b92942c4fe8d231dc246b2690439832c606e181f0132f29d",
+        "effectcraft-cli-export": "69247b74f102f1f56ed754132cf5c83bc9a00a065f1a4e4af2c9babd8d71f6ae"
       }
     }
   ]
