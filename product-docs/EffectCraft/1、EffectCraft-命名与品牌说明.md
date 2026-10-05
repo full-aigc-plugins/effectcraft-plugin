@@ -24,7 +24,7 @@ EffectCraft: 图层合成、动态图形与镜头效果.
 | Skills source (planned) | full-aigc-skills/effectcraft-skills |
 | Native deliverable | .ecproj |
 | Current stage | documentation-baseline |
-| Metadata version | 0.1.0-dev.0 |
+| Metadata version | 0.1.0-dev.2 |
 
 
 ## 3. 品牌与版权边界
