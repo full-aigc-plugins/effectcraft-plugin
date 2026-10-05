@@ -122,7 +122,7 @@ Independent skill workflow acceptance now covers native `.ecproj` round trips, t
 
 External PNG media collection and footprint-preserving replacement are now tested in the 15-test suite. See [current evidence](docs/evidence/effect-assets-tests.json). Full domain and host acceptance remain in progress.
 
-Independent skills are pinned at the current published development tag `v0.1.0-dev.5`, including the exact source commit and whole-skill digest in `skills.lock.json`. Verify using `python3 scripts/vendor/skill_vendor.py check`. These source snapshots do not establish plugin-host acceptance or production readiness.
+Independent skills are pinned at the current published development tag `v0.1.0-dev.6`, including the exact source commit and whole-skill digest in `skills.lock.json`. Verify using `python3 scripts/vendor/skill_vendor.py check`. These source snapshots do not establish plugin-host acceptance or production readiness.
 
 ## Development skill installation and use
 
@@ -147,6 +147,8 @@ The current development milestone adds hash-bound exchange loss reports to nativ
 
 The source suite contains 13 independently installable skills with setup, public CLI operations and focused tasks. [Architecture and catalogue](docs/EffectCraft-Skill-Suite-Architecture.md). Runtime and plugin versions are separate; prior host evidence retains its original version scope.
 
-Current plugin: `0.1.0-dev.6`; skill suite: `0.1.0-dev.5`. The corrected examples resolve scripts from the actual host-loaded `SKILL.md` directory. All skills passed isolated entry-point checks in user, project and plugin layouts with spaces. [Path evidence](docs/evidence/installed-skill-paths.json). Earlier host evidence above covers its recorded release; existing installations require an update.
+Current plugin: `0.1.0-dev.7`; skill suite: `0.1.0-dev.6`. The corrected examples resolve scripts from the actual host-loaded `SKILL.md` directory. All skills passed isolated entry-point checks in user, project and plugin layouts with spaces. [Path evidence](docs/evidence/installed-skill-paths.json). Earlier host evidence above covers its recorded release; existing installations require an update.
 
 Plugin `0.1.0-dev.6` corrects the whole-skill digests by fetching the immutable public source tag, without local Python caches. Plugin tag `v0.1.0-dev.5` is superseded and must not be installed because its source digests included ignored development caches.
+
+Plugin dev.7 pins source dev.6 with a self-contained editable-mask example and vertex-edit/removal workflow. All 39 default-public-download native tests pass with zero skipped; isolated task skills install into empty runtimes, preserve old projects and non-target layers, and verify actual RGBA mask boundaries. [Evidence](docs/evidence/task-skill-first-use.json). Native runtime remains 0.2.0; model/GUI and full creative acceptance remain open.

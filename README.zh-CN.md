@@ -147,6 +147,8 @@ python3 -I -B skills/effectcraft-use/scripts/workflow.py --help
 
 技能源包含 13 项可独立安装的技能，分为安装、CLI 公共操作与场景任务。[架构与清单](docs/EffectCraft-Skill-Suite-Architecture.zh_CN.md)。运行时与插件版本分别维护；旧宿主证据保持原版本范围。
 
-当前插件版本：`0.1.0-dev.6`；技能源版本：`0.1.0-dev.5`。命令示例以宿主实际加载的 `SKILL.md` 所在目录调用脚本。全部技能在用户、项目与插件三种含空格布局中通过隔离入口检查。[路径证据](docs/evidence/installed-skill-paths.json)。此前宿主验证仍对应其记录版本，既有安装需更新。
+当前插件版本：`0.1.0-dev.7`；技能源版本：`0.1.0-dev.6`。命令示例以宿主实际加载的 `SKILL.md` 所在目录调用脚本。全部技能在用户、项目与插件三种含空格布局中通过隔离入口检查。[路径证据](docs/evidence/installed-skill-paths.json)。此前宿主验证仍对应其记录版本，既有安装需更新。
 
 插件 `0.1.0-dev.6` 从固定公开标签重新取快照并修正整个技能摘要，未带入本地 Python 缓存。插件标签 `v0.1.0-dev.5` 的摘要误包含被忽略的开发缓存，已被替代，不可安装该标签。
+
+插件 dev.7 固定技能源 dev.6，增加自包含可编辑蒙版示例与顶点修改/移除工作流。默认公开下载原生回归 39 项全部通过、无跳过；独立场景技能从空运行时安装，保留旧工程和非目标图层，以 RGBA 像素核验真实蒙版边界。[证据](docs/evidence/task-skill-first-use.json)。运行时保持 0.2.0；模型/GUI 与完整创作验收仍未完成。

@@ -15,6 +15,7 @@
 - [x] 1.7 [EC-SK-003] 编写 CLI 子命令拒绝、单技能隔离执行与既有 use 回归测试，记录失败原因。责任：Skills owner；前置：上游 CodeGraph 调查与运行时目录取证；产物：tests/test_skill_suite.py、研究证据。
 - [x] 1.8 [EC-SK-003] 实现 CLI/安装/领域场景技能和自包含公开调用入口；更新双语清单与插件来源锁。责任：Skills owner；前置：1.7；产物：独立技能源、固定标签与内置快照。
 - [x] 1.9 [EC-SK-003] 验证每个单独技能的 CLI 发现与原生代表任务、旧入口回归及插件技能发现。责任：QA owner；前置：1.8；产物：docs/evidence/skill-suite.json；明确未执行的创作/GUI 场景。
+- [x] 1.10 [EC-SK-003] 完成场景技能默认在线冷启动及蒙版创建/顶点修改/移除验收，记录原工程和非目标图层保留、RGBA 像素与当前源摘要；产物：docs/evidence/task-skill-first-use.json。
 - [x] 1.11 [EC-SK-003] 修正全部技能为真实加载目录调用，执行三种安装布局及含空格路径的隔离入口回归；产物：docs/evidence/installed-skill-paths.json、独立技能源 tests/test_installed_paths.py。此检查不替代完整创作验收。
 - [x] 1.12 [EC-SK-001] 修复本地来源覆盖读取工作树而非固定标签的漂移，验证脏文件保留、缓存排除和公开来源摘要一致；产物：tests/test_skill_vendor.py、docs/evidence/installed-skill-paths.json。
 

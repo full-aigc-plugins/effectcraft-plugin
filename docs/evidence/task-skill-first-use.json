@@ -1,0 +1,58 @@
+{
+  "schema": "craft-task-skill-first-use/v1",
+  "date": "2026-10-06",
+  "pluginId": "effectcraft",
+  "sourceVersion": "0.1.0-dev.6",
+  "runtimeVersion": "0.2.0",
+  "platform": "darwin-arm64",
+  "python": "3.13.5",
+  "regression": {
+    "tests": 39,
+    "passed": 39,
+    "skipped": 0,
+    "seconds": 136.172,
+    "environment": {
+      "CRAFT_TASK_FIRST_USE": "1",
+      "CRAFT_LIVE_TEST": "1",
+      "CRAFT_LIVE_SUITE": "1"
+    },
+    "archiveOverride": false
+  },
+  "installation": {
+    "layout": "isolated single skill",
+    "runtimeHome": "new empty directory per task",
+    "PATH": "/usr/bin:/bin for skill invocation",
+    "nativeDownload": "default public pinned archive URL"
+  },
+  "redPhase": [
+    "Missing skill-owned layer-mask.json fails contract",
+    "Previous source workflow rejects mask.setVertex as unsupported_command"
+  ],
+  "checks": [
+    "All 13 skills independently discover pinned CLI commands",
+    "11 scene tests install independently and operate on native projects",
+    "Closed Add mask saved as native project and rendered to RGBA PNG",
+    "Skill-owned workflow example creates editable mask and revises two vertices",
+    "Source project SHA unchanged by revision",
+    "Public CLI removal restores actual visible pixels",
+    "Non-target title properties unchanged",
+    "Existing animation, footage, effects, expression, camera and native video checks pass"
+  ],
+  "files": {
+    "tests/test_task_skill_first_use.py": "3e92c11f5a1c78bbbe8b1fc61d4093445b1fce4b8ec90eec9a453d591322d68e",
+    "tests/test_native_workflow.py": "b3883e2196ca5a7757e2e9bbc0d07a5e5b466ebf562632a92020f211a31751b3",
+    "skills/effectcraft-use/scripts/workflow.py": "42b07403eecadf1e8f350030f274094c9459f5920d7525ea6d46f7cd4379361c",
+    "skills/effectcraft-use/examples/layer-mask.json": "61efc2abc7274b45224659ab4aae7e847486af3f3660161a03b83b978ec7a8bc",
+    "skills/effectcraft-cli-masks/references/scenario.md": "f1275b6532b06710b86a5ed6aa49d49515d8c78668c431c6ec44f90ad8b47c35",
+    "skill-suite.json": "db954b9e3ba1891e16ca03f841d1d2ede96915515174f57d67dcbe5f887c3fdf",
+    ".claude-plugin/plugin.json": "c2b2f887baa94ae109ad63610b9030940f7792e5ce3b2e59d52fa3a08f503531"
+  },
+  "unverified": [
+    "Model task dispatch and GUI",
+    "Automatic roto or arbitrary complex/feathered mask acceptance",
+    "Creative approval",
+    "Other platforms",
+    "Full cross-editor interchange fidelity"
+  ],
+  "previousEvidence": "docs/evidence/task-skill-first-use-v4.json"
+}
