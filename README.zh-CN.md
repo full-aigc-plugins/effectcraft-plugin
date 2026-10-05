@@ -154,3 +154,5 @@ python3 -I -B skills/effectcraft-use/scripts/workflow.py --help
 插件 dev.7 固定技能源 dev.6，增加自包含可编辑蒙版示例与顶点修改/移除工作流。默认公开下载原生回归 39 项全部通过、无跳过；独立场景技能从空运行时安装，保留旧工程和非目标图层，以 RGBA 像素核验真实蒙版边界。[证据](docs/evidence/task-skill-first-use.json)。运行时保持 0.2.0；模型/GUI 与完整创作验收仍未完成。
 
 当前固定发布的宿主核验（2026-10-06）：Codex 0.153.4 安装五个当前固定插件，加载全部 58 技能并逐项核对内容身份。本插件代表性原生工作流从实际安装路径调用，在新的原生运行时中完成创建、重开和修订检查；五工作流调用后，全部 58 个技能摘要保持不变。[证据](docs/evidence/codex-current-release-20261006.json)。显式标签生成器由 ArtCraft 统一持有。模型派发等待授权，GUI、创作与完整宿主验收仍未完成；本次 QA 维护不改变已发布技能/运行时内容或标签。
+
+当前固定发布矩阵（FilmCraft dev.6、EffectCraft dev.7、PhotoCraft dev.6、VectorCraft dev.6、ArtCraft dev.17）在隔离 Codex 安装后通过 58 技能发现及原生代表工作流；执行后所有技能摘要保持不变。[宿主安装内容的原生验证](docs/evidence/codex-release17-native-20261006.json)。此证据不代表模型调度、GUI 或完整创作验收。
