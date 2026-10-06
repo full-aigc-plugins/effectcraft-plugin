@@ -91,3 +91,7 @@
 ## 当前宿主证据范围
 
 `docs/evidence/codex-current-release.json` 记录固定发布在 Codex 0.147.0 / 0.153.4 的安装、发现与公开入口执行；共享复现工具由 ArtCraft 持有。该证据未覆盖模型派发、桌面 GUI、完整 P0 与创作验收，release-compatibility 任务的前置条件尚未全部满足，不能据此勾选完整发布任务。
+
+## 首版文字返工与透明素材交接补充
+
+任务 4.7–4.9 / 4.13–4.15 的有界实际证据：固定 EffectCraft dev.7 与 FilmCraft dev.7 各单独复制一个安装技能、分别使用空运行时。片头文字修改保留原徽标和标题关键帧；原生 RGBA PNG 经 FilmCraft 检查并放置到 V2，在原生预览与成片解码中露出绿色底层，2,423 个完全不透明前景像素逐项核对。真实 1 项通过（13.898 秒），结束后两领域全部 24 项安装技能摘要保持一致。证据 `docs/evidence/codex-effectcraft7-filmcraft7-alpha-handoff-20261006.json`。完整任务保持开放：未覆盖动画透明视频、任意色彩配置和预乘 alpha 转换。

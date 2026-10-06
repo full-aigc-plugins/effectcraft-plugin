@@ -16,5 +16,6 @@
     "1.10": "docs/evidence/task-skill-first-use.json"
   },
   "hostValidationEvidence": "docs/evidence/codex-release18-native-20261006.json",
-  "hostValidationStatus": "bounded-installed-native-workflow-passed"
+  "hostValidationStatus": "bounded-installed-native-workflow-passed",
+  "filmAlphaHandoffEvidence": "docs/evidence/codex-effectcraft7-filmcraft7-alpha-handoff-20261006.json"
 }
