@@ -14,9 +14,10 @@
     "1.11": "docs/evidence/installed-skill-paths.json",
     "1.12": "docs/evidence/installed-skill-paths.json",
     "1.10": "docs/evidence/task-skill-first-use.json",
-    "4.19": "docs/evidence/codex-effectcraft7-temporal-animation-first-use-20261006.json"
+    "4.19": "docs/evidence/codex-effectcraft7-temporal-animation-first-use-20261006.json",
+    "4.20": "docs/evidence/codex-effectcraft8-parameter-first-use-20261006.json"
   },
-  "hostValidationEvidence": "docs/evidence/codex-release18-native-20261006.json",
-  "hostValidationStatus": "bounded-installed-native-workflow-passed",
+  "hostValidationEvidence": "docs/evidence/codex-effectcraft8-parameter-first-use-20261006.json",
+  "hostValidationStatus": "bounded-installed-effect-mask-parameter-first-use-passed",
   "filmAlphaHandoffEvidence": "docs/evidence/codex-effectcraft7-filmcraft7-alpha-handoff-20261006.json"
 }
