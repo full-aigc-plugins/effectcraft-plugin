@@ -23,5 +23,6 @@
   "hostValidationStatus": "bounded-installed-native-dynamic-sequence-first-use-passed",
   "filmAlphaHandoffEvidence": "docs/evidence/codex-effectcraft7-filmcraft7-alpha-handoff-20261006.json",
   "dynamicFilmHandoffEvidence": "docs/evidence/codex-effectcraft9-filmcraft10-dynamic-first-use-20261006.json",
-  "currentReleaseDiscoveryEvidence": "docs/evidence/codex-effectcraft9-filmcraft10-dynamic-first-use-20261006.json"
+  "currentReleaseDiscoveryEvidence": "docs/evidence/codex-effectcraft9-filmcraft10-dynamic-first-use-20261006.json",
+  "currentDomainTaskMatrixEvidence": "docs/evidence/codex-current-domain-task-matrix-20261006.json"
 }
