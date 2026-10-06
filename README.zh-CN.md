@@ -55,9 +55,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.15 |
+| Metadata version | 0.1.0-dev.16 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / 0.1.0-dev.14 |
+| Skills source | effectcraft-skills / 0.1.0-dev.15 |
 | Execution | 上游 CLI；ArtCraft 使用子适配器 |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |
@@ -205,3 +205,5 @@ EffectCraft 独立技能源 dev.7 对效果／蒙版计划参数校验错误返�
 固定插件发行候选 0.1.0-dev.11 锁定技能源 0.1.0-dev.10，包含 HD 分段工作流与像素校验优化。实际安装版首次使用验收待完成。
 
 公开工作流回复检查已同步领域技能源候选，并通过有界原生／Art 协议验证。新的固定领域和 Art 分发包仍待发行与实际安装验收。[候选架构](docs/EffectCraft-Complete-Commands-Architecture.zh_CN.md) · [证据](docs/evidence/public-workflow-session-candidate-20261007.json)。
+
+失败暂存候选：公开工作流保留原生暂存原路径、依赖摘要、最后提交请求与已完成回执，禁止重放；固定发行与安装副本验收仍开放。[架构](docs/EffectCraft-Failed-Stage-Architecture.zh_CN.md)。
