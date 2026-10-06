@@ -30,7 +30,8 @@
     "8.8": "docs/evidence/codex-protocol-fault-first-use-20261007.json",
     "8.9": "docs/evidence/codex-public-workflow-session-first-use-20261007.json",
     "3.10": "docs/evidence/failed-stage-candidate-20261007.json",
-    "3.11": "docs/evidence/failed-stage-candidate-20261007.json"
+    "3.11": "docs/evidence/failed-stage-candidate-20261007.json",
+    "3.12": "docs/evidence/codex-failed-stage-first-use-20261007.json"
   },
   "hostValidationEvidence": "docs/evidence/codex-protocol-fault-first-use-20261007.json",
   "hostValidationStatus": "fixed-protocol-repair-install-and-discovery-passed",
@@ -59,5 +60,6 @@
     "commit": "5f5f91aa98c933cdcae6b873f8ace17e19f94b75"
   },
   "publicWorkflowFixedHostEvidence": "docs/evidence/codex-public-workflow-session-first-use-20261007.json",
-  "failedStageCandidateEvidence": "docs/evidence/failed-stage-candidate-20261007.json"
+  "failedStageCandidateEvidence": "docs/evidence/failed-stage-candidate-20261007.json",
+  "failedStageHostEvidence": "docs/evidence/codex-failed-stage-first-use-20261007.json"
 }
