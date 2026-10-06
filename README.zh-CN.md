@@ -1,10 +1,12 @@
 # EffectCraft Agent Plugin
 
-当前插件 `0.1.0-dev.19`／技能源 `0.1.0-dev.17` 固定原生下载恢复修复；实际安装首用复验进行中。
+固定原生首次安装与完整命令恢复验收通过：新版五插件58技能逐项独立冷安装，十个Art技能分别安装四领域；四个原生下载半包SSL EOF恢复、72个原生保存后故障、四个健康命令返工及混合HD返工／恢复／移动包通过，全部安装摘要保全。仅关闭领域2.10／8.11与Art4.10；2639条命令逐项、GUI、模型、通用Skills CLI及完整V1仍开放。 [版本及证据](docs/evidence/codex-native-download-first-use-20261007.json).
 
-原生下载恢复候选：最多三次只读重试并丢弃半包；此前固定版本冷安装遇到SSL EOF失败，修复后的固定安装验收仍开放。
+当前插件 `0.1.0-dev.19`／技能源 `0.1.0-dev.17` 固定原生下载恢复修复；固定安装首用子门禁已通过。
 
-当前插件 `0.1.0-dev.18`／技能源 `0.1.0-dev.16` 固定完整命令内层JSON修复；实际安装首用复验进行中。
+固定发布前的候选记录：原生下载恢复候选：最多三次只读重试并丢弃半包；此前固定版本冷安装遇到SSL EOF失败，修复后的固定安装验收仍开放。
+
+历史插件版本记录 `0.1.0-dev.18`／技能源 `0.1.0-dev.16` 固定完整命令内层JSON修复；实际安装首用复验进行中。
 
 当前固定失败暂存验收：插件 dev.17、独立技能源 dev.15。全部58项独立CLI冷启动、24个原暂存原生故障案例及37原生场景＋6合同检查通过；Art77领域包升级仍开放。[证据](docs/evidence/codex-failed-stage-first-use-20261007.json)。
 
@@ -178,7 +180,7 @@ python3 -I -B skills/effectcraft-use/scripts/workflow.py --help
 
 技能源包含 13 项可独立安装的技能，分为安装、CLI 公共操作与场景任务。[架构与清单](docs/EffectCraft-Skill-Suite-Architecture.zh_CN.md)。运行时与插件版本分别维护；旧宿主证据保持原版本范围。
 
-当前插件版本：`0.1.0-dev.7`；技能源版本：`0.1.0-dev.6`。命令示例以宿主实际加载的 `SKILL.md` 所在目录调用脚本。全部技能在用户、项目与插件三种含空格布局中通过隔离入口检查。[路径证据](docs/evidence/installed-skill-paths.json)。此前宿主验证仍对应其记录版本，既有安装需更新。
+历史插件版本记录版本：`0.1.0-dev.7`；技能源版本：`0.1.0-dev.6`。命令示例以宿主实际加载的 `SKILL.md` 所在目录调用脚本。全部技能在用户、项目与插件三种含空格布局中通过隔离入口检查。[路径证据](docs/evidence/installed-skill-paths.json)。此前宿主验证仍对应其记录版本，既有安装需更新。
 
 插件 `0.1.0-dev.6` 从固定公开标签重新取快照并修正整个技能摘要，未带入本地 Python 缓存。插件标签 `v0.1.0-dev.5` 的摘要误包含被忽略的开发缓存，已被替代，不可安装该标签。
 
@@ -202,7 +204,7 @@ EffectCraft 独立技能源 dev.7 对效果／蒙版计划参数校验错误返�
 
 当前固定发行领域场景矩阵：FilmCraft dev.10、EffectCraft dev.9、PhotoCraft dev.10、VectorCraft dev.11 共 37 个原生场景及 6 项合同检查通过，零跳过。每个场景仅复制对应安装技能，从空运行时目录使用默认公开附件安装原生 CLI；核验原生工程、实际像素／音频及局部修改保持，全部 58 项安装身份保持一致。[版本绑定证据](docs/evidence/codex-current-domain-task-matrix-20261006.json)。完整首版、通用 Skills CLI 安装、模型派发、GUI 与创作验收仍开放。
 
-当前插件 dev.10 锁定技能源 dev.9，包含整份效果／蒙版计划字段预检，以及工程打开／创建前的只读原生 schema 核对。[候选证据](docs/evidence/effect-preflight-source-candidate-20261006.json)仅记录源码检查，固定发行宿主验收另行记录。
+历史插件版本记录 dev.10 锁定技能源 dev.9，包含整份效果／蒙版计划字段预检，以及工程打开／创建前的只读原生 schema 核对。[候选证据](docs/evidence/effect-preflight-source-candidate-20261006.json)仅记录源码检查，固定发行宿主验收另行记录。
 
 固定插件 dev.10／技能源 dev.9 安装后验收通过：Codex 发现全部 58 技能且零加载错误；13 项 Effect 技能分别从空目录公开安装 CLI，非法计划在安装／编辑前拒绝；4 项动画／序列／Film 交接回归与 13 项领域矩阵通过，零跳过。全部安装技能摘要保持不变。[版本绑定证据](docs/evidence/codex-effectcraft10-preflight-first-use-20261006.json)。Art 领域包升级、真实 Skills CLI 安装及完整首版仍开放。
 
