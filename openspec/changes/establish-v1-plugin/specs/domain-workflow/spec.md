@@ -81,6 +81,12 @@ EffectCraft SHALL 交接时记录颜色空间、位深、alpha 类型与编码�
 - **WHEN** 要求透明但渲染输出为不透明 RGB
 - **THEN** alpha 门禁失败，不提交为可合成素材
 
+#### Scenario: EC-DM-005-SEQUENCE 动态透明 PNG 序列
+
+- **WHEN** 用户通过公开技能请求 `png-sequence` 导出
+- **THEN** 固定原生 CLI SHALL 导出完整 RGBA PNG 序列，逐帧验证连续编号、尺寸、8 位通道、实际 alpha 样本及摘要，交付 `craft-image-sequence/v1` 清单、帧率、持续时间和原生工程
+- **AND** 缺帧、额外帧、非 RGBA、尺寸冲突或全不透明帧不得发布为透明序列；颜色空间未核实时 SHALL 标记未知，不推断跨软件保真
+
 ### Requirement: EC-DM-006 工程与渲染交付
 
 EffectCraft SHALL 重开 .ecproj 验证图层与关键帧；渲染结果与源合成版本绑定；向下游提供素材化损失说明。
