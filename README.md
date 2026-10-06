@@ -158,3 +158,5 @@ Current fixed-release host verification (2026-10-06): Codex 0.153.4 installs all
 The fixed FilmCraft dev.6 / EffectCraft dev.7 / PhotoCraft dev.6 / VectorCraft dev.6 / ArtCraft dev.17 matrix passed isolated Codex discovery of 58 skills and representative native workflows from installed skill content. All installed skill digests remained unchanged afterward. [Installed native evidence](docs/evidence/codex-release17-native-20261006.json). Model dispatch, GUI and complete creative acceptance remain unverified.
 
 [Actual transparent handoff to FilmCraft](docs/EffectCraft-FilmCraft-Alpha-Handoff-Acceptance.md): one installed two-domain empty-runtime case passes, preserving title animation and compositing native RGBA PNG over a video background with verified foreground pixels. Complete color and animated-alpha-video acceptance remain open.
+
+Installed animation skill temporal first use passed: four native RGBA samples and 12 decoded video frames verify the fade; text revision preserves badge/key properties and original deliveries. [Temporal acceptance](docs/EffectCraft-Temporal-Animation-Acceptance.md). Full creative/animated-alpha acceptance remains open.

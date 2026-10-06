@@ -158,3 +158,5 @@ python3 -I -B skills/effectcraft-use/scripts/workflow.py --help
 当前固定发布矩阵（FilmCraft dev.6、EffectCraft dev.7、PhotoCraft dev.6、VectorCraft dev.6、ArtCraft dev.17）在隔离 Codex 安装后通过 58 技能发现及原生代表工作流；执行后所有技能摘要保持不变。[宿主安装内容的原生验证](docs/evidence/codex-release17-native-20261006.json)。此证据不代表模型调度、GUI 或完整创作验收。
 
 [透明素材到 FilmCraft 的实际交接](docs/EffectCraft-FilmCraft-Alpha-Handoff-Acceptance.zh_CN.md)：安装后双领域空运行时 1 项通过；修改片头文字保留动画，原生 RGBA PNG 在 FilmCraft 中露出底层并保留不透明前景像素。完整色彩／动画透明视频验收仍开放。
+
+安装后的动画技能时序首次使用通过：4 个原生 RGBA 时刻与 12 帧视频解码核对淡入；文字返工保留徽标、关键帧属性及原交付。[时序验收](docs/EffectCraft-Temporal-Animation-Acceptance.zh_CN.md)。完整创作及动画透明视频验收仍开放。
