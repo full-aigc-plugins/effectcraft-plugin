@@ -32,9 +32,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.10 |
+| Metadata version | 0.1.0-dev.11 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.9 |
+| Skills source | effectcraft-skills / 0.1.0-dev.10 |
 | Execution | 上游 CLI；ArtCraft 使用子适配器 |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |
@@ -178,3 +178,5 @@ EffectCraft 独立技能源 dev.7 对效果／蒙版计划参数校验错误返�
 工作区分段生产器候选：有界原生帧范围、摘要绑定恢复及逐帧核验；固定插件与 Film／Art 消费仍待完成。[架构](docs/EffectCraft-Segmented-Render-Architecture.zh_CN.md)。
 
 当前源码 HD 分段候选通过 1080p／24 fps／五秒及动态标题核验；固定安装版与 Art HD 仍待完成。[架构与证据](docs/EffectCraft-HD-Sequence-Architecture.zh_CN.md)。
+
+固定插件发行候选 0.1.0-dev.11 锁定技能源 0.1.0-dev.10，包含 HD 分段工作流与像素校验优化。实际安装版首次使用验收待完成。

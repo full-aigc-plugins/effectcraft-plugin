@@ -67,3 +67,5 @@ python3 -I -B "$SKILL_DIR/scripts/bootstrap.py"
 | **effectcraft-cli-export** | 预览关键帧、渲染序列或视频和透明交接片段 |
 
 缺少技能：`npx skills add full-aigc-skills/effectcraft-skills --skill <skill-name>`。每项自带安装与执行资源；直接执行本技能 `scripts/cli.py` 也可查询当前 CLI，不依赖兄弟路径。
+
+工作区分段生产候选见 [分段渲染](references/segmented-render.md)。公开 png-segmented 工作流及有界 Film／Art 候选消费已接入；尚未进入当前固定发布，HD 长序列和固定安装验收开放，不能用不完整检查点代替完整素材交付。

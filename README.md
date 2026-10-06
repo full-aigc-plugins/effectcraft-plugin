@@ -32,9 +32,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.10 |
+| Metadata version | 0.1.0-dev.11 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.9 |
+| Skills source | effectcraft-skills / 0.1.0-dev.10 |
 | Execution | Upstream CLI; ArtCraft uses child adapters |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |
@@ -178,3 +178,5 @@ Fixed plugin dev.10 / source dev.9 installed acceptance passes: Codex discovers 
 Working-tree segmented producer candidate: bounded native ranges, hash-bound recovery and per-frame checks; fixed plugin and Film/Art consumption remain pending. [Architecture](docs/EffectCraft-Segmented-Render-Architecture.md).
 
 Current-source HD segmented candidate passes 1080p / 24 fps / five seconds and animated-title checks; immutable installed releases and Art HD remain pending. [Architecture and evidence](docs/EffectCraft-HD-Sequence-Architecture.md).
+
+Immutable plugin release candidate 0.1.0-dev.11 pins skill source 0.1.0-dev.10, including HD segmented workflows and pixel verification optimization. Actual installed first-use acceptance remains pending.
