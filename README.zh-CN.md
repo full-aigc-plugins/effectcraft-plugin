@@ -172,3 +172,5 @@ EffectCraft 独立技能源 dev.7 对效果／蒙版计划参数校验错误返�
 当前固定发行领域场景矩阵：FilmCraft dev.10、EffectCraft dev.9、PhotoCraft dev.10、VectorCraft dev.11 共 37 个原生场景及 6 项合同检查通过，零跳过。每个场景仅复制对应安装技能，从空运行时目录使用默认公开附件安装原生 CLI；核验原生工程、实际像素／音频及局部修改保持，全部 58 项安装身份保持一致。[版本绑定证据](docs/evidence/codex-current-domain-task-matrix-20261006.json)。完整首版、通用 Skills CLI 安装、模型派发、GUI 与创作验收仍开放。
 
 当前插件 dev.10 锁定技能源 dev.9，包含整份效果／蒙版计划字段预检，以及工程打开／创建前的只读原生 schema 核对。[候选证据](docs/evidence/effect-preflight-source-candidate-20261006.json)仅记录源码检查，固定发行宿主验收另行记录。
+
+固定插件 dev.10／技能源 dev.9 安装后验收通过：Codex 发现全部 58 技能且零加载错误；13 项 Effect 技能分别从空目录公开安装 CLI，非法计划在安装／编辑前拒绝；4 项动画／序列／Film 交接回归与 13 项领域矩阵通过，零跳过。全部安装技能摘要保持不变。[版本绑定证据](docs/evidence/codex-effectcraft10-preflight-first-use-20261006.json)。Art 领域包升级、真实 Skills CLI 安装及完整首版仍开放。
