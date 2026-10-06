@@ -4,8 +4,8 @@
     {
       "package": "effectcraft-skills",
       "repo": "https://github.com/full-aigc-skills/effectcraft-skills.git",
-      "ref": "v0.1.0-dev.17",
-      "sha": "8d1782024ff7f7826a148e92ebf7ab4b212bda59",
+      "ref": "v0.1.0-dev.18",
+      "sha": "0d3055ee1804990145ebd951b0fb85770b1f22ef",
       "skills": [
         "effectcraft-use",
         "effectcraft-cli",
@@ -23,19 +23,19 @@
       ],
       "dest": "skills/",
       "sha256": {
-        "effectcraft-use": "40d1b64a80172b6b8a4926561646d890153bded1e2f712b367f49849899792f3",
-        "effectcraft-cli": "f185ef0a8e2cbd26b97181c480f6043a23bbe298c75938af3b21d0d1ff29548d",
-        "effectcraft-cli-setup": "2e1e1c5287bc4b43faf71a5348b831de8644d18275e4ebf1729a2d2bdd5f6fec",
-        "effectcraft-cli-project": "97e2b7b3ad4eb1753112d28315bf22ed77811e9be5e1e4a33d374a890ad6a097",
-        "effectcraft-cli-footage": "0ba84d1e52a989deef75a17fbbca5ebaf89f8e1620193a6c60ca9bfd362058cf",
-        "effectcraft-cli-composition": "13831962eaef1ca6cb21e612d03d9d8def2e512fab26749747b0fd96ce591d2f",
-        "effectcraft-cli-layers": "c30d368ede4d9f78b1628f519b1df23fda2506f694ab1b6854c8f5089cf097c2",
-        "effectcraft-cli-animation": "45db87afb9daa27c7effdc019ab11db6f7e8ba1be43dc1f8e81f7fa7c07b81f9",
-        "effectcraft-cli-effects": "169eaa735aea8bd937c150703758a2b43cae30a9e4f3821ed2f510e061ba7a4e",
-        "effectcraft-cli-masks": "fc2b457252aef4f444bfe181ac11f0742ebf14e2d03d650c7c0d5591b58934b1",
-        "effectcraft-cli-expressions": "e41e0fea41b3675caefc2cc7a8a8f1bb38b7ea18c3814d9a7cd4cf21370150ae",
-        "effectcraft-cli-camera": "baed5d9a9746884b6652d6fb8e55d9bccf9d50de48d11b82ac8967fdd6fab3f4",
-        "effectcraft-cli-export": "c196949c3acfae39ec49bc13ab4761981cfbcca2dd671e06df9075f3b689cb64"
+        "effectcraft-use": "4f3ecf90c39d2976902d6938b8b44da0b279dabfa9fd576ea650a76fe26b133f",
+        "effectcraft-cli": "9433c272a61c810a05445a9e8bea591f6447996e948cb50c984a3aa2269eae16",
+        "effectcraft-cli-setup": "03a084001fe753d4c699f8512f8d920c05aa72a55d6fe783ae33282f9d076a0e",
+        "effectcraft-cli-project": "aa2f201b735991391fb4763915ca01c94f9746bcc0060d5ae4475d2a0b3601c2",
+        "effectcraft-cli-footage": "f570a7c463d0438e132edbb8e01eb62e6a80f19b169695c0b77b2447de8cbaf8",
+        "effectcraft-cli-composition": "1cd80f39d295a71f67aed169a1edc573c8bdb7c15faf595d0bfdf0e45d35da0d",
+        "effectcraft-cli-layers": "a4e33c27761981617906625bfd71fdbb1bd0b90c9c1fdc8d79e0353a3ea04f96",
+        "effectcraft-cli-animation": "767b81761c626c759c3df9cea4e7442ccbaf2ade9067ba464076692b2cc1fc98",
+        "effectcraft-cli-effects": "6286a1e42016a27e79ce86d66dd09c8f6897fa5f551b47d760ce28d24e03d698",
+        "effectcraft-cli-masks": "9440d611e26fb81e09ded3ad8123ae4a9841ef0ef9c620336e5c49718da7ca54",
+        "effectcraft-cli-expressions": "4c9abb9284276fc0c4fd666fd7789908fc58fcf11c03ec140708f4b5933e27a7",
+        "effectcraft-cli-camera": "2db380133dc32c3d0db0662ff74f76c42637879863ffb881997143d137e82c0c",
+        "effectcraft-cli-export": "175df4e097346926b0f2a3e041a0848cc48224840cf1b1d21e8518c46ced16f0"
       }
     }
   ]
