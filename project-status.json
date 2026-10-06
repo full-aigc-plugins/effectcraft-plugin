@@ -19,7 +19,8 @@
     "4.21": "docs/evidence/dynamic-sequence-candidate-20261006.json",
     "4.23": "docs/evidence/codex-effectcraft9-filmcraft10-dynamic-first-use-20261006.json",
     "4.24": "docs/evidence/codex-effectcraft10-preflight-first-use-20261006.json",
-    "4.25": "docs/evidence/segment-producer-candidate-20261007.json"
+    "4.25": "docs/evidence/segment-producer-candidate-20261007.json",
+    "4.27": "docs/evidence/effect-film-segment-hd-candidate-20261007.json"
   },
   "hostValidationEvidence": "docs/evidence/codex-effectcraft10-preflight-first-use-20261006.json",
   "hostValidationStatus": "bounded-installed-plan-preflight-and-domain-first-use-passed",
@@ -27,5 +28,6 @@
   "dynamicFilmHandoffEvidence": "docs/evidence/codex-effectcraft9-filmcraft10-dynamic-first-use-20261006.json",
   "currentReleaseDiscoveryEvidence": "docs/evidence/codex-effectcraft10-preflight-first-use-20261006.json",
   "previousDomainTaskMatrixEvidence": "docs/evidence/codex-current-domain-task-matrix-20261006.json",
-  "currentEffectDomainMatrixEvidence": "docs/evidence/codex-effectcraft10-preflight-first-use-20261006.json"
+  "currentEffectDomainMatrixEvidence": "docs/evidence/codex-effectcraft10-preflight-first-use-20261006.json",
+  "hdSequenceCandidateEvidence": "docs/evidence/effect-film-segment-hd-candidate-20261007.json"
 }

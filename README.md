@@ -176,3 +176,5 @@ Current plugin dev.10 pins source dev.9 with whole-plan effect/mask field prefli
 Fixed plugin dev.10 / source dev.9 installed acceptance passes: Codex discovers all 58 skills with zero loading errors; all 13 Effect skills cold-install the public CLI and reject invalid plans before installation/editing; four temporal/sequence/Film-handoff regressions and the 13-test Effect domain matrix pass with zero skips. All installed skill hashes remain unchanged. [Version-bound evidence](docs/evidence/codex-effectcraft10-preflight-first-use-20261006.json). Art domain bundle upgrade, actual Skills CLI installation and complete V1 remain open.
 
 Working-tree segmented producer candidate: bounded native ranges, hash-bound recovery and per-frame checks; fixed plugin and Film/Art consumption remain pending. [Architecture](docs/EffectCraft-Segmented-Render-Architecture.md).
+
+Current-source HD segmented candidate passes 1080p / 24 fps / five seconds and animated-title checks; immutable installed releases and Art HD remain pending. [Architecture and evidence](docs/EffectCraft-HD-Sequence-Architecture.md).

@@ -39,3 +39,5 @@ OpenSpec is the sole behavioral authority; this documentation provides explanati
 [Domain technical design](EffectCraft-Domain-Design.md)
 
 [Current host verification / 当前宿主验证](EffectCraft-Host-Verification-Architecture.md)
+
+Current-source HD segmented candidate passes 1080p / 24 fps / five seconds and animated-title checks; immutable installed releases and Art HD remain pending. [Architecture and evidence](EffectCraft-HD-Sequence-Architecture.md).
