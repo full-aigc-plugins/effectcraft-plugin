@@ -32,9 +32,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.7 |
+| Metadata version | 0.1.0-dev.8 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.6 |
+| Skills source | effectcraft-skills / v0.1.0-dev.7 |
 | Execution | 上游 CLI；ArtCraft 使用子适配器 |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |
@@ -160,3 +160,5 @@ python3 -I -B skills/effectcraft-use/scripts/workflow.py --help
 [透明素材到 FilmCraft 的实际交接](docs/EffectCraft-FilmCraft-Alpha-Handoff-Acceptance.zh_CN.md)：安装后双领域空运行时 1 项通过；修改片头文字保留动画，原生 RGBA PNG 在 FilmCraft 中露出底层并保留不透明前景像素。完整色彩／动画透明视频验收仍开放。
 
 安装后的动画技能时序首次使用通过：4 个原生 RGBA 时刻与 12 帧视频解码核对淡入；文字返工保留徽标、关键帧属性及原交付。[时序验收](docs/EffectCraft-Temporal-Animation-Acceptance.zh_CN.md)。完整创作及动画透明视频验收仍开放。
+
+EffectCraft 独立技能源 dev.7 对效果／蒙版计划参数校验错误返回 unsupported_mapping；原生 CLI 仍为 0.2.0。真实新建／修订拒绝保留原交付，完整原生技能源回归 44 项通过、零跳过（182.083 秒）。固定新版插件安装后复验尚待执行。[架构](docs/EffectCraft-Parameter-Errors-Architecture.zh_CN.md) · [证据](docs/evidence/parameter-mapping-repair-20261006.json)。

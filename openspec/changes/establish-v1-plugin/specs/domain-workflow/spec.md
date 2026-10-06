@@ -95,3 +95,10 @@ EffectCraft SHALL 重开 .ecproj 验证图层与关键帧；渲染结果与源�
 
 - **WHEN** 导出文件存在但无法重开原生工程
 - **THEN** 交付不完整，不能标为 completed
+
+#### Scenario: EC-DM-004-PARAM 未知效果与蒙版参数的领域错误
+
+- **WHEN** 原生工作流中的 effect.apply、effect.remove、effect.toggle、mask.new、mask.setVertex 或 mask.remove 被固定引擎的命令参数校验拒绝
+- **THEN** 返回 unsupported_mapping，保留命令 ID 与原生参数诊断，不把字段静默删除再重试
+- **AND** 新工程的暂存结果不作为成功交付；源工程修订失败时保留原交付的全部文件
+- **AND** 普通渲染、素材和运行时故障保留原错误分类，不误报为参数映射失败

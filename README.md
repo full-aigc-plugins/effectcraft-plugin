@@ -32,9 +32,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.7 |
+| Metadata version | 0.1.0-dev.8 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.6 |
+| Skills source | effectcraft-skills / v0.1.0-dev.7 |
 | Execution | Upstream CLI; ArtCraft uses child adapters |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |
@@ -160,3 +160,5 @@ The fixed FilmCraft dev.6 / EffectCraft dev.7 / PhotoCraft dev.6 / VectorCraft d
 [Actual transparent handoff to FilmCraft](docs/EffectCraft-FilmCraft-Alpha-Handoff-Acceptance.md): one installed two-domain empty-runtime case passes, preserving title animation and compositing native RGBA PNG over a video background with verified foreground pixels. Complete color and animated-alpha-video acceptance remain open.
 
 Installed animation skill temporal first use passed: four native RGBA samples and 12 decoded video frames verify the fade; text revision preserves badge/key properties and original deliveries. [Temporal acceptance](docs/EffectCraft-Temporal-Animation-Acceptance.md). Full creative/animated-alpha acceptance remains open.
+
+Independent EffectCraft source dev.7 maps matching effect/mask plan parameter validation errors to unsupported_mapping; native CLI stays at 0.2.0. Actual rejected creation/revision preserves prior deliveries. All 44 native source tests pass with zero skips (182.083s); fixed new plugin installed acceptance is pending. [Architecture](docs/EffectCraft-Parameter-Errors-Architecture.md) · [Evidence](docs/evidence/parameter-mapping-repair-20261006.json).
