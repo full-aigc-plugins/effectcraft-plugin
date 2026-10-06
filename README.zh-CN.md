@@ -32,9 +32,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.9 |
+| Metadata version | 0.1.0-dev.10 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.8 |
+| Skills source | effectcraft-skills / v0.1.0-dev.9 |
 | Execution | 上游 CLI；ArtCraft 使用子适配器 |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |
@@ -170,3 +170,5 @@ EffectCraft 独立技能源 dev.7 对效果／蒙版计划参数校验错误返�
 固定 Effect dev.9 与 Film dev.10 安装后的动态交接已通过：三项真实原生测试、58 技能发现零错误、逐项执行后全部安装摘要保全。[证据](docs/evidence/codex-effectcraft9-filmcraft10-dynamic-first-use-20261006.json)。Art 动态集成仍待完成。
 
 当前固定发行领域场景矩阵：FilmCraft dev.10、EffectCraft dev.9、PhotoCraft dev.10、VectorCraft dev.11 共 37 个原生场景及 6 项合同检查通过，零跳过。每个场景仅复制对应安装技能，从空运行时目录使用默认公开附件安装原生 CLI；核验原生工程、实际像素／音频及局部修改保持，全部 58 项安装身份保持一致。[版本绑定证据](docs/evidence/codex-current-domain-task-matrix-20261006.json)。完整首版、通用 Skills CLI 安装、模型派发、GUI 与创作验收仍开放。
+
+当前插件 dev.10 锁定技能源 dev.9，包含整份效果／蒙版计划字段预检，以及工程打开／创建前的只读原生 schema 核对。[候选证据](docs/evidence/effect-preflight-source-candidate-20261006.json)仅记录源码检查，固定发行宿主验收另行记录。

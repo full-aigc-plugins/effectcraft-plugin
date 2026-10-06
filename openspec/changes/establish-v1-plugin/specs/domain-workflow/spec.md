@@ -66,6 +66,13 @@ EffectCraft SHALL 在应用效果或蒙版前发现命令与参数 schema；不�
 - **WHEN** 请求不存在的效果参数
 - **THEN** 返回 unsupported_mapping，不静默省略
 
+#### Scenario: EC-DM-004-PREFLIGHT 后续非法字段不执行先前编辑
+
+- **WHEN** 整份计划中的后续效果或蒙版命令含未知顶层字段或缺少固定反射必填字段
+- **THEN** 工作流在读取源工程、安装运行时及任何原生编辑之前返回 unsupported_mapping，不发布交付目录
+- **AND** 有效计划在打开或创建工程之前只读核对实际命令 schema；固定制品身份或 schema 不匹配时拒绝继续
+- **AND** 字段内的对象引用在原生会话中解析，字段预检不替代效果名、属性路径、数值和实际渲染验收
+
 ### Requirement: EC-DM-005 透明与色彩交接
 
 EffectCraft SHALL 交接时记录颜色空间、位深、alpha 类型与编码；透明背景必须通过实际像素或通道检查验证。

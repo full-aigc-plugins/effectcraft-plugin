@@ -108,3 +108,5 @@
 4.21 候选证据：单技能公开冷安装动态序列 1 项通过、完整性／资源检查 4 项通过；默认测试 32 项通过、19 项跳过。证据 docs/evidence/dynamic-sequence-candidate-20261006.json。4.22 固定发行、Film 动态导入和 Art 混合验收保持开放。
 
 - [x] 4.23 [EC-DM-005-SEQUENCE / FC-DM-001-SEQUENCE] 固定 Effect dev.9 与 Film dev.10 公开安装后，从实际安装快照验证单 Effect 冷下载序列、双领域动态交接及移动文字返工、原 MP4 回归，三项通过；58 技能发现零错误，每项执行后全部安装摘要保持不变。证据 docs/evidence/codex-effectcraft9-filmcraft10-dynamic-first-use-20261006.json。Art 动态联调与实际 Skills CLI 安装仍未完成，不关闭完整首版。
+
+- [ ] 4.24 [EC-DM-004-PREFLIGHT] 真实复现后续效果／蒙版非法字段直到编辑阶段才拒绝；固定原生反射合同绑定制品身份，整份计划先检查未知／必填字段，打开或创建工程前核对实际 schema。完成独立技能源回归、不可变发行及单技能空运行时安装验收；源工程与技能摘要保全，不关闭任意效果或完整首版验收。
