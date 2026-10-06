@@ -55,7 +55,7 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.16 |
+| Metadata version | 0.1.0-dev.17 |
 | Stage | implementation-in-progress |
 | Skills source | effectcraft-skills / 0.1.0-dev.15 |
 | Execution | 上游 CLI；ArtCraft 使用子适配器 |
