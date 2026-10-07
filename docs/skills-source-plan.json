@@ -15,11 +15,12 @@
     "effectcraft-cli-masks",
     "effectcraft-cli-expressions",
     "effectcraft-cli-camera",
-    "effectcraft-cli-export"
+    "effectcraft-cli-export",
+    "effectcraft-cli-tracking"
   ],
   "sourceOfTruth": "independent skills repository",
   "packaging": "immutable vendored snapshot with tag, commit and whole-tree checksums",
   "suiteManifest": "https://github.com/full-aigc-skills/effectcraft-skills/blob/main/skill-suite.json",
-  "sourceRef": "v0.1.0-dev.25",
-  "sourceSha": "93348b3fb2f5d416eedda99ab992745511dd7a8f"
+  "sourceRef": "v0.1.0-dev.26",
+  "sourceSha": "95eb5f2b7e6d3412328f3ebca43ce6ea9954b0de"
 }
