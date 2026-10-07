@@ -39,7 +39,8 @@
     "8.12": "docs/evidence/codex-native-gateway-first-use-20261007.json",
     "8.13": "docs/evidence/effect-expression-candidate-20261007.json",
     "8.14": "docs/evidence/codex-effectcraft-expression-first-use-20261007.json",
-    "8.15": "docs/evidence/codex-art87-effect-expression-first-use-20261007.json"
+    "8.15": "docs/evidence/codex-art87-effect-expression-first-use-20261007.json",
+    "8.16": "docs/evidence/craft-owned-desktop-first-use-20261007.json"
   },
   "hostValidationEvidence": "docs/evidence/codex-protocol-fault-first-use-20261007.json",
   "hostValidationStatus": "fixed-protocol-repair-install-and-discovery-passed",
