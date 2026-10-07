@@ -12,7 +12,7 @@ vendor=importlib.util.module_from_spec(spec);spec.loader.exec_module(vendor)
 
 class VendorTests(unittest.TestCase):
     def source(self, ref='v0.1.0-dev.0', dest='skills/'):
-        return {'package':'effectcraft-skills','repo':'https://github.com/full-aigc-skills/effectcraft-skills.git','ref':ref,'skills':['effectcraft-use'],'dest':dest}
+        return {'package':'effectcraft-skills','repo':'https://github.com/full-aigc-skills/effectcraft-skills.git','ref':ref,'skills':['effectcraft-use'],'dest':dest,'sha':'a'*40,'sha256':{'effectcraft-use':'b'*64}}
 
     def test_development_tag_is_immutable_version(self):
         with tempfile.TemporaryDirectory() as temporary:

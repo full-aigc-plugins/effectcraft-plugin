@@ -1,0 +1,113 @@
+{
+  "schema": "craft-skill-source-contract-evidence/v1",
+  "result": "PASS",
+  "requirement": "EC-SK-001",
+  "requirementSha256": "47a74e7bec9c6f42c12b62dcfa34502510f27ce3e92bafb322a298f129ef3c16",
+  "vendorSha256": "ce99651896676f7c64b0075fce0f6589c28f03954c39480d11b27aa158801570",
+  "testSha256": "3c28f7ebbabd27c751824c41b80c8c8b459dbbc2dffa733fe7070ac9863140e6",
+  "oldVendorSha256": "b72dfa1175b7f785e3b9877182eeadab7c9dd563310452c93f3490ce4985f298",
+  "red": {
+    "tests": 12,
+    "failingAssertions": 17,
+    "errors": 0,
+    "logSha256": "8ffa9dfa981a5f116895be8d89e2859968f905405a63316061b5e2698242a26e",
+    "scope": "The original vendor script was byte-identical in all five repositories; current complete boundary tests run against that original version."
+  },
+  "sources": [
+    {
+      "package": "effectcraft-skills",
+      "repo": "https://github.com/full-aigc-skills/effectcraft-skills.git",
+      "ref": "v0.1.0-dev.31",
+      "sha": "d13fc6f2cf4f00a85db7cd8c385e91b75fdf3c6d",
+      "skills": [
+        "effectcraft-use",
+        "effectcraft-cli",
+        "effectcraft-cli-setup",
+        "effectcraft-cli-project",
+        "effectcraft-cli-footage",
+        "effectcraft-cli-composition",
+        "effectcraft-cli-layers",
+        "effectcraft-cli-animation",
+        "effectcraft-cli-effects",
+        "effectcraft-cli-masks",
+        "effectcraft-cli-expressions",
+        "effectcraft-cli-camera",
+        "effectcraft-cli-export",
+        "effectcraft-cli-tracking",
+        "effectcraft-cli-puppet"
+      ],
+      "dest": "skills/",
+      "sha256": {
+        "effectcraft-use": "a0bf5e7089140de67788f20333ab2010aea1b58adcb772b6f94810e96b0fb5ae",
+        "effectcraft-cli": "97a7933e804746ae811fb9a165e5b7c20bcd3987c47f00144547f077bda111a5",
+        "effectcraft-cli-setup": "543aae8cbaea6f28d08179056dc91a080079778bc7f9e8eca9f5dfe07f70f165",
+        "effectcraft-cli-project": "d9723629f87b5ba4cc8a09e6a477852f0d345dc30a33906749e69951407c3ac2",
+        "effectcraft-cli-footage": "d55b7e53a50046e44614d44a99d3227fc6a3525c65c50dbc9f9f5f58e12ca6f9",
+        "effectcraft-cli-composition": "2c8403f1fee3ba184dceeb628b377e6d45c90ef16301bb7f71fd27668e6a645c",
+        "effectcraft-cli-layers": "ac3761ed0cc114711ea7d0a1db7767b5fef89c730d26109a3d9ca804152ad3a0",
+        "effectcraft-cli-animation": "4aedb4c0ae35dd39b40123fe37f352ba7855b48c0c834370b52ed02144e36911",
+        "effectcraft-cli-effects": "6908163450deb75343812bcea956d775246f42b5ed1e27783af86616fbfbdbed",
+        "effectcraft-cli-masks": "a5af1a1439becaa85802bf78e85ddf55afc46ec43142c862b541eb593f824e7e",
+        "effectcraft-cli-expressions": "292411d38174b9f0f579b9ff410fe91cc6494ac1357df49dd4cfc06e14daa28d",
+        "effectcraft-cli-camera": "8b1b6cc758da5b505c06dac785d278b27bbdbfaf491dcae1f7879756c76e9599",
+        "effectcraft-cli-export": "aa5acf1698c4f21c99f07ab5a747d9184a248be4172b3ca99cd35eef8ef41a3f",
+        "effectcraft-cli-tracking": "7f05ce2e3fb0381f11ac4e3d49b4f4e37265f1cd74e2c9efbe7e50cbaaa0f48c",
+        "effectcraft-cli-puppet": "a44bb1ce100267f4974e1dac5c8fc03ba41ad8ccde6b0bd0b1bed20feba8a2a4"
+      }
+    }
+  ],
+  "publicSourceCheck": {
+    "result": "PASS",
+    "logSha256": "90ab0663c40e48b11bd7f8c21dc68d0af19c687c8112a9fdfbfdc9dcdf600ce0",
+    "scope": "Public remote tag-only resolution, isolated checkout, exact locked commit and whole skill payload comparison; no local override."
+  },
+  "currentInstallationIdentity": {
+    "result": "passed",
+    "skills": 64,
+    "scope": "Current tracked skill-source files match the fixed-tag archive; plugin/installed full trees rehashed; local immutable tags and recorded host discovery match the exact lock. Ignored source files are separately reported."
+  },
+  "installationAuditSha256": "331eb34110da5557b870c174163993e242145f8c5a4cb5be5cbe4094e4702178",
+  "scenarios": [
+    {
+      "id": "EC-SK-001-P",
+      "proof": "Actual public fixed source check plus current64 source/plugin/installed full-tree identity audit."
+    },
+    {
+      "id": "EC-SK-001-N",
+      "proof": "Snapshot drift refuses check without updating lock; old fixed-tag checkout excludes local dirty source and caches."
+    },
+    {
+      "id": "EC-SK-001-LOCAL",
+      "proof": "Existing real Git fixture verifies fixed-tag checkout and source worktree preservation."
+    },
+    {
+      "id": "EC-SK-001-SELF-CONTAINED",
+      "proof": "File/directory/root/parent/dangling links and equal-content external entries refuse; actual public check/update preserve old targets and lock; invalid second source preflights before any replacement."
+    },
+    {
+      "id": "EC-SK-001-TAG",
+      "proof": "Real local version-named branch without a tag refuses both resolution and checkout; missing commit/digest locks refuse offline checks."
+    }
+  ],
+  "regression": {
+    "plugin": "effectcraft",
+    "total": 18,
+    "passed": 18,
+    "skipped": 0,
+    "seconds": 4.571,
+    "logSha256": "31d871f512a02a47de2f8cb01f30c17c8cee8770b5fe9928986db0c3df0845ac"
+  },
+  "unverified": [
+    "Actual generic Skills CLI installation",
+    "Copy-time I/O transaction rollback",
+    "Malicious concurrent filesystem replacement",
+    "Native creative scenarios have separate evidence",
+    "Complete V1"
+  ],
+  "publishedSkillRuntimeChanges": "none",
+  "documentationValidation": {
+    "result": "PASS",
+    "logSha256": "7f87371b7e69f0b0ec2bd031d7ae1b6ad272b8cfa9437a1387493e2f307701ed",
+    "openTasks": 54
+  }
+}
