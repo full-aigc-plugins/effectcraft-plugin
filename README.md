@@ -274,3 +274,5 @@ Scenario installation examples now name the loaded skill itself. Source paths/la
 Fixed installed own-directory acceptance passes for the updated scenario skills; 64 host identities match. Complete V1 remains open. [Evidence / 证据](docs/evidence/craft-scenario-paths-fixed-first-use-20261008.json).
 
 Puppet recording/follow source candidate: ten representative commands, frame-aligned keys, native reopen, targeted revision and three rejection paths pass. Immutable installed-release acceptance remains separate. [Architecture](docs/EffectCraft-Puppet-Record-Follow-Architecture.md).
+
+Fixed EffectCraft plugin dev.35 / source dev.33 acceptance passes: 64 installed skill identities/discovery, 15 fresh standalone Effect CLI installs, and native puppet recording/follow/reopen/targeted revision plus three failure paths. The other 49 cold records are historical and byte-identical. Full V1 stays open. [Fixed evidence](docs/evidence/effectcraft-puppet-record-follow-fixed-first-use-20261008.json).
