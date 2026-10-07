@@ -1,3 +1,5 @@
+Domain scene acceptance now has **43 passed native tests / all 42 distinct domain scene skills**. The fixed-installed tracking case passed with supported H.264 High; the earlier lossless input is unsupported by the native decoder and its failed evidence remains historical. Art role-specific tasks, generic Skills CLI and complete V1 remain open. [Evidence / 证据](docs/evidence/craft-fixed-tracking-supported-input-20261007.json).
+
 Additional scene acceptance: **42 native tests passed / 41 of 42 domain scene skills**. Multicam, timed transcript import, filters and Puppet passed. Effect tracking video texture is absent from its expected preview pixels, and analysis produced zero actual keys and remains unaccepted. All64 installed identities remain unchanged. Art role-specific tasks, automatic ASR, generic Skills CLI installation and complete V1 remain open. [Evidence](docs/evidence/craft-fixed-additional-task-scenes-20261007.json).
 
 Installed task-scene first use: **38 native tests / 37 distinct domain scene skills pass** from independent cold runtime directories. Five domain scene skills (Film multicam/transcript, Photo filters, Effect puppet/tracking) remain outside this business gate; Art role-specific tasks and generic Skills CLI are separately open. All64 installed hashes remain unchanged. [Evidence](docs/evidence/craft-fixed-installed-task-scenes-first-use-20261007.json).
@@ -6,7 +8,7 @@ Current fixed V1 representative native baseline: four installed domain workflows
 
 Every-skill cold first use: **64/64 passed** on macOS arm64 / Python3.13.5 (620.155s). Each single skill used its own empty runtime and default public downloads; locked native version and command discovery passed, installed hashes unchanged. Generic Skills CLI installation and complete V1 remain open. [Evidence](docs/evidence/craft-fixed64-every-skill-cold-first-use-20261007.json).
 
-Current plugin: `0.1.0-dev.30`; skill source: `0.1.0-dev.28`; Strict command-plan JSON snapshot is vendored. Source regression and standalone-copy plan tests pass; fixed installed plan guards and representative native save/reopen/render checks pass. Exhaustive commands and full V1 remain open.
+Current plugin: `0.1.0-dev.31`; skill source: `0.1.0-dev.29`. Local tracking decoding/result guide and actual-status example are vendored. Source candidate command-plan creation/reopen passed; fixed new-plugin acceptance is pending. Complete V1 remains open.
 
 Fixed installation verification: five plugins / 62 skills discovered in isolated Codex, zero loading errors; all62 command/resource checks and248 setup-diagnostic checks passed. Four new specialized skills passed empty-runtime installation, version and command queries. Native creative, exhaustive-command and fullV1 acceptance remain separately scoped. [Evidence](docs/evidence/craft-fixed62-installation-20261007.json).
 
@@ -103,9 +105,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.30 |
+| Metadata version | 0.1.0-dev.31 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.28 |
+| Skills source | effectcraft-skills / v0.1.0-dev.29 |
 | Execution | Upstream CLI; ArtCraft uses child adapters |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |
