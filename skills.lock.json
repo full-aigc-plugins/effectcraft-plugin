@@ -4,8 +4,8 @@
     {
       "package": "effectcraft-skills",
       "repo": "https://github.com/full-aigc-skills/effectcraft-skills.git",
-      "ref": "v0.1.0-dev.31",
-      "sha": "d13fc6f2cf4f00a85db7cd8c385e91b75fdf3c6d",
+      "ref": "v0.1.0-dev.32",
+      "sha": "130f5c45f252ffbd388e8ec14c636b6897ba7648",
       "skills": [
         "effectcraft-use",
         "effectcraft-cli",
@@ -38,8 +38,8 @@
         "effectcraft-cli-expressions": "292411d38174b9f0f579b9ff410fe91cc6494ac1357df49dd4cfc06e14daa28d",
         "effectcraft-cli-camera": "8b1b6cc758da5b505c06dac785d278b27bbdbfaf491dcae1f7879756c76e9599",
         "effectcraft-cli-export": "aa5acf1698c4f21c99f07ab5a747d9184a248be4172b3ca99cd35eef8ef41a3f",
-        "effectcraft-cli-tracking": "7f05ce2e3fb0381f11ac4e3d49b4f4e37265f1cd74e2c9efbe7e50cbaaa0f48c",
-        "effectcraft-cli-puppet": "a44bb1ce100267f4974e1dac5c8fc03ba41ad8ccde6b0bd0b1bed20feba8a2a4"
+        "effectcraft-cli-tracking": "d219aeb0221f34bbf60fd45a5ae3beb46bb94c69adc1db2ab66bd9e4d4e66a10",
+        "effectcraft-cli-puppet": "453c41e63b365eea81c311554d5ab50c1258a8acad6572e0df73e6e46a060cf0"
       }
     }
   ]
