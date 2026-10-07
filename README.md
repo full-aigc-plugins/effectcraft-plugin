@@ -1,3 +1,5 @@
+Fixed EffectCraft plugin dev.32/source dev.30 passes independent cold installation for every domain skill,7 installed guard tests and1 actual cold native create/reopen/revise/export case. Across the three updated domains:41 distinct empty caches,21 guards and3 native cases pass; all64 installed skill hashes remain unchanged. Art bundle upgrade and full V1 remain separate. [Evidence](docs/evidence/craft-three-domain-output-guards-fixed-first-use-20261007.json).
+
 EffectCraft source dev.30 candidate protects public workflow output before native sessions:7 guard tests, 120 source regressions (32 explicit-environment skips), and1 actual cold native create/revise/reopen/export test pass. Completed records bind effective plans, source revisions and runtime SHA. Fixed plugin installation and Art bundle integration remain separate gates. [Evidence](docs/evidence/effectcraft-output-execution-candidate-20261007.json) · [Architecture](docs/EffectCraft-Output-Execution-Architecture.md).
 
 Fixed plugin31/source29 tracking acceptance passed:15 skills discovered without errors, native cold task plus public-plan cold create/reopen,12 keys preserved, all15 installed hashes unchanged and both public archives verified. [Evidence / 证据](docs/evidence/effectcraft31-fixed-tracking-first-use-20261007.json).
@@ -12,7 +14,7 @@ Current fixed V1 representative native baseline: four installed domain workflows
 
 Every-skill cold first use: **64/64 passed** on macOS arm64 / Python3.13.5 (620.155s). Each single skill used its own empty runtime and default public downloads; locked native version and command discovery passed, installed hashes unchanged. Generic Skills CLI installation and complete V1 remain open. [Evidence](docs/evidence/craft-fixed64-every-skill-cold-first-use-20261007.json).
 
-Current plugin: `0.1.0-dev.32`; skill source: `0.1.0-dev.30`. Output execution protection is vendored; source cold native creation/revision and guard tests passed. Fixed installation remains pending; full V1 and Art bundle integration remain open.
+Current plugin: `0.1.0-dev.32`; skill source: `0.1.0-dev.30`. Output execution protection is vendored; source cold native creation/revision and guard tests passed. Fixed installation passed; full V1 and Art bundle integration remain open.
 
 Fixed installation verification: five plugins / 62 skills discovered in isolated Codex, zero loading errors; all62 command/resource checks and248 setup-diagnostic checks passed. Four new specialized skills passed empty-runtime installation, version and command queries. Native creative, exhaustive-command and fullV1 acceptance remain separately scoped. [Evidence](docs/evidence/craft-fixed62-installation-20261007.json).
 

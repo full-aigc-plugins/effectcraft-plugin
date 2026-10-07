@@ -1,3 +1,5 @@
+固定EffectCraft插件dev.32／源dev.30通过本领域每个技能的独立冷安装、7项安装保护和1项冷原生创建／重开／返工／导出。三个更新领域合计41个独立空缓存、21项保护和3项原生验收通过，全部64安装摘要保持不变。Art捆绑升级与完整V1另行验收。[证据](docs/evidence/craft-three-domain-output-guards-fixed-first-use-20261007.json)。
+
 EffectCraft 技能源dev.30候选在原生会话前保护公开工作流目标：7项保护测试、120项源回归（32项需显式环境的测试跳过）及1项实际冷原生创建／返工／重开／导出通过。完成记录绑定实际计划、原工程与运行时摘要。固定安装与Art捆绑升级分别验收。[证据](docs/evidence/effectcraft-output-execution-candidate-20261007.json) · [架构](docs/EffectCraft-Output-Execution-Architecture.zh_CN.md)。
 
 固定插件31／源29跟踪验收通过：15技能发现零错误，原生冷任务与公开计划冷创建／重开通过，12关键帧保全，15安装摘要不变，两公开附件核验通过。 [Evidence / 证据](docs/evidence/effectcraft31-fixed-tracking-first-use-20261007.json).
@@ -12,7 +14,7 @@ EffectCraft 技能源dev.30候选在原生会话前保护公开工作流目标�
 
 逐技能独立冷启动：**64／64通过**（macOS arm64、Python3.13.5，620.155秒）。每个单技能分别使用独立空运行时与默认公开下载；锁定原生版本和命令发现通过，安装技能摘要不变。通用Skills CLI安装及完整首版仍开放。[证据](docs/evidence/craft-fixed64-every-skill-cold-first-use-20261007.json)。
 
-当前插件：`0.1.0-dev.32`；技能源：`0.1.0-dev.30`。已同步输出执行保护；源冷原生创建／返工和保护测试通过，固定安装尚待验收，Art捆绑集成与完整V1仍开放。
+当前插件：`0.1.0-dev.32`；技能源：`0.1.0-dev.30`。已同步输出执行保护；源冷原生创建／返工和保护测试通过，固定安装通过，Art捆绑集成与完整V1仍开放。
 
 固定安装复验：五插件共62技能在隔离Codex宿主中加载成功，加载错误0；62技能完整命令查询与场景资源核对通过，248项安装失败诊断检查通过；四个新增专项技能的空运行时安装、版本与查询通过。原生创作、全量命令和完整V1按各自证据验收。[安装证据](docs/evidence/craft-fixed62-installation-20261007.json)。
 
