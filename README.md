@@ -1,3 +1,5 @@
+Fixed plugin31/source29 tracking acceptance passed:15 skills discovered without errors, native cold task plus public-plan cold create/reopen,12 keys preserved, all15 installed hashes unchanged and both public archives verified. [Evidence / 证据](docs/evidence/effectcraft31-fixed-tracking-first-use-20261007.json).
+
 Domain scene acceptance now has **43 passed native tests / all 42 distinct domain scene skills**. The fixed-installed tracking case passed with supported H.264 High; the earlier lossless input is unsupported by the native decoder and its failed evidence remains historical. Art role-specific tasks, generic Skills CLI and complete V1 remain open. [Evidence / 证据](docs/evidence/craft-fixed-tracking-supported-input-20261007.json).
 
 Additional scene acceptance: **42 native tests passed / 41 of 42 domain scene skills**. Multicam, timed transcript import, filters and Puppet passed. Effect tracking video texture is absent from its expected preview pixels, and analysis produced zero actual keys and remains unaccepted. All64 installed identities remain unchanged. Art role-specific tasks, automatic ASR, generic Skills CLI installation and complete V1 remain open. [Evidence](docs/evidence/craft-fixed-additional-task-scenes-20261007.json).
@@ -8,7 +10,7 @@ Current fixed V1 representative native baseline: four installed domain workflows
 
 Every-skill cold first use: **64/64 passed** on macOS arm64 / Python3.13.5 (620.155s). Each single skill used its own empty runtime and default public downloads; locked native version and command discovery passed, installed hashes unchanged. Generic Skills CLI installation and complete V1 remain open. [Evidence](docs/evidence/craft-fixed64-every-skill-cold-first-use-20261007.json).
 
-Current plugin: `0.1.0-dev.31`; skill source: `0.1.0-dev.29`. Local tracking decoding/result guide and actual-status example are vendored. Source candidate command-plan creation/reopen passed; fixed new-plugin acceptance is pending. Complete V1 remains open.
+Current plugin: `0.1.0-dev.31`; skill source: `0.1.0-dev.29`. Local tracking decoding/result guide and actual-status example are vendored. Source candidate command-plan creation/reopen passed; fixed plugin31/source29 installation and native/public-plan tracking acceptance passed. Complete V1 remains open.
 
 Fixed installation verification: five plugins / 62 skills discovered in isolated Codex, zero loading errors; all62 command/resource checks and248 setup-diagnostic checks passed. Four new specialized skills passed empty-runtime installation, version and command queries. Native creative, exhaustive-command and fullV1 acceptance remain separately scoped. [Evidence](docs/evidence/craft-fixed62-installation-20261007.json).
 
