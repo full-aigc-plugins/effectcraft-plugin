@@ -1,5 +1,11 @@
 # 版本绑定的历史发行记录
 
+## dev.49 — 2026-10-09
+
+锁定source dev.47：修正新增绑定测试在Windows的UTF-8读取，15个技能执行载荷与dev.48相同。dev.48草稿由本版替代，保留不可变标签。完整V1与74项任务继续开放。
+
+Pins source dev.47 with the Windows UTF-8 test correction. Runtime payload is unchanged from dev.48; supersedes its draft without rewriting tags. Full V1 stays open.
+
 ## 开发版 dev.48 — 2026-10-09
 
 锁定技能源 dev.46 不可变快照，15 个技能包含任务私有执行快照及原运行时绑定。24 项绑定测试及482项回归（444通过／38条件跳过），含本机 macOS 限定原生恢复证据。任务9.25组件完成；74项任务、跨版本清理、目标平台与固定宿主验收及完整V1仍开放。

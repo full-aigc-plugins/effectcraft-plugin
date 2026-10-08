@@ -2,7 +2,7 @@
 
 技能源工作区执行绑定候选通过24项目标及482项回归（444通过／38条件跳过），完成本机限定旧任务原生恢复。9.25已勾选，9.1.4及74项实施任务仍开放；已发布source45/plugin47不含本增量。[证据](docs/evidence/task-execution-binding-candidate-20261009.json)。
 
-开发版技能源45已完成只读doctor／目录任务9.2.1：显式已验证CLI能力发现、恢复argv和离线差异。回归420通过／38条件跳过，15个单技能实际诊断及15次无Python只读诊断通过。开发版source46/plugin48包含本增量，74项实施任务及完整V1仍开放。[证据](docs/evidence/doctor-capabilities-candidate-20261008.json)。
+开发版技能源45已完成只读doctor／目录任务9.2.1：显式已验证CLI能力发现、恢复argv和离线差异。回归420通过／38条件跳过，15个单技能实际诊断及15次无Python只读诊断通过。开发版source47/plugin49包含本增量，74项实施任务及完整V1仍开放。[证据](docs/evidence/doctor-capabilities-candidate-20261008.json)。
 
 > 开发版dev.47固定技能源dev.45：隔离Python、持久任务、自有分段恢复、共享重试预算及UTF-8合同。[实现与开放门禁](docs/EffectCraft-Managed-Optimization.zh_CN.md)。下文历史验收仅适用于各自版本，完整V1及其他平台/宿主验收继续开放。
 
@@ -11,7 +11,7 @@
 
 文字、图形与镜头需求进入，交付可编辑 `.ecproj`、依赖素材和渲染结果。
 
-当前插件：`0.1.0-dev.48`；技能源：`0.1.0-dev.46`；15 个独立技能。
+当前插件：`0.1.0-dev.49`；技能源：`0.1.0-dev.47`；15 个独立技能。
 
 已验证首次使用平台：macOS arm64、Python 3.11+。固定运行时安装在用户数据目录，技能文件保留在宿主加载目录。当前为开发版本；完整首版验收及通用 Skills CLI 实际安装仍未完成。
 
@@ -104,9 +104,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.48 |
+| Metadata version | 0.1.0-dev.49 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.46 |
+| Skills source | effectcraft-skills / v0.1.0-dev.47 |
 | Execution | 上游 CLI；ArtCraft 使用子适配器 |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |

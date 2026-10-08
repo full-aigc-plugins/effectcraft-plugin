@@ -1,5 +1,11 @@
 # Version-bound release records
 
+## dev.49 — 2026-10-09
+
+锁定source dev.47：修正新增绑定测试在Windows的UTF-8读取，15个技能执行载荷与dev.48相同。dev.48草稿由本版替代，保留不可变标签。完整V1与74项任务继续开放。
+
+Pins source dev.47 with the Windows UTF-8 test correction. Runtime payload is unchanged from dev.48; supersedes its draft without rewriting tags. Full V1 stays open.
+
 ## Development release dev.48 — 2026-10-09
 
 Pins immutable source dev.46 with task-private execution snapshots and original runtime binding across all 15 skills. 24 targeted tests and 482 regressions (444 passed / 38 conditional skips); bounded macOS native recovery evidence. Task9.25 component complete; 74 tasks, cross-version cleanup, target-platform and fixed-host acceptance, and full V1 remain open.

@@ -325,7 +325,7 @@ flowchart TD
 
 冷启动恢复补充 / Cold recovery completion: Shell及PowerShell在无Python时也报告准备隔离Python的实际入口argv，不自动执行；POSIX引号路径实测通过。PowerShell显式UTF-8避免恢复路径中文损坏，语法与实际JSON返回分支在本地PowerShell引擎通过；真实Windows主机验收仍NOT_RUN。最终证据绑定两种启动脚本及最终源码；早期456项回归是中间记录，当前有效回归为458项、420通过／38条件跳过。
 
-## 开发分发 dev.46／技能源 dev.44
+## 开发分发 dev.47／技能源 dev.44
 
 本次分发纳入已完成的 doctor 与命令目录差异增量（9.2.1、9.24），此前候选描述保留其阶段范围。未完成运行时绑定草稿不纳入本版。不可变快照独立校验；发布不关闭剩余 74 项任务、原生平台和固定宿主自然语言验收。
 
@@ -350,6 +350,6 @@ flowchart LR
 
 ## 2026-10-09 开发发行状态 / Development release status
 
-技能源 dev.46／插件 dev.48 纳入任务执行绑定组件9.25；此前章节的“候选未发布”和旧锁定版本仅描述各自检查点。24项绑定测试与macOS原生恢复证据对应本次执行代码，固定安装后的智能体自然语言派发验收仍开放。两个实际原生版本升级、跨状态根清理、其他目标平台及完整V1不因本次发布关闭。
+技能源 dev.47／插件 dev.49 纳入任务执行绑定组件9.25；此前章节的“候选未发布”和旧锁定版本仅描述各自检查点。24项绑定测试与macOS原生恢复证据对应本次执行代码，固定安装后的智能体自然语言派发验收仍开放。两个实际原生版本升级、跨状态根清理、其他目标平台及完整V1不因本次发布关闭。
 
-Source dev.46 / plugin dev.48 includes component9.25. Earlier unpublished-candidate statements describe their historical checkpoints. Publication does not qualify installed-host dispatch, two actual native-version upgrades, global cleanup or full V1.
+Source dev.47 / plugin dev.49 includes component9.25. Earlier unpublished-candidate statements describe their historical checkpoints. Publication does not qualify installed-host dispatch, two actual native-version upgrades, global cleanup or full V1.
