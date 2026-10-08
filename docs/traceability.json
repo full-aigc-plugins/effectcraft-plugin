@@ -335,7 +335,8 @@
         "9.14"
       ],
       "owner": "Harness owner",
-      "status": "planned"
+      "status": "in-progress",
+      "commandPngRevisionCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json"
     },
     {
       "requirement": "EC-QA-003",
@@ -355,7 +356,8 @@
         "9.23"
       ],
       "owner": "Harness owner",
-      "status": "planned"
+      "status": "in-progress",
+      "commandPngRevisionCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json"
     }
   ]
 }
