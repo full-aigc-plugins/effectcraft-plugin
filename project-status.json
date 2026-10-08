@@ -87,7 +87,9 @@
     "9.32": "docs/evidence/cancel-restart-candidate-20261009.json",
     "9.33": "docs/evidence/cancel-family-candidate-20261009.json",
     "9.6.3": "docs/evidence/current-capability-docs-candidate-20261009.json",
-    "9.3.5": "docs/evidence/managed-public-interface-candidate-20261009.json"
+    "9.3.5": "docs/evidence/managed-public-interface-candidate-20261009.json",
+    "9.3.6": "docs/evidence/managed-three-mode-composition-20261009.json",
+    "9.3.1": "docs/evidence/managed-default-routing-20261009.json"
   },
   "hostValidationEvidence": "docs/evidence/craft-full-command-fixed-first-use-20261007.json",
   "hostValidationStatus": "fixed-five-plugin58-discovery-and-standalone-desktop-passed",

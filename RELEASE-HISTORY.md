@@ -1,5 +1,11 @@
 # Version-bound release records
 
+## dev.57 — 2026-10-09
+
+15个技能默认受管理三模式派发；只读预检和旧状态拒绝执行合同通过。源码589项548通过／41条件跳过；本机三模式原生组合证据绑定未变执行资源，完整平台及固定宿主门禁仍开放，V1剩余70项。插件消费技能源dev.55固定发行快照。
+
+Managed routing guidance and native three-mode composition evidence. Full V1 and native platform/host gates remain open. [Routing evidence](docs/evidence/managed-default-routing-20261009.json) · [Native composition evidence](docs/evidence/managed-three-mode-composition-20261009.json).
+
 ## dev.56 — 2026-10-09
 
 锁定已发布技能源v0.1.0-dev.54／29fddc504ca2231bcc2d8de7bd7e589142ab656b的15个技能摘要。严格回执身份与统一管理入口9.3.5验收完成，完整V1剩余72项；历史15技能报告不覆盖新载荷，当前完整能力矩阵保持NOT_RUN。
