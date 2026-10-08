@@ -1,5 +1,11 @@
 # Version-bound release records
 
+## dev.50 — 2026-10-09
+
+技能源 dev.48 新增严格 Python／CLI 安装回执校验；插件 dev.50 消费该不可变快照。490 项回归：452 通过／38 条件跳过；PowerShell 本机函数19例通过，macOS 完整隔离发行升级与原生工程／12帧解码通过。任务9.26–9.28为限定组件证据；9.29旧任务入口缺陷、75项开放任务、其他平台／宿主与完整V1未完成。
+
+Strict Python/CLI receipt validation; bounded macOS upgrade and native decode evidence. 452 regression passes / 38 conditional skips; 19 local PowerShell function cases. Old-task bootstrap gap 9.29, 75 tasks and full V1 remain open.
+
 ## dev.49 — 2026-10-09
 
 锁定source dev.47：修正新增绑定测试在Windows的UTF-8读取，15个技能执行载荷与dev.48相同。dev.48草稿由本版替代，保留不可变标签。完整V1与74项任务继续开放。

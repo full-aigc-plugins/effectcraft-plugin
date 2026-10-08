@@ -76,7 +76,10 @@
     "9.23": "docs/evidence/command-revision-resource-candidate-20261008.json",
     "9.24": "docs/evidence/command-catalog-diff-candidate-20261008.json",
     "9.2.1": "docs/evidence/doctor-capabilities-candidate-20261008.json",
-    "9.25": "docs/evidence/task-execution-binding-candidate-20261009.json"
+    "9.25": "docs/evidence/task-execution-binding-candidate-20261009.json",
+    "9.26": "docs/evidence/runtime-upgrade-component-candidate-20261009.json",
+    "9.27": "docs/evidence/runtime-upgrade-component-candidate-20261009.json",
+    "9.28": "docs/evidence/isolated-python-upgrade-candidate-20261009.json"
   },
   "hostValidationEvidence": "docs/evidence/craft-full-command-fixed-first-use-20261007.json",
   "hostValidationStatus": "fixed-five-plugin58-discovery-and-standalone-desktop-passed",
@@ -128,5 +131,8 @@
   "commandRevisionResourceCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json",
   "commandCatalogDiffCandidateEvidence": "docs/evidence/command-catalog-diff-candidate-20261008.json",
   "doctorCapabilitiesCandidateEvidence": "docs/evidence/doctor-capabilities-candidate-20261008.json",
-  "taskExecutionBindingCandidateEvidence": "docs/evidence/task-execution-binding-candidate-20261009.json"
+  "taskExecutionBindingCandidateEvidence": "docs/evidence/task-execution-binding-candidate-20261009.json",
+  "runtimeUpgradeComponentCandidateEvidence": "docs/evidence/runtime-upgrade-component-candidate-20261009.json",
+  "isolatedPythonUpgradeCandidateEvidence": "docs/evidence/isolated-python-upgrade-candidate-20261009.json",
+  "boundEntryBootstrapFailureEvidence": "docs/evidence/isolated-python-upgrade-candidate-20261009.json"
 }

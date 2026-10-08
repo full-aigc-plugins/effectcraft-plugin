@@ -30,12 +30,14 @@
       "tasks": [
         "2.1",
         "2.2",
-        "2.3"
+        "2.3",
+        "9.27"
       ],
       "owner": "Runtime owner",
       "status": "verified",
       "evidence": "docs/evidence/craft-fixed-runtime-integrity-20261008.json",
-      "scope": "current pinned macOS arm64 CLI matrix; all current requirement scenarios"
+      "scope": "current pinned macOS arm64 CLI matrix; all current requirement scenarios",
+      "runtimeUpgradeComponentCandidateEvidence": "docs/evidence/runtime-upgrade-component-candidate-20261009.json"
     },
     {
       "requirement": "EC-RT-002",
@@ -48,7 +50,8 @@
         "2.10",
         "9.2",
         "9.24",
-        "9.25"
+        "9.25",
+        "9.26"
       ],
       "owner": "Runtime owner",
       "status": "in-progress",
@@ -56,7 +59,8 @@
       "fixedNativeDownloadEvidence": "docs/evidence/codex-native-download-first-use-20261007.json",
       "commandCatalogDiffCandidateEvidence": "docs/evidence/command-catalog-diff-candidate-20261008.json",
       "doctorCapabilitiesCandidateEvidence": "docs/evidence/doctor-capabilities-candidate-20261008.json",
-      "taskExecutionBindingCandidateEvidence": "docs/evidence/task-execution-binding-candidate-20261009.json"
+      "taskExecutionBindingCandidateEvidence": "docs/evidence/task-execution-binding-candidate-20261009.json",
+      "runtimeUpgradeComponentCandidateEvidence": "docs/evidence/runtime-upgrade-component-candidate-20261009.json"
     },
     {
       "requirement": "EC-TX-001",
@@ -312,13 +316,16 @@
       "capability": "runtime-distribution",
       "tasks": [
         "9.1",
-        "9.15"
+        "9.15",
+        "9.28",
+        "9.29"
       ],
       "owner": "Runtime owner",
       "status": "in-progress",
       "evidence": "docs/evidence/craft-fixed-runtime-integrity-20261008.json",
       "scope": "current pinned macOS arm64 CLI matrix; all current requirement scenarios",
-      "doctorCapabilitiesCandidateEvidence": "docs/evidence/doctor-capabilities-candidate-20261008.json"
+      "doctorCapabilitiesCandidateEvidence": "docs/evidence/doctor-capabilities-candidate-20261008.json",
+      "isolatedPythonUpgradeCandidateEvidence": "docs/evidence/isolated-python-upgrade-candidate-20261009.json"
     },
     {
       "requirement": "EC-TX-005",

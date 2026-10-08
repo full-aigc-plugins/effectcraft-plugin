@@ -26,6 +26,12 @@
 - **THEN** 安装互斥等待最多 120 秒，取得锁后核验并复用已原子发布的版本；不存在重复下载或部分安装被运行
 - **AND** 超时返回 runtime_install_busy，保留已有安装，不自动重放任何编辑或渲染
 
+#### Scenario: 已安装版本回执损坏或身份漂移
+
+- **WHEN** 复用已安装CLI时，安装回执不是无歧义UTF-8 JSON对象，或其中版本、平台、来源、制品摘要、版本输出与固定锁不一致
+- **THEN** 安装器 SHALL 拒绝复用并保留原目录和回执供核对，不覆盖、不重新下载、不自动回退到其他版本
+- **AND** 新版本安装失败 SHALL 不改变旧版本的文件和回执；只有完成摘要、许可、完整载荷与实际版本验证的新目录才能原子发布
+
 ### Requirement: EC-RT-002 运行能力与隔离升级
 
 适配器 SHALL 核对运行时版本和实际命令 schema，区分 headless 与 desktop bridge；升级必须排空任务、保留回退版本，禁止回退到不兼容状态 schema。
@@ -116,6 +122,12 @@ Each domain skill SHALL offer `desktop.py run PLAN --output NEW_DIRECTORY` that 
 - **THEN** 安装器 SHALL 在用户目录私有暂存区验证完整性及解包安全性，经互斥锁原子发布；失败保留可用旧版，离线制品执行相同校验
 - **AND** 不改系统 Python、全局 PATH、插件只读安装目录，活动任务继续使用其绑定版本
 
+#### Scenario: Python安装回执保护启动
+
+- **WHEN** 独立启动入口复用已有隔离Python目录
+- **THEN** 入口 SHALL 在执行解释器前核验非链接的安装回执，固定版本、平台和归档摘要；损坏、缺失、重复／额外字段、身份不匹配或非法编码 SHALL 拒绝，保留原回执与载荷，不自动重新安装
+- **AND** 既有入口生成的合法字段顺序与格式 SHALL 可读取；新发布Python目录 SHALL 同时具备已验证载荷与匹配回执，不能以校验单个可执行文件替代完整发行验证
+
 #### Scenario: Web 与 FreeBSD 独立通道
 
 - **WHEN** 运行环境是 Web 或 FreeBSD
@@ -153,6 +165,12 @@ Each domain skill SHALL offer `desktop.py run PLAN --output NEW_DIRECTORY` that 
 - **THEN** 系统 SHALL 核对任务私有执行资源清单、解释器身份和原生锁，派发到原解释器及原执行快照；修订子任务 SHALL 继承原执行组合和任务族预算
 - **AND** 默认隔离 Python SHALL 核对整个锁定发行载荷；兼容的外部 Python 仅记录其可执行文件身份，不能被标记为已隔离
 - **AND** Windows 控制器切换 SHALL 使用自有进程树守护和监督通道，不能因前端退出留下失去所有权的编辑进程
+
+#### Scenario: 当前Python准备失败不阻止可信旧任务派发
+
+- **WHEN** 用户恢复或评价已有任务，原隔离解释器及任务私有执行资源完好，但当前技能的Python尚未准备或准备失败
+- **THEN** 启动入口 SHALL 在准备当前Python之前选择并验证该任务的原启动资源，使用原解释器和控制器，不以重新安装当前Python作为旧任务恢复的前置条件
+- **AND** 原启动证据损坏、缺失或历史记录无法证明可执行时 SHALL 保留现场并拒绝自动续写，不重建旧快照、不回退到当前代码、不重放未知编辑
 
 #### Scenario: 执行绑定损坏或历史记录缺失
 
