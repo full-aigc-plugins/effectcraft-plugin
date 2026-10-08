@@ -355,7 +355,8 @@
         "9.31",
         "9.32",
         "9.33",
-        "9.34"
+        "9.34",
+        "9.35"
       ],
       "owner": "Harness owner",
       "status": "in-progress",
@@ -370,7 +371,8 @@
       "sharedProjectClaimsCandidateEvidence": "docs/evidence/shared-project-claims-candidate-20261009.json",
       "projectCreationGenerationCandidateEvidence": "docs/evidence/project-creation-generation-candidate-20261009.json",
       "desktopNativeRevisionCandidateEvidence": "docs/evidence/desktop-native-revision-candidate-20261009.json",
-      "desktopConflictReconcileCandidateEvidence": "docs/evidence/desktop-conflict-reconcile-candidate-20261009.json"
+      "desktopConflictReconcileCandidateEvidence": "docs/evidence/desktop-conflict-reconcile-candidate-20261009.json",
+      "commandCompletionCrashCandidateEvidence": "docs/evidence/command-completion-crash-candidate-20261009.json"
     },
     {
       "requirement": "EC-QA-003",

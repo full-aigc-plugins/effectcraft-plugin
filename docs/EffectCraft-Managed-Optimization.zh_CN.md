@@ -502,3 +502,5 @@ flowchart TD
 桌面原子冲突核对候选：`docs/evidence/desktop-conflict-reconcile-candidate-20261009.json`。v2证明绑定任务、操作参数、会话基线及已停止的所属桌面；公开reconcile/resume可报告单个操作未执行，原attempted与成功回执保全。旧v1、非原子变化或缺停止证明保持unknown；任务未决时拒绝新任务绕过。本增量尚未发布，完整9.3.3／9.3.4及V1继续开放。
 
 source59／plugin61开发发行新增版本化命令完成证明，在核对全部原结果、停止身份、原生工程副本和实际媒体后只补齐交付登记；取消或材料变化不发布迟到结果。完整崩溃、普通编辑恢复及V1仍开放。当前验证见[发行证据](evidence/release59-validation-20261009.json)。
+
+本地真实进程故障候选（9.35）：命令和自有桌面分别验证完成证明写入前、写入后引用未保存、引用保存后三个SIGKILL窗口。无证明及悬空证明不自动接管；完整原证明仅在真实停止、只读重开和实际PNG解码后补齐交付，原文件／回执与预算保全。同时修复损坏ownership导致公开核对输出traceback的问题，保留非POSIX缺字段兼容。见[候选证据](evidence/command-completion-crash-candidate-20261009.json)。其他目标平台、完整9.3.3／9.3.4与V1保持开放。

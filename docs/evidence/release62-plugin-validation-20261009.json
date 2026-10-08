@@ -1,0 +1,63 @@
+{
+  "schema": "effectcraft-plugin-release-validation/v1",
+  "observedAt": "2026-10-08T23:32:35.684323+00:00",
+  "sourceVersion": "0.1.0-dev.60",
+  "sourceTag": "v0.1.0-dev.60",
+  "sourceSHA": "3d274748823dac4ae1a4d1e8d3f8dda785421be4",
+  "sourceRelease": "https://github.com/full-aigc-skills/effectcraft-skills/releases/tag/v0.1.0-dev.60",
+  "pluginVersion": "0.1.0-dev.62",
+  "fullV1": "NOT_RUN",
+  "marketplaceEligible": false,
+  "openImplementationTasks": 70,
+  "sourceValidation": {
+    "path": "docs/evidence/release60-validation-20261009.json",
+    "sha256": "cb59e89ea9f1618dacc1c7d562ec97f52707df6de0d7ea8640e8db4aa0125766"
+  },
+  "completedTask": "9.35",
+  "parentTasksOpen": [
+    "9.3.3",
+    "9.3.4"
+  ],
+  "currentReleaseCI": "NOT_RUN",
+  "status": "PASS_BOUNDED_VALIDATION",
+  "tests": {
+    "total": 24,
+    "passed": 24,
+    "logSha256": "21bde189f84e633eab8b522bdcfdf5d6952bbb2f91f142ba399a284475849fcd"
+  },
+  "documents": {
+    "status": "passed",
+    "scope": "documentation structure, local links, status honesty and spec/task traceability only",
+    "markdownFiles": 408,
+    "capabilities": 7,
+    "requirements": 26,
+    "scenarios": 157,
+    "openImplementationTasks": 70,
+    "errors": []
+  },
+  "strictOpenSpec": "PASS",
+  "immutableSnapshotCheck": "PASS",
+  "lockedSkills": {
+    "effectcraft-use": "097fc07a2a3a5acd3edccf209e54c2160601dba88126f0ae5b61902ed6f08125",
+    "effectcraft-cli": "2a3bb09b1dad2957465e30625c72733703d0492062c9d6dc37e56d32146bb6ee",
+    "effectcraft-cli-setup": "b2be78af53dfad479ec38d28d42e8a52b2030d9a7d46c4b55e16cec51e8cd44d",
+    "effectcraft-cli-project": "9c6eb20b13d51a8dc6c60858340ccb4e9ad6e6effa650592f54e3bb09b76326b",
+    "effectcraft-cli-footage": "eefbdd9162bb3932ee7026953926ce5a45ef85b16c52762d58db7852a37702ae",
+    "effectcraft-cli-composition": "de975423f820ab6a10c488cb6ab4aa2f22f2c19d8d5eb873a16d1e444e00770f",
+    "effectcraft-cli-layers": "e1f04e4cd51e8eb06dacb85cb6fc1662044038ae7d0cdcc4e5454f3fdb7c788f",
+    "effectcraft-cli-animation": "d6d882cae9768728f2ad10efa1cc7a129e3028d1d2c18fc19b63bffaf2eacad0",
+    "effectcraft-cli-effects": "3542bea82da1583e89f33b1a409ef549ea6ae0543f786208a7f0905618ad000f",
+    "effectcraft-cli-masks": "f3d8a6f162046651a2d756fa06ef3ee8bad0e6e7ffc1cace9c554d7d61728380",
+    "effectcraft-cli-expressions": "c1b6ed64365e8e1d6045a7371314596eda8f7d0ded59d93991de46b1d36911ff",
+    "effectcraft-cli-camera": "d880f147c6d2016873ce35c2e624d88e929b48427c66de3470de2febf3d98ddd",
+    "effectcraft-cli-export": "9a5a4a0abfa543659d8fe0bab491ff57c62cd4ab9580853623cb06443c15c8bc",
+    "effectcraft-cli-tracking": "6811bea2eb720831c7818529886ff001ddd1f6e6168064059ba0d0c5cfb686bf",
+    "effectcraft-cli-puppet": "db3d7994b2a1df4b75d389bc0dea108ff9e375ec86aa709bcbc3e9982efba8c4"
+  },
+  "initialValidation": {
+    "status": "FAIL",
+    "reason": "source plan retained source59 identity after lock update; updated docs/skills-source-plan.json to source60 before rerun",
+    "failures": 3,
+    "logSha256": "6d5b50288c3542d6b7f0af9a9afb253738ea5e1c13dc3fa3ba3bbe9f3e457723"
+  }
+}

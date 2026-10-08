@@ -400,3 +400,9 @@ source57／plugin59发行绑定：本次发布技能源v0.1.0-dev.57／`1d4fd8e5
 9.3.3／9.3.4交付登记窗口增量：增加`effectcraft-command-completion/v1`与显式引用，在commands／desktop成功返回后固定原回执、全部步骤、工程媒体、输入、运行时及原生命周期身份；恢复持有三类租约，锁外只读重开／解码，锁内再次复核后登记交付。旧缺证明任务不补造证据；取消、截止、材料变化或未证实停止时拒绝登记。13项合同测试覆盖失败保全和取消竞争，当前发行证据见`docs/evidence/release59-validation-20261009.json`。该增量不关闭完整9.3.3／9.3.4，真实进程崩溃与完整目标矩阵仍待验收。
 
 source59／plugin61发行绑定：技能源v0.1.0-dev.59／`6209b28518cb1fcd7f3072b79adfdd060119358f`已发布，插件锁定该不可变快照及15技能摘要。发布9.34诊断组件与交付登记恢复增量；当前完整回归666项619通过／47条件跳过，插件24项通过，严格OpenSpec及快照摘要通过。当前证据`docs/evidence/release59-validation-20261009.json`与`docs/evidence/release61-plugin-validation-20261009.json`；旧候选报告保留历史范围，完整9.3.3／9.3.4与70项V1继续开放，不归档。
+
+- [x] 9.35 [EC-TX-005] 完成证明窗口真实worker强杀验收：commands／owned desktop分别在v1完成证明写入前、文件已写但引用未落盘、引用已落盘后三个窗口SIGKILL当前绑定worker，核对原守护器所属进程组的停止及负退出结果；仅完整原证明允许公开reconcile／resume重开工程、解码PNG并登记交付，前窗无证明保持unknown且拒绝换ID／目录。原产物字节、inode／mtime、逐操作回执、原截止／预算／资源与只读单技能／冻结资源保全，非任务进程不受影响。当前macOS arm64真实案例通过后仅关闭本限定验收，不替代完整9.3.3／9.3.4、其他目标平台、模型派发或V1。
+
+9.35当前候选证据：`docs/evidence/command-completion-crash-candidate-20261009.json`。当前源码6个真实SIGKILL案例通过，commands与签名owned desktop各覆盖证明未写、证明已写但引用未落盘、引用已落盘三个窗口；原running状态不人工改写，原守护器记录已停止及原workerReturncode=-9，非任务进程保全。完整证明经公开原冻结控制器reconcile／重复resume登记原交付，其他两窗保持unknown，悬空证明保留且换ID／输出被拒绝。原工程／PNG字节、inode／mtime、20个原生步骤回执及根任务期限／资源／预算保全；原生副本重开与96×64 RGBA实际解码及alpha[0,255]通过。
+
+损坏ownership目标15项先产生1项公开JSON失败及4个AttributeError子用例错误，补齐对象／版本／nonce校验后15项通过；显式坏值拒绝，既有非POSIX缺字段兼容保留。当前674项完整回归621通过／53条件跳过，既有Linux aarch64 Python3.12容器15项合同通过，不替代锁定3.13或其他目标机。全部15份当前completion模块一致，六案例安装副本与冻结执行资源对应当前候选；原生缓存复用，外部解释器3.13.5，仅本机根任务与登记窗口验收。插件仍固定source59／plugin61，当前新增代码／测试／文档未提交发布；完整9.3.3／9.3.4、父子真实取消及其他原生平台／固定宿主与70项V1保持开放，不归档。
