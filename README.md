@@ -1,15 +1,15 @@
 # EffectCraft Agent Plugin
 
-Development source44 completes readonly doctor/catalog task9.2.1: explicit verified native discovery, executable recovery argv and offline differences.420 regression passes/38 conditional skips;15 readonly single-skill probes and15 no-Python diagnostics pass. Development source44/plugin46 includes this increment;74 implementation tasks and full V1 remain open. [Evidence](docs/evidence/doctor-capabilities-candidate-20261008.json).
+Development source45 completes readonly doctor/catalog task9.2.1: explicit verified native discovery, executable recovery argv and offline differences.420 regression passes/38 conditional skips;15 readonly single-skill probes and15 no-Python diagnostics pass. Development source45/plugin47 includes this increment;74 implementation tasks and full V1 remain open. [Evidence](docs/evidence/doctor-capabilities-candidate-20261008.json).
 
-> Development release dev.46 pins source dev.44: isolated Python, durable managed execution, owned segment recovery, shared retry accounting and UTF-8 contracts. [Implementation and open gates](docs/EffectCraft-Managed-Optimization.md). Earlier acceptance records below apply only to their own versions; complete V1 and other platform/host qualification remain open.
+> Development release dev.47 pins source dev.45: isolated Python, durable managed execution, owned segment recovery, shared retry accounting and UTF-8 contracts. [Implementation and open gates](docs/EffectCraft-Managed-Optimization.md). Earlier acceptance records below apply only to their own versions; complete V1 and other platform/host qualification remain open.
 
 
 Four-domain RT-001 runtime source/integrity acceptance now covers every current scenario; existing pinned skill bytes remain unchanged. Runtime upgrades and fullV1 remain open. [Acceptance architecture](docs/Craft-Fixed-Runtime-Integrity-Architecture.md).
 
 Turn text, graphics and footage into an editable `.ecproj`, dependencies and rendered media.
 
-Current plugin: `0.1.0-dev.46`; skill source: `0.1.0-dev.44`; 15 independent skills.
+Current plugin: `0.1.0-dev.47`; skill source: `0.1.0-dev.45`; 15 independent skills.
 
 Verified first-use platform: macOS arm64 and Python 3.11+. Pinned runtimes install into the user data directory; skill files stay in their host-loaded directory. These are development releases; complete V1 acceptance and generic Skills CLI installation remain open.
 
@@ -102,9 +102,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.46 |
+| Metadata version | 0.1.0-dev.47 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.44 |
+| Skills source | effectcraft-skills / v0.1.0-dev.45 |
 | Execution | Upstream CLI; ArtCraft uses child adapters |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |

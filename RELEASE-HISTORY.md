@@ -1,5 +1,10 @@
 # Version-bound release records
 
+## Development release dev.47 — 2026-10-08
+
+Pins source dev.45, correcting the Windows short/long-path test identity assertion. All 15 skill snapshots retain dev.46 content; source test correction is verified separately. Full V1 remains open.
+
+
 ## Development release dev.46 — 2026-10-08
 
 Pins source dev.44: readonly doctor, executable recovery arguments and offline command/schema differences in all 15 independent skills. Runtime-binding drafts excluded; 74 tasks and full V1 remain open.

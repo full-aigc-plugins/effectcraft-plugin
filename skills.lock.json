@@ -4,8 +4,8 @@
     {
       "package": "effectcraft-skills",
       "repo": "https://github.com/full-aigc-skills/effectcraft-skills.git",
-      "ref": "v0.1.0-dev.44",
-      "sha": "69c2a13b981c42ed2cfab6a6453915b4eaacc008",
+      "ref": "v0.1.0-dev.45",
+      "sha": "bce1876aab330e9fac1e95dfca5ac17e14ff78dd",
       "skills": [
         "effectcraft-use",
         "effectcraft-cli",
