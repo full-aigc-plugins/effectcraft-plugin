@@ -179,3 +179,9 @@ flowchart TD
 ```
 
 Release distribution: source dev.41 / plugin dev.43 includes task9.22. Task9.23 is specification and local work in progress only; unfinished revision code is excluded from the immutable source snapshot. Complete V1 and new fixed-host acceptance remain open.
+
+## Scoped command revision development increment (source dev.42 / plugin dev.44)
+
+Original tasks bind project, composition, layer and static-property scope. Revision checks current review, native gates, version and shared budget before persisting a child. Private native seeds preserve fields; verified assets relocate by digest. Text edits retain font/style. Actual rerenders, native reopening and unaffected-field/keyframe/pixel checks produce preservation receipts.
+
+40 targeted tests; 403 regressions:365 passes,38 conditional skips. Native command visual repair passed on four multi-composition samples and one imported-asset sample. The second desktop attempt stopped after the driver timeout; missing failure receipt retains unknown state and prohibits replay. Task9.23, initial command resource accounting, cross-file settlement crash qualification, fixed-host dispatch, other platforms and V1 remain open. Public protocol ownership and existing calls remain compatible. [Evidence](evidence/command-revision-candidate-20261008.json).

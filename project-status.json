@@ -118,5 +118,6 @@
   "videoAssetsReviewCandidateEvidence": "docs/evidence/video-assets-review-candidate-20261008.json",
   "engineeringReviewCandidateEvidence": "docs/evidence/engineering-review-candidate-20261008.json",
   "commandDeliveryCandidateEvidence": "docs/evidence/command-delivery-candidate-20261008.json",
-  "commandJudgeCandidateEvidence": "docs/evidence/command-judge-candidate-20261008.json"
+  "commandJudgeCandidateEvidence": "docs/evidence/command-judge-candidate-20261008.json",
+  "commandRevisionCandidateEvidence": "docs/evidence/command-revision-candidate-20261008.json"
 }

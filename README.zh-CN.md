@@ -1,15 +1,15 @@
 # EffectCraft Agent Plugin
 
-开发版dev.43固定技能源dev.41：受管理命令／桌面Judge v2与不可变评价账本逐原生合成／版本核对覆盖。任务9.22完成，76项任务仍开放（含局部修订9.23）；发布不代表完整V1或新固定宿主验收通过。[证据](docs/evidence/command-judge-candidate-20261008.json)。
+开发版dev.44固定技能源dev.42：限定范围局部修订和原生保全回执。40项目标测试；回归365通过／38条件跳过。命令视觉修订通过，桌面中断尚未验收。9.23、76项任务及完整V1保持开放。[证据](docs/evidence/command-revision-candidate-20261008.json)。
 
-> 开发版dev.43固定技能源dev.41：隔离Python、持久任务、自有分段恢复、共享重试预算及UTF-8合同。[实现与开放门禁](docs/EffectCraft-Managed-Optimization.zh_CN.md)。下文历史验收仅适用于各自版本，完整V1及其他平台/宿主验收继续开放。
+> 开发版dev.44固定技能源dev.42：隔离Python、持久任务、自有分段恢复、共享重试预算及UTF-8合同。[实现与开放门禁](docs/EffectCraft-Managed-Optimization.zh_CN.md)。下文历史验收仅适用于各自版本，完整V1及其他平台/宿主验收继续开放。
 
 
 四领域RT-001运行时来源与完整性已完成当前全部场景验收，固定技能字节保持不变；运行时升级与完整首版仍开放。[验收架构](docs/Craft-Fixed-Runtime-Integrity-Architecture.zh_CN.md)。
 
 文字、图形与镜头需求进入，交付可编辑 `.ecproj`、依赖素材和渲染结果。
 
-当前插件：`0.1.0-dev.43`；技能源：`0.1.0-dev.41`；15 个独立技能。
+当前插件：`0.1.0-dev.44`；技能源：`0.1.0-dev.42`；15 个独立技能。
 
 已验证首次使用平台：macOS arm64、Python 3.11+。固定运行时安装在用户数据目录，技能文件保留在宿主加载目录。当前为开发版本；完整首版验收及通用 Skills CLI 实际安装仍未完成。
 
@@ -102,9 +102,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.43 |
+| Metadata version | 0.1.0-dev.44 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.41 |
+| Skills source | effectcraft-skills / v0.1.0-dev.42 |
 | Execution | 上游 CLI；ArtCraft 使用子适配器 |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |

@@ -130,3 +130,5 @@
 命令/桌面Judge复用effectcraft-judge-request/v2、receipt/v2和现有任务族账本。evaluation-scope/v1通过contexts兼容扩展表达多个合成/原生版本，每个媒体绑定独立context与帧索引；覆盖按context分别判定，并要求实际观察请求内媒体，不把不同作品帧索引合并。workflow旧单上下文合同保持兼容。命令质量适配仅读取任务内部观察，不伪造manifest/native.json，不重写交付。局部修订继续作为既有9.4完整闭环的剩余范围。
 
 命令/桌面修订不扩展craft-command-plan/v1。管理plan/run可通过单独revision-scope参数绑定根任务授权（保存工程路径、comp/layer创建别名、允许属性）。内部effectcraft-command-revision/v1请求绑定当前command-delivery摘要、选定工程及显式comp/layer静态属性编辑；当前Judge FAIL和全部工程/技术门禁通过后才扣共享轮数。子任务沿用commands或desktop模式和原运行时，原工程副本置于任务私有目录，素材通过原字节摘要复制到新输出，重新保存/渲染所有当前工程/绑定PNG。比较全部原生JSON字段，除声明素材位置搬迁与授权属性value外不得变化；非目标媒体像素保全。原件与源任务不改写，失败保留预算/activeRevision及现场，不自动重试。视频/序列和动画属性时间范围属于仍开放的完整范围，不用静态修订声明这些验收完成。
+
+命令修订生成器具有显式内部版本：旧版计划只用于核对；新版在每次静态编辑前先选中同一授权合成的目标图层，满足上游原生注册表前置条件。核对旧版不以新生成器重写计划。注册表阻断的编辑只有在调用账本与失败日志完整对应、所有已发送调用均为查询/open_project/comp.open/layer.select、原进程确认停止、源交付与私有种子不变且未生成新工程/媒体时，才结算为明确未执行；预算不退回、不自动重发。其余结果保持未知。

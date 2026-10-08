@@ -1,5 +1,7 @@
 # Version-bound release records
 
+Development release dev.44 pins source dev.42: scoped local revision and native preservation receipts. 40 targeted tests; 365 regression passes / 38 conditional skips. Command visual repair passed; desktop interruption remains unaccepted. Task9.23, 76 tasks and full V1 remain open. [Evidence](docs/evidence/command-revision-candidate-20261008.json).
+
 Plugin dev.43 pins source dev.41. Task9.22 command/desktop Judge v2 and immutable ledger integration has bounded macOS native sampled-review evidence. 76 tasks remain open; task9.23 local revision is excluded from the runtime snapshot. Full V1 and new installed-host acceptance remain open.
 
 Plugin dev.42 pins source dev.40. Saved-project/PNG command and owned-desktop quality component task9.21 passes on macOS arm64. 75 tasks remain open; new installed-host dispatch and full V1 remain unaccepted.
