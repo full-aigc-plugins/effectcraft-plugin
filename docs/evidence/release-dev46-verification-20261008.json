@@ -1,0 +1,19 @@
+{
+  "schema": "effectcraft-plugin-release-verification/v1",
+  "version": "0.1.0-dev.46",
+  "sourceRef": "v0.1.0-dev.44",
+  "sourceSha": "69c2a13b981c42ed2cfab6a6453915b4eaacc008",
+  "managedSkills": 15,
+  "pluginTests": {
+    "passed": 23,
+    "logSha256": "fd48d7ac0f57918bedcd399a441b1d2cafade37dfff5f67f638a815633300783"
+  },
+  "documentation": "PASS",
+  "strictOpenSpec": "PASS",
+  "protocolGitContent": "PASS",
+  "vendorOffline": "PASS",
+  "vendorRemote": "PASS",
+  "remainingImplementationTasks": 74,
+  "marketplaceEligible": false,
+  "fullV1": "OPEN"
+}

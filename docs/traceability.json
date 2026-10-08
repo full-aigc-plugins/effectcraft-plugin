@@ -46,12 +46,15 @@
         "2.6",
         "2.9",
         "2.10",
-        "9.2"
+        "9.2",
+        "9.24"
       ],
       "owner": "Runtime owner",
       "status": "in-progress",
       "candidateEvidence": "docs/evidence/effectcraft-native-download-candidate-20261007.json",
-      "fixedNativeDownloadEvidence": "docs/evidence/codex-native-download-first-use-20261007.json"
+      "fixedNativeDownloadEvidence": "docs/evidence/codex-native-download-first-use-20261007.json",
+      "commandCatalogDiffCandidateEvidence": "docs/evidence/command-catalog-diff-candidate-20261008.json",
+      "doctorCapabilitiesCandidateEvidence": "docs/evidence/doctor-capabilities-candidate-20261008.json"
     },
     {
       "requirement": "EC-TX-001",
@@ -310,9 +313,10 @@
         "9.15"
       ],
       "owner": "Runtime owner",
-      "status": "verified",
+      "status": "in-progress",
       "evidence": "docs/evidence/craft-fixed-runtime-integrity-20261008.json",
-      "scope": "current pinned macOS arm64 CLI matrix; all current requirement scenarios"
+      "scope": "current pinned macOS arm64 CLI matrix; all current requirement scenarios",
+      "doctorCapabilitiesCandidateEvidence": "docs/evidence/doctor-capabilities-candidate-20261008.json"
     },
     {
       "requirement": "EC-TX-005",

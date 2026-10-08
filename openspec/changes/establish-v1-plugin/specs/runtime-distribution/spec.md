@@ -48,6 +48,13 @@
 - **THEN** 安装器 SHALL 丢弃半包并最多执行三次只读下载，之后仍执行原摘要／安全解压／版本检查，不重试原生编辑
 - **AND** 证书、权限、磁盘、大小限制、摘要及非临时HTTP拒绝错误 SHALL 不被重试或放宽；固定发行及安装首用另行验收
 
+#### Scenario: 固定命令目录的离线升级差异
+
+- **WHEN** 智能体比较已发布旧覆盖目录和候选固定目录
+- **THEN** 入口 SHALL 不安装、不启动原生编辑、不写任务或工程，确定性列出新增、移除、参数合同、技能归属、工作流映射、运行模式路由及原生工具schema变化；未知schema、领域不符、重复身份及歧义JSON SHALL 拒绝
+- **AND** 新增／变化合同 SHALL 保持 NOT_RUN，运行时或工具网关变化 SHALL 列出需要重新验收的命令；旧目录缺少模式或工具schema SHALL 显式记录缺失，不视为合同相同或继承历史PASS
+- **AND** 覆盖目录生成 SHALL 核对固定反射与原生目录的完整身份集合，新增／缺失／重复命令 SHALL 在写出文档前报 native_registry_drift；模式路由不替代实际enabled状态及逐命令创作验收
+
 ### Requirement: EC-DS-001 Owned standalone desktop workflow
 Each domain skill SHALL offer `desktop.py run PLAN --output NEW_DIRECTORY` that validates the plan before installation, verifies fixed desktop and CLI identities, starts only its own isolated desktop, confirms the loopback listener belongs to that process, executes the existing full-command bridge gateway, and closes only its owned desktop/MCP processes on success or failure. Photo authentication SHALL use a private token file and the same authorized output root in both desktop and CLI. Unknown editing outcomes SHALL not be replayed.
 
@@ -120,6 +127,13 @@ Each domain skill SHALL offer `desktop.py run PLAN --output NEW_DIRECTORY` that 
 - **WHEN** 用户或宿主调用 doctor，或锁定原生 CLI 命令目录发生变化
 - **THEN** doctor SHALL 只读返回平台、缺失依赖、锁定与实际版本、运行模式、可执行恢复动作；命令清单 SHALL 记录参数契约、技能归属、运行模式、场景验收状态
 - **AND** 新增或变化命令默认未验收，清单生成不得将其直接标记为可用于创作
+
+#### Scenario: 显式只读原生能力探测
+
+- **WHEN** 调用 doctor --probe-native，或同时提供 --compare-catalog 旧固定目录
+- **THEN** doctor SHALL 先校验旧目录、平台条件及已有CLI完整性，仅对已验证可启动制品限时查询版本、tools/list及自有空headless会话的list_commands，不安装、不连接已有桌面、不编辑或渲染、不创建或恢复任务
+- **AND** 默认doctor SHALL 不启动原生进程，报告锁定／实际Python版本、CLI完整性、固定目录和可执行恢复argv；所有恢复动作只报告、不自动执行。没有隔离Python时启动入口 SHALL 只读报告缺失，不自动下载
+- **AND** 版本／注册身份／工具schema漂移 SHALL 报FAIL，无法完成探测 SHALL 报NOT_RUN；缺失／损坏安装或最低系统不满足 SHALL 不启动CLI。探测PASS仅表示只读发现符合固定合同，不提升创作、desktop、目标平台整体或宿主验收
 
 #### Scenario: 单技能双启动入口与制品选择
 

@@ -1,5 +1,10 @@
 # 版本绑定的历史发行记录
 
+## 开发版 dev.46 — 2026-10-08
+
+固定技能源 dev.44：15 个独立技能新增只读 doctor、恢复执行参数及离线命令/schema 差异。运行时绑定草稿不纳入本版，74 项任务和完整 V1 仍开放。
+
+
 开发版dev.45锁定source dev.43不可变快照：共享PNG资源记账及修订只读核对；任务9.23限定范围完成。源码388项回归通过、38项条件跳过。75项任务及完整V1继续开放，marketplaceEligible=false。证据：docs/evidence/command-revision-resource-candidate-20261008.json。
 
 开发版dev.44固定技能源dev.42：限定范围局部修订和原生保全回执。40项目标测试；回归365通过／38条件跳过。命令视觉修订通过，桌面中断尚未验收。9.23、76项任务及完整V1保持开放。[证据](docs/evidence/command-revision-candidate-20261008.json)。

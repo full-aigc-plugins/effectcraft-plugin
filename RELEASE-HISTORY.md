@@ -1,5 +1,10 @@
 # Version-bound release records
 
+## Development release dev.46 — 2026-10-08
+
+Pins source dev.44: readonly doctor, executable recovery arguments and offline command/schema differences in all 15 independent skills. Runtime-binding drafts excluded; 74 tasks and full V1 remain open.
+
+
 开发版dev.45锁定source dev.43不可变快照：共享PNG资源记账及修订只读核对；任务9.23限定范围完成。源码388项回归通过、38项条件跳过。75项任务及完整V1继续开放，marketplaceEligible=false。证据：docs/evidence/command-revision-resource-candidate-20261008.json。
 
 Development release dev.44 pins source dev.42: scoped local revision and native preservation receipts. 40 targeted tests; 365 regression passes / 38 conditional skips. Command visual repair passed; desktop interruption remains unaccepted. Task9.23, 76 tasks and full V1 remain open. [Evidence](docs/evidence/command-revision-candidate-20261008.json).

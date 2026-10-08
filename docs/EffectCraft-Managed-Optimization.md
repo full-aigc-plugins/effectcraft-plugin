@@ -203,3 +203,41 @@ Managed root plans reserve declared PNG frames before native execution. Each act
 Each mode passed8 public refusal gates for binding/scope/parameters/runtime/resources/rounds/cancel/deadline, restoring owned QA fault injections exactly. Readonly settlement tests cover expiry/cancel. Current public reconcile retains the earlier expired partial desktop task as UNKNOWN, without replay/refund/output changes. Only resource_meter.validate changed after native execution, to reject corrupt dot-only media paths; current-source native/technical reinspection passed and both execution/recheck identities are retained in evidence.
 
 Task9.23 closes only its bounded local static-PNG revision component. Full9.3/9.3.6 modes,CPU/memory,video/sequences,animated-target scope,per-command/GUI,fixed-host dispatch,other platforms andV1 remain open. Published plugin44/source42 snapshots are unchanged; this increment is uncommitted/unpublished. [Evidence](evidence/command-revision-resource-candidate-20261008.json).
+
+## Command catalog upgrade diff candidate (2026-10-08)
+
+The source candidate adds offline `commands.py diff BASELINE.json` to all15 independent skills. It compares command parameters, owners, workflow mappings, mode routes and native tool input schemas without installation, task registration or native editing. Added/changed contracts never inherit PASS; missing historical schemas remain NOT_RUN. Runtime/gateway changes list commands requiring revalidation. The generator rejects added, missing or duplicate reflected/native identities before writing stale documentation.
+
+Readonly discovery of locked EffectCraft0.4.0 confirms655 commands and22 tool schemas. Comparing the published source43 catalog yields655 mode-metadata additions, not655 new native capabilities; that historical catalog lacks tool schemas. Each single-skill copy passes the public entry under a space-containing readonly path with isolated Python3.13.16 and no runtime directory; installed file hashes remain unchanged.
+
+15 targeted tests pass after expected failures; regression441 total,403 passed/38 conditional skips. Component task9.24 is complete. Full doctor, Web/FreeBSD, every-command creative acceptance, other target platforms and fixed-host dispatch remain open. Plugin skills/ remains the released source43 snapshot; this source candidate is uncommitted/unpublished and does not change marketplace eligibility. [Evidence](evidence/command-catalog-diff-candidate-20261008.json).
+
+## Actual readonly doctor capability candidate (2026-10-08)
+
+Task9.2.1 is now verified: default doctor reports platform, locked/actual Python, cached CLI integrity, catalog and executable recovery argv without starting native processes or executing recovery. Explicit `doctor --probe-native` checks integrity and minimum system requirements before bounded version/tools/list/list_commands queries in its own empty headless session. Invalid baseline fails before launch; missing/corrupt/incompatible installations are preserved and never started. Timeouts are not retried and unknown tasks are not resumed.
+
+All15 isolated skill copies pass actual readonly probing under space-containing readonly paths (CLI0.4.0,655 commands,22 tool schemas);15 no-Python calls remain readonly. Public Shell entry passes; runtime payload, unknown task records and skill hashes remain unchanged and native binary handles return to their original set.17 targeted tests and regression458 total/420 passes/38 conditional skips pass. Together with9.24 catalog evidence, task9.2.1 is checked;74 implementation tasks remain open.
+
+Discovery PASS is limited to native version/registry/schema identity. Creative, desktop, overall target-platform and host acceptance remain NOT_RUN. Web/FreeBSD, other-platform creative tasks and fixed-host natural-language dispatch remain open. Plugin skills/ still pins released source43; the candidate is uncommitted/unpublished. The previous catalog-component doctor status describes its earlier checkpoint; this section and tasks hold the current state. [Evidence](evidence/doctor-capabilities-candidate-20261008.json).
+
+```mermaid
+flowchart TD
+  Request[doctor] --> Static[Read locks platform and cache integrity]
+  Static --> Default[Default: report facts and recovery argv]
+  Static --> Opt[Explicit --probe-native]
+  Opt --> Guard{Verified cache and minimum system?}
+  Guard -->|No| Keep[Preserve cache and tasks; NOT_RUN]
+  Guard -->|Yes| Version[Bounded --version query]
+  Version --> Match{Version matches?}
+  Match -->|No| Fail[FAIL: no MCP launch]
+  Match -->|Yes| MCP[Owned empty session: tools/list and list_commands]
+  MCP --> Close[Close owned session]
+  Close --> Report[Discovery PASS / FAIL / NOT_RUN]
+  Report --> Limits[Creative desktop and host acceptance unchanged]
+```
+
+冷启动恢复补充 / Cold recovery completion: Shell及PowerShell在无Python时也报告准备隔离Python的实际入口argv，不自动执行；POSIX引号路径实测通过。PowerShell显式UTF-8避免恢复路径中文损坏，语法与实际JSON返回分支在本地PowerShell引擎通过；真实Windows主机验收仍NOT_RUN。最终证据绑定两种启动脚本及最终源码；早期456项回归是中间记录，当前有效回归为458项、420通过／38条件跳过。
+
+## Development distribution dev.46 / source dev.44
+
+This distribution includes the completed doctor and catalog-diff increments (9.2.1 and 9.24). Earlier candidate statements describe their checkpoints. Unfinished runtime-binding drafts are excluded. The immutable snapshot is verified independently; publication does not close the 74 remaining tasks, native platform qualification or fixed-host natural-language acceptance.
