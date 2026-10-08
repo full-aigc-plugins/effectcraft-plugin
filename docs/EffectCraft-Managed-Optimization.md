@@ -289,7 +289,7 @@ flowchart LR
 此组件不关闭9.1.4、2.4–2.6、其他目标平台或完整V1：跨状态根清理尚缺实现与证据；旧Python3.13.5仅绑定外部执行文件，不证明旧隔离标准库升级。新候选未提交／发布，插件skills/仍为不可变source47快照；安装后智能体自然语言派发尚未验收。首次暂停是受控测试边界，不等于未知编辑的可恢复证明。[证据 / Evidence](evidence/runtime-upgrade-component-candidate-20261009.json)。
 
 
-## 2026-10-09 隔离Python双版本与入口失败 / Isolated Python versions and frontend failure
+## 2026-10-09 前一检查点：隔离Python双版本与入口失败 / Previous isolated-Python checkpoint
 
 启动前新增Python安装回执校验：非链接文件、固定版本／平台／归档摘要、无额外／重复字段与非法编码；兼容旧入口生成的六种字段顺序和排版。坏回执保留，不调用解释器、不重装。4项POSIX公开入口测试先出现13个失败断言后转绿；PowerShell实际函数在本机19例通过，语法通过，真实Windows执行仍NOT_RUN。3个实际隔离Python坏回执公开doctor反例均保全回执和全部任务文件。
 
@@ -307,3 +307,24 @@ flowchart LR
 ```
 
 新发现的真实失败必须保留：调用已有old-held的公开resume，指定空的当前Python缓存并提供坏新制品；虽然绑定的旧3.13.15及快照完好，启动器仍先准备当前3.13.16并失败，无法进入原控制器。所有任务文件未改变、未重放编辑。这是9.29／9.1.4的未完成行为，不能用正常升级通过或本轮单元测试掩盖。后续须在当前Python安装之前选择并验证已有任务原执行资源；旧记录没有可信启动证据时保留现场，不能通过当前代码重建旧快照。跨状态根清理、其他原生平台和固定宿主仍开放。[证据 / Evidence](evidence/isolated-python-upgrade-candidate-20261009.json)。
+
+## 2026-10-09 Bound task entry candidate
+
+Execution binding v2 includes the digest of a fixed-field launch descriptor. Freezing atomically publishes the original identity JSON, descriptor and complete skill snapshot. POSIX and PowerShell entry points select existing tasks before reading or preparing the current Python lock. They verify the top-level task identity, original platform and minimum system, Python receipt and complete distribution, then invoke only the current package's readonly dispatcher. The dispatcher rechecks authoritative state and the complete original snapshot before handing off the original controller and runtimeHome. POSIX preserves PID through exec; Windows retains the owned Job and stdin supervision channel. V1 bindings remain readable and resolvable with an existing Python; missing launch materials are never implicitly rebuilt or migrated.
+
+Actual macOS evidence: an isolated Python3.13.15 / EffectCraft0.3.1 task resumes with an empty current Python cache, bad current archive and corrupt current Python lock. Native project reopening and full12-frame decoding pass. Original identity, deadline, completed operations and frozen resources remain unchanged; the original runtimeHome replaces the incorrect frontend argument. A bad original Python receipt rejects before interpreter execution. The final frontend also passes readonly native reopening and decoding against the retained earlier task snapshot. A new final-source task uses isolated3.13.16 / CLI0.4.0 and passes the same checks.
+
+Validation: 13 targeted tests, including8 actual PowerShell identity-function cases;19 receipt-function cases on macOS. Full source regression504 total:466 passed /38 conditional skips. PowerShell syntax and function tests do not establish native Windows entry or process termination acceptance. Only component9.29.1 is checked;9.29,9.1.4, cross-state-root retention/cleanup, other targets, fixed installed-host dispatch and fullV1 remain open. Candidate is unpublished; the plugin still pins source48. [Evidence](evidence/task-bound-entry-candidate-20261009.json).
+
+```mermaid
+flowchart LR
+  A["Existing task request"] --> B["Validate original identity and descriptor"]
+  B -->|"match"| C["Verify original Python receipt and distribution"]
+  C --> D["Current readonly dispatcher"]
+  D --> E["Recheck state and original snapshot"]
+  E --> F["Original Python, controller and runtimeHome"]
+  B -->|"missing or changed"| G["Preserve; refuse execution or rebuilding"]
+  C -->|"changed"| G
+  E -->|"changed"| G
+  F --> H["Return original exit; never install as fallback"]
+```

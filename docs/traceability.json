@@ -318,14 +318,16 @@
         "9.1",
         "9.15",
         "9.28",
-        "9.29"
+        "9.29",
+        "9.29.1"
       ],
       "owner": "Runtime owner",
       "status": "in-progress",
       "evidence": "docs/evidence/craft-fixed-runtime-integrity-20261008.json",
-      "scope": "current pinned macOS arm64 CLI matrix; all current requirement scenarios",
+      "scope": "partial macOS component evidence only; current scenarios retain target-platform, fixed-host and bound-entry gates",
       "doctorCapabilitiesCandidateEvidence": "docs/evidence/doctor-capabilities-candidate-20261008.json",
-      "isolatedPythonUpgradeCandidateEvidence": "docs/evidence/isolated-python-upgrade-candidate-20261009.json"
+      "isolatedPythonUpgradeCandidateEvidence": "docs/evidence/isolated-python-upgrade-candidate-20261009.json",
+      "taskBoundEntryCandidateEvidence": "docs/evidence/task-bound-entry-candidate-20261009.json"
     },
     {
       "requirement": "EC-TX-005",

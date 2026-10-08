@@ -153,6 +153,13 @@ Each domain skill SHALL offer `desktop.py run PLAN --output NEW_DIRECTORY` that 
 - **THEN** 技能 SHALL 提供 POSIX Shell 与 PowerShell 启动入口，准备用户目录内隔离 Python 后执行同一 Python 工作流；Windows SHALL 使用 Python 官方嵌入式发行包，macOS/Linux SHALL 使用固定 python-build-standalone install_only 制品
 - **AND** 平台锁 SHALL 选择各目标共同可用的受维护 Python 3.13 补丁版本并保存版本、平台、来源、摘要及许可；版本选择在构建时确定，运行时不得解析 latest
 
+#### Scenario: 受管理入口自动消费离线原生制品
+
+- **WHEN** 用户指定CRAFT_PYTHON_ARCHIVE与CRAFT_RUNTIME_ARCHIVE本地制品并从单技能的公开run进入空运行时缓存
+- **THEN** 启动器及原生安装器 SHALL 使用各自固定锁校验本地制品并自动完成安装，不要求用户预先安装Python或手工调用另一安装器；原生安装器显式archive参数 SHALL 优先于环境提供的制品
+- **AND** 已选择的离线制品缺失、损坏或安装失败 SHALL 保留已有版本及任务，不回落联网下载；完整已安装版本可校验复用，不因无效的待用离线归档而替换它
+- **AND** 含空格的只读技能目录 SHALL 保持内容及权限不变，不访问兄弟技能目录；各目标平台运行证据独立记录
+
 #### Scenario: 活动任务引用阻止运行时清理
 
 - **WHEN** 安装升级或清理旧运行时，而已有活动任务引用旧运行时身份
@@ -171,6 +178,12 @@ Each domain skill SHALL offer `desktop.py run PLAN --output NEW_DIRECTORY` that 
 - **WHEN** 用户恢复或评价已有任务，原隔离解释器及任务私有执行资源完好，但当前技能的Python尚未准备或准备失败
 - **THEN** 启动入口 SHALL 在准备当前Python之前选择并验证该任务的原启动资源，使用原解释器和控制器，不以重新安装当前Python作为旧任务恢复的前置条件
 - **AND** 原启动证据损坏、缺失或历史记录无法证明可执行时 SHALL 保留现场并拒绝自动续写，不重建旧快照、不回退到当前代码、不重放未知编辑
+
+#### Scenario: 安装前启动身份及退出状态不可绕过
+
+- **WHEN** 任务启动材料存在但身份摘要、描述、原解释器载荷或快照不一致，或者原控制器返回非零退出状态
+- **THEN** 入口 SHALL 保留原材料并拒绝回落到当前Python安装或新任务执行；原控制器返回125等状态 SHALL 作为原结果传递，不能当成未选择任务
+- **AND** POSIX SHALL 原位替换启动器，Windows SHALL 保持原有自有进程树监督；顶层任务身份 SHALL 不被计划中的嵌套同名字段替代
 
 #### Scenario: 执行绑定损坏或历史记录缺失
 
