@@ -74,7 +74,7 @@
 
 任务入口 doctor/plan/run/inspect/reconcile/resume/cancel/review/revise；输出、源工程和会话均绑定身份。副作用前落盘 attempted；恢复先核对原结果，不能用新输出目录规避未知状态。旧会话缺少身份只允许诊断，不能自动重置。
 
-新增任务的 identity.runtimeBinding 使用 effectcraft-execution-binding/v1，绑定原 Python、运行时根、原生版本和任务私有 execution/skill 执行资源清单摘要。绑定参与 identityHash，不能参与排除重复未知工作的 workKey。固定 Python 核验整个发行载荷；外部 Python 兼容入口只绑定可执行文件。资源通过私有暂存、前后摘要核对及同文件系统重命名发布；损坏或缺失现场不重建。公开恢复/评价/修订转交到原快照；POSIX 使用原位 exec，Windows 使用既有门控 Job 守护器和监督通道，退出后核对控制器生命周期。单一状态根的只读引用清单不构成跨状态根清理授权；安装器继续保留所有版本目录。升级/清理全门禁保持 9.1.4 范围。
+新增任务的 identity.runtimeBinding 使用 effectcraft-execution-binding/v2（历史 v1 仅按其已有材料读取／核验，不补造 v2 启动证明），绑定原 Python、运行时根、原生版本和任务私有 execution/skill 执行资源清单摘要。绑定参与 identityHash，不能参与排除重复未知工作的 workKey。固定 Python 核验整个发行载荷；外部 Python 兼容入口只绑定可执行文件。资源通过私有暂存、前后摘要核对及同文件系统重命名发布；损坏或缺失现场不重建。公开恢复/评价/修订转交到原快照；POSIX 使用原位 exec，Windows 使用既有门控 Job 守护器和监督通道，退出后核对控制器生命周期。单一状态根的只读引用清单不构成跨状态根清理授权；安装器继续保留所有版本目录。升级/清理全门禁保持 9.1.4 范围。
 
 技术验收与创作评价分离；Judge 回执绑定工程、产物、标准和时间范围。缺少解码或视觉证据保持 NOT_RUN。局部修订复核源版本、限定对象属性并验证非目标保全。双语文档记录候选与已发布版本边界。
 
@@ -169,3 +169,12 @@ flowchart TD
 
 
 父子取消终态屏障（开发版source52／plugin54）：根取消意图与后代身份先落盘，后代仍活跃／缺少停止证明时保持cancel_requested；各子任务经原控制器核对后，未知编辑传播为父任务reconciling。未启动证明只在原取消时取得全部执行租约后生成，重启不补造。27项取消测试及真实macOS原生父子中断恢复通过；完整崩溃／GUI矩阵、其他原生平台、固定宿主与V1仍开放。证据：`docs/evidence/cancel-family-candidate-20261009.json`。
+
+
+## 当前实现定位与能力证据（9.6.3）
+
+执行事实源为独立技能源的 `skills/effectcraft-use/scripts/`：管理入口 `managed.py`、账本 `task_store.py`、父子取消 `cancellation.py`、绑定与快照 `runtime_binding.py`、绑定解释器启动 `task_entry.py`／`task_entry.sh`／`task_entry.ps1`。上述路径在技能源维护，再由插件 `skills.lock.json` 固定消费；不在插件根创建第二执行内核。
+
+维护者生成器为技能源 `scripts/build_capability_matrix.py`，当前产物为两仓 `docs/current-capabilities.json`。`effectcraft-capability-matrix/v2` 为内部文档格式，保留平台字段并增加显式证据绑定；不是公共 craft 协议。完整技能载荷须与当前原始只读安装报告的文件／模式清单摘要对应，Python、原生制品和报告摘要亦须匹配。证据失效时输出 NOT_RUN 和原因；插件 `scripts/capability_reference.py` 只校验分发文档，不承担执行。README 保留当前入口和精确门禁，原文移入同仓 `README-HISTORY-20261009*.md`，由版本历史链接。
+
+公共协议仍以 `docs/contracts-reference.json` 固定的 ArtCraft 标签、提交与四份文件为权威。当前源代码及 Git 对象校验通过不关闭其他平台／宿主或 V1。

@@ -1,5 +1,9 @@
 # Version-bound release records
 
+## dev.55 — 2026-10-09
+
+Plugin dev.55 consumes immutable source dev.53. Full-payload capability evidence binding and legacy readonly management guards; direct cancellation uses the original controller. Full V1, other native targets and host acceptance remain open.
+
 ## dev.53 — 2026-10-09
 
 Development source dev.51 / plugin dev.53: POSIX private group ownership and nonce-bound business results cover guardian loss, orphan descendants and forced cancellation. Current regression and offline installed-copy evidence: [release validation](docs/evidence/group-ownership-release51-20261009.json). Historical checkpoints below retain their original fingerprints; cross-platform native, fixed-host, creative acceptance and full V1 remain open.
@@ -119,3 +123,8 @@ Historical release record: Current first-use entry: plugin `0.1.0-dev.21`, skill
 
 Fixed native gateway first use passes:48 independently installed domain skills and ten Art85/source58 public workflows cold-install, create/reopen/export, revise and preserve original deliveries. Art public Brief, all four gateway domains, five child nodes, selective Logo revision/icon reuse, moved package, native cancellation and six unknown faults pass. All58 installed identities are unchanged. Full2639-command/GUI/model/generic Skills CLI/V1 gates remain open. [Usage](docs/Craft-Native-Gateway-Usage.md) · [Fixed evidence](docs/evidence/codex-native-gateway-first-use-20261007.json).
 
+
+
+## Historical README capture — 2026-10-09
+
+[Complete original text with original versions and evidence boundaries](README-HISTORY-20261009.md)
