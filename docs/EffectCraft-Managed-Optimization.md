@@ -96,3 +96,19 @@ Killing the native CLI during a frame write, guardian takeover, commands/desktop
 ## Fixed development release verification
 
 Plugin dev.39 pins source dev.37. [Current fixed evidence](evidence/effectcraft39-fixed-managed-release-20261008.json) verifies all15 skill snapshots against the public ZIP, cold standalone launch with only the system PATH and empty Python/native caches, automatic Python3.13.16 setup, native create/save/reopen and full12-frame video decoding. Public-archive orphan recovery also passes12 continuous-render pixel comparisons. Source regression:216 passes/38 conditional skips out of254; GitHub macOS/Windows/Linux contract and nativeCLI discovery jobs pass. Earlier candidate evidence remains snapshot-specific. Other architectures, complete platform creative tasks, final host dispatch and fullV1 remain open.
+
+## Sequence quality reinspection candidate
+
+The source candidate recomputes ordinary and segmented sequence records, including frame indices, byte/pixel digests, alpha and rational timing. Segmented output additionally checks the original project, composition, ranges and per-segment receipts. Refreshing package hashes cannot hide a mismatch between descriptors and actual frames; unknown or incomplete descriptors produce technical FAIL. This candidate has not replaced the dev.39 locked snapshot. Full task9.4, platform and host gates remain open.
+
+## Version reviews and best-result candidate
+
+The task-family review ledger fixes the first criteria, reuses version request identities, makes identical imports idempotent and rejects conflicting responses. The root atomically settles stagnation and best-version selection, retaining immutable request/response/report and artifact digests. Historical scores without this ledger remain diagnostic. Fourteen targeted tests and 273 regressions (235 passed, 38 conditional skips), plus actual native local revision, passed. Codex observed a clipped title, changed only that title, and checked the revised output; engineering/technical/creative passed and user acceptance remains false. See [candidate evidence](evidence/review-ledger-candidate-20261008.json). This source candidate has not replaced the dev.39 snapshot. Full Judge scope contracts, platform/host gates and V1 remain open.
+
+## Judge v2 and actual host observation candidate
+
+Explicit v2 requests/receipts bind task, project/media, criteria and evaluation-scope digests. Scopes include rational timing, half-open frame ranges and requested samples. Observations bind source-media bytes, inspected frame indices and method. Missing visual/temporal capability or coverage retains NOT_RUN without scoring or stagnation charges. Legacy v1 remains diagnostic. Incomplete technical verification does not pin a partial request; the same task can review after a decoder becomes available.
+
+Current Codex inspected five video samples before/after revision plus transparent previews, changed only the clipped title via public review/revise/review, and verified reopen/decode, non-target preservation, best-version identity and receipt idempotence. Ten contract tests, 23 ledger/revision tests and 292 regressions (254 passed, 38 conditional skips) passed. Bounded tasks9.18/9.4.3/9.4.4 are closed. Full9.4.2 still needs stale-receipt current-status CLI evidence;9.4.1/9.4 and V1 remain open. Sampled PASS is not all-frame acceptance, user acceptance is false, and no independent paid model dependency was added. Source bytes match the observed copy; the locked plugin remains dev.39. See [candidate evidence](evidence/judge-v2-candidate-20261008.json).
+
+Task 9.4.2 public rejection diagnostics verified: 260 passed / 38 conditional skips out of 298 regressions. Current native delivery changes reject old review receipts with technical FAIL / creative NOT_RUN and preserve history/state. [Evidence](evidence/review-rejection-candidate-20261008.json).
