@@ -80,7 +80,10 @@
     "9.26": "docs/evidence/runtime-upgrade-component-candidate-20261009.json",
     "9.27": "docs/evidence/runtime-upgrade-component-candidate-20261009.json",
     "9.28": "docs/evidence/isolated-python-upgrade-candidate-20261009.json",
-    "9.29.1": "docs/evidence/task-bound-entry-candidate-20261009.json"
+    "9.29.1": "docs/evidence/task-bound-entry-candidate-20261009.json",
+    "9.30": "docs/evidence/process-group-probe-candidate-20261009.json",
+    "9.5.1": "docs/evidence/independent-offline15-candidate-20261009.json",
+    "9.31": "docs/evidence/group-ownership-release51-20261009.json"
   },
   "hostValidationEvidence": "docs/evidence/craft-full-command-fixed-first-use-20261007.json",
   "hostValidationStatus": "fixed-five-plugin58-discovery-and-standalone-desktop-passed",
@@ -137,5 +140,8 @@
   "isolatedPythonUpgradeCandidateEvidence": "docs/evidence/isolated-python-upgrade-candidate-20261009.json",
   "boundEntryBootstrapFailureEvidence": "docs/evidence/isolated-python-upgrade-candidate-20261009.json",
   "taskBoundEntryCandidateEvidence": "docs/evidence/task-bound-entry-candidate-20261009.json",
-  "releaseReadinessEvidence": "docs/evidence/release-readiness-source50-20261009.json"
+  "releaseReadinessEvidence": "docs/evidence/release-readiness-source50-20261009.json",
+  "processGroupProbeCandidateEvidence": "docs/evidence/process-group-probe-candidate-20261009.json",
+  "independentOfflineSkillsCandidateEvidence": "docs/evidence/independent-offline15-candidate-20261009.json",
+  "groupOwnershipReleaseEvidence": "docs/evidence/group-ownership-release51-20261009.json"
 }

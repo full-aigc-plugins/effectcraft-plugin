@@ -248,11 +248,14 @@
         "1.9",
         "1.10",
         "1.11",
-        "9.5"
+        "9.5",
+        "9.5.1",
+        "9.5.2"
       ],
       "owner": "Skills owner",
-      "status": "bounded-verification-passed",
-      "evidence": "docs/evidence/skill-suite.json"
+      "status": "partial-macOS-packaging-passed; domain and target-platform gates open",
+      "evidence": "docs/evidence/skill-suite.json",
+      "independentOfflineSkillsCandidateEvidence": "docs/evidence/independent-offline15-candidate-20261009.json"
     },
     {
       "requirement": "EC-CM-001",
@@ -347,11 +350,14 @@
         "9.11",
         "9.12",
         "9.13",
-        "9.14"
+        "9.14",
+        "9.30"
       ],
       "owner": "Harness owner",
       "status": "in-progress",
-      "commandPngRevisionCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json"
+      "commandPngRevisionCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json",
+      "processGroupProbeCandidateEvidence": "docs/evidence/process-group-probe-candidate-20261009.json",
+      "groupOwnershipReleaseEvidence": "docs/evidence/group-ownership-release51-20261009.json"
     },
     {
       "requirement": "EC-QA-003",

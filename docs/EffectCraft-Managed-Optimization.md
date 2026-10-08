@@ -328,3 +328,49 @@ flowchart LR
   E -->|"changed"| G
   F --> H["Return original exit; never install as fallback"]
 ```
+
+## Offline sandbox process-group confirmation
+
+The unpublished candidate probes the original owned process group under its task lifecycle lease with signal0, which sends no termination signal. A missing group proves it is empty without invoking ps. Existing groups and EPERM still require valid member evidence; failed inspection keeps unknown. Ten targeted tests and516 regressions (478 passes/38 conditional skips) pass on macOS, including actual network-denied sandbox exit and descendant cleanup. The original unknown task retains all93 files and reconcile still rejects it. Native Windows/other POSIX targets, fixed hosts and fullV1 stay open. [Evidence](evidence/process-group-probe-candidate-20261009.json).
+
+```mermaid
+flowchart TD
+    A[Hold task lifecycle lease] --> B[Kernel signal0 probe of original owned group]
+    B -->|Group absent| C[Record stopped and actual exit code]
+    B -->|Exists or EPERM| D[Inspect group members]
+    D -->|No active members| C
+    D -->|Active members| E[Bounded owned cleanup and recheck]
+    D -->|Unconfirmed| F[Keep unknown and evidence]
+    F --> G[Refuse replay or resumed edits]
+```
+
+## Fifteen independent readonly offline skills
+
+Task9.5.1 passes on macOS arm64:15 installs each contain one skill, use paths with spaces and remain readonly. The OS denies network, developer-workspace reads and system Python execution. Public run/review, native project reopen and actual12-frame decode (320×180,12fps,1second) pass for every skill. All installed content matches current source; readonly modes are preserved, every lifecycle is stopped and no CLI process remains.
+
+The first case installs from cold Python/native caches using prepared official archives;14 cases reuse the verified shared user cache. This is not15 cold installs. ffmpeg/ffprobe are preinstalled prerequisites; automatic media-tool installation is not qualified. Creative/user acceptance remains NOT_RUN. Domain tasks/transparent FilmCraft handoff9.5.2, other targets9.1.2, fixed hosts and fullV1 stay open. This candidate is unpublished and candidateCI is NOT_RUN. [Evidence](evidence/independent-offline15-candidate-20261009.json).
+
+## POSIX ownership release dev.51 / plugin dev.53
+
+Development source dev.51 / plugin dev.53: POSIX private group ownership and nonce-bound business results cover guardian loss, orphan descendants and forced cancellation. Current regression and offline installed-copy evidence: [release validation](evidence/group-ownership-release51-20261009.json). Historical checkpoints below retain their original fingerprints; cross-platform native, fixed-host, creative acceptance and full V1 remain open.
+
+```mermaid
+sequenceDiagram
+  participant S as Supervisor
+  participant G as Guardian
+  participant A as POSIX group holder
+  participant W as Business worker
+  S->>G: Private control lease
+  G->>A: Open control + anonymous result pipe
+  A->>W: Execute in owned group
+  W-->>A: Actual business exit
+  A-->>G: Versioned nonce-bound result
+  G->>A: Drain descendants while ownership held
+  alt Guardian disappears
+    A->>A: Control EOF stops own group
+  else Forced cancel without business receipt
+    G-->>S: Confirm stopped, negative executor exit, unverified business
+  else Result and group stop verified
+    G-->>S: Actual business exit + stopped receipt
+  end
+```
