@@ -241,3 +241,28 @@ flowchart TD
 ## Development distribution dev.46 / source dev.44
 
 This distribution includes the completed doctor and catalog-diff increments (9.2.1 and 9.24). Earlier candidate statements describe their checkpoints. Unfinished runtime-binding drafts are excluded. The immutable snapshot is verified independently; publication does not close the 74 remaining tasks, native platform qualification or fixed-host natural-language acceptance.
+
+## Task execution binding candidate — 2026-10-09
+
+Task9.25 closes task-private snapshots and original-controller recovery:24 targeted tests and482 regressions (444 passed/38 conditional skips), including15 independent entry registrations, pass. Native macOS public resume/review uses the original locked Python3.13.16/controller/EffectCraft0.4.0 after a hypothetical unavailable source-lock update, preserving identity/deadline/snapshot. A new task freezes a distinct code generation. Both projects reopen and both videos fully decode12 frames. Three public missing/corrupt/modified-snapshot refusals preserve task bytes and worker logs.
+
+The Windows Job/EOF controller adapter has portable contract tests, not native target qualification. Two actual native release versions, global cleanup, other native platforms and installed host dispatch remain open;9.1.4 and EC-RT-002 are incomplete. Plugin skills/ remains the immutable published source45 snapshot; this candidate is uncommitted/unpublished. [Evidence](evidence/task-execution-binding-candidate-20261009.json).
+
+```mermaid
+flowchart LR
+ A[Register original execution identity] --> B[Stage and verify private snapshot]
+ B --> C[Atomic snapshot publication]
+ C --> D[Original Python and owned worker guard]
+ E[Updated skill recovery entry] --> F{Original binding intact}
+ F -->|yes| G[Original controller snapshot]
+ G --> D
+ F -->|no| H[Preserve and refuse writes]
+ B -->|copy failure| H
+```
+
+
+## 2026-10-09 开发发行状态 / Development release status
+
+技能源 dev.46／插件 dev.48 纳入任务执行绑定组件9.25；此前章节的“候选未发布”和旧锁定版本仅描述各自检查点。24项绑定测试与macOS原生恢复证据对应本次执行代码，固定安装后的智能体自然语言派发验收仍开放。两个实际原生版本升级、跨状态根清理、其他目标平台及完整V1不因本次发布关闭。
+
+Source dev.46 / plugin dev.48 includes component9.25. Earlier unpublished-candidate statements describe their historical checkpoints. Publication does not qualify installed-host dispatch, two actual native-version upgrades, global cleanup or full V1.

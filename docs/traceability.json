@@ -47,14 +47,16 @@
         "2.9",
         "2.10",
         "9.2",
-        "9.24"
+        "9.24",
+        "9.25"
       ],
       "owner": "Runtime owner",
       "status": "in-progress",
       "candidateEvidence": "docs/evidence/effectcraft-native-download-candidate-20261007.json",
       "fixedNativeDownloadEvidence": "docs/evidence/codex-native-download-first-use-20261007.json",
       "commandCatalogDiffCandidateEvidence": "docs/evidence/command-catalog-diff-candidate-20261008.json",
-      "doctorCapabilitiesCandidateEvidence": "docs/evidence/doctor-capabilities-candidate-20261008.json"
+      "doctorCapabilitiesCandidateEvidence": "docs/evidence/doctor-capabilities-candidate-20261008.json",
+      "taskExecutionBindingCandidateEvidence": "docs/evidence/task-execution-binding-candidate-20261009.json"
     },
     {
       "requirement": "EC-TX-001",

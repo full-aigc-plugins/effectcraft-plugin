@@ -328,3 +328,28 @@ flowchart TD
 ## 开发分发 dev.46／技能源 dev.44
 
 本次分发纳入已完成的 doctor 与命令目录差异增量（9.2.1、9.24），此前候选描述保留其阶段范围。未完成运行时绑定草稿不纳入本版。不可变快照独立校验；发布不关闭剩余 74 项任务、原生平台和固定宿主自然语言验收。
+
+## 任务执行绑定候选 — 2026-10-09
+
+9.25关闭任务私有执行快照及原控制器恢复组件：24项目标及482项回归（444通过／38条件跳过）、15个独立入口登记通过。macOS公开resume/review在测试源锁改为不可用假设新版本后仍使用原隔离Python3.13.16、控制器和EffectCraft0.4.0，身份、期限及快照不变；新任务采用不同代码快照。两份工程及两份12帧视频通过原生重开/完整解码；三项公开快照缺失/清单损坏/执行文件变化反例保全状态与worker日志。
+
+Windows Job/EOF控制器适配仅有组件合同测试，不算目标平台原生通过。两个真实原生版本升级、全局清理、其他原生平台和固定宿主派发仍开放；9.1.4与EC-RT-002未完成。插件skills/仍为已发布source45不可变快照，候选未提交发布。[证据](evidence/task-execution-binding-candidate-20261009.json)。
+
+```mermaid
+flowchart LR
+ A[登记原执行身份] --> B[暂存并核对私有快照]
+ B --> C[原子发布快照]
+ C --> D[原Python和自有worker守护]
+ E[更新后的技能恢复入口] --> F{原绑定完整}
+ F -->|是| G[原控制器快照]
+ G --> D
+ F -->|否| H[保留现场并拒绝写入]
+ B -->|复制失败| H
+```
+
+
+## 2026-10-09 开发发行状态 / Development release status
+
+技能源 dev.46／插件 dev.48 纳入任务执行绑定组件9.25；此前章节的“候选未发布”和旧锁定版本仅描述各自检查点。24项绑定测试与macOS原生恢复证据对应本次执行代码，固定安装后的智能体自然语言派发验收仍开放。两个实际原生版本升级、跨状态根清理、其他目标平台及完整V1不因本次发布关闭。
+
+Source dev.46 / plugin dev.48 includes component9.25. Earlier unpublished-candidate statements describe their historical checkpoints. Publication does not qualify installed-host dispatch, two actual native-version upgrades, global cleanup or full V1.

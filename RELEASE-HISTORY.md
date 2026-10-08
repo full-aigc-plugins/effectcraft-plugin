@@ -1,5 +1,9 @@
 # Version-bound release records
 
+## Development release dev.48 — 2026-10-09
+
+Pins immutable source dev.46 with task-private execution snapshots and original runtime binding across all 15 skills. 24 targeted tests and 482 regressions (444 passed / 38 conditional skips); bounded macOS native recovery evidence. Task9.25 component complete; 74 tasks, cross-version cleanup, target-platform and fixed-host acceptance, and full V1 remain open.
+
 ## Development release dev.47 — 2026-10-08
 
 Pins source dev.45, correcting the Windows short/long-path test identity assertion. All 15 skill snapshots retain dev.46 content; source test correction is verified separately. Full V1 remains open.
