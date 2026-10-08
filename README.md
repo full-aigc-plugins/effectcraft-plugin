@@ -1,10 +1,10 @@
 # EffectCraft Agent Plugin
 
-Development source dev.49 / plugin dev.51: trusted v2 tasks select their original Python before current-runtime preparation; managed entry supports CRAFT_RUNTIME_ARCHIVE offline native artifacts. Current macOS native reopen/decode passes; native Windows, fixed-host and full V1 acceptance remain open. [Evidence](docs/evidence/release-readiness-20261009.json).
+Development source dev.50 / plugin dev.52: trusted v2 tasks select their original Python before current-runtime preparation; managed entry supports CRAFT_RUNTIME_ARCHIVE offline native artifacts. Current macOS native reopen/decode passes; native Windows, fixed-host and full V1 acceptance remain open. [Evidence](docs/evidence/release-readiness-source50-20261009.json).
 
 Turn text, graphics and footage into an editable `.ecproj`, dependencies and rendered media.
 
-Current plugin: `0.1.0-dev.51`; skill source: `0.1.0-dev.49`; 15 independent skills.
+Current plugin: `0.1.0-dev.52`; skill source: `0.1.0-dev.50`; 15 independent skills.
 
 Verified first-use platform: macOS arm64 and Python 3.11+. Pinned runtimes install into the user data directory; skill files stay in their host-loaded directory. These are development releases; complete V1 acceptance and generic Skills CLI installation remain open.
 
@@ -97,9 +97,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.51 |
+| Metadata version | 0.1.0-dev.52 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.49 |
+| Skills source | effectcraft-skills / v0.1.0-dev.50 |
 | Execution | Upstream CLI; ArtCraft uses child adapters |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |

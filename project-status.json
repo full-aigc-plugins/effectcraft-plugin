@@ -137,5 +137,5 @@
   "isolatedPythonUpgradeCandidateEvidence": "docs/evidence/isolated-python-upgrade-candidate-20261009.json",
   "boundEntryBootstrapFailureEvidence": "docs/evidence/isolated-python-upgrade-candidate-20261009.json",
   "taskBoundEntryCandidateEvidence": "docs/evidence/task-bound-entry-candidate-20261009.json",
-  "releaseReadinessEvidence": "docs/evidence/release-readiness-20261009.json"
+  "releaseReadinessEvidence": "docs/evidence/release-readiness-source50-20261009.json"
 }

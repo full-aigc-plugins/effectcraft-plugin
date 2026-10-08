@@ -346,3 +346,5 @@ Judge v2源码候选验收：`docs/evidence/judge-v2-candidate-20261008.json`。
 - [x] 9.29.1 [EC-RT-003] 安装前可信任务派发的macOS组件：原Python3.13.15完整发行及CLI0.3.1任务在当前Python缓存为空、新归档错误且当前Python锁损坏时从公开resume/review完成工程重开与12帧完整解码，保全身份／期限／步骤／快照并恢复原runtimeHome；坏原Python回执在解释器前拒绝。新绑定v2及描述显式版本，历史材料不补建，POSIX同PID exec与退出125不回落安装有测试；Windows保留自有Job交接，实际Windows入口仍待验收。13项目标及504项完整回归（466通过／38条件跳过）；最终源码新3.13.16／0.4.0任务亦重开解码通过。证据 `docs/evidence/task-bound-entry-candidate-20261009.json`；此勾选不关闭9.29、9.1.4、其他平台或V1。
 
 发布复核（source49／plugin51）：508项回归470通过／38条件跳过，当前前端对原绑定任务的只读原生重开／12帧解码通过。禁止联网沙箱中，空原生缓存通过 CRAFT_RUNTIME_ARCHIVE 安装并完成编辑／渲染，但进程树退出确认失败；reconcile 仍拒绝确认，任务与产物保留且未重放。此负例不关闭9.5.1或恢复／取消门禁。证据 `docs/evidence/release-readiness-20261009.json`。
+
+后继source50／plugin52修复Windows缺失启动描述的稳定诊断：先以新增PowerShell函数用例复现，再捕获文件不可访问异常并统一bound_entry_invalid，保留拒绝执行和现场。14项目标、509项完整回归（471通过／38条件跳过）及当前macOS原任务重开解码通过。dev49两次Windows失败CI及原标签保留，最终Windows CI另行核验；完整9.29与V1仍开放。证据 `docs/evidence/release-readiness-source50-20261009.json`。
