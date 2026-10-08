@@ -366,7 +366,9 @@
       "threeModeCompositionEvidence": "docs/evidence/managed-three-mode-composition-20261009.json",
       "defaultManagedRoutingEvidence": "docs/evidence/managed-default-routing-20261009.json",
       "sourceRevisionConflictCandidateEvidence": "docs/evidence/source-revision-conflict-candidate-20261009.json",
-      "sharedProjectClaimsCandidateEvidence": "docs/evidence/shared-project-claims-candidate-20261009.json"
+      "sharedProjectClaimsCandidateEvidence": "docs/evidence/shared-project-claims-candidate-20261009.json",
+      "projectCreationGenerationCandidateEvidence": "docs/evidence/project-creation-generation-candidate-20261009.json",
+      "desktopNativeRevisionCandidateEvidence": "docs/evidence/desktop-native-revision-candidate-20261009.json"
     },
     {
       "requirement": "EC-QA-003",

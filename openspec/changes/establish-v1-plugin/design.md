@@ -206,3 +206,24 @@ flowchart TD
 源工程运行期冲突保护（9.3.2候选）：同一只读核对函数用于start、begin_step及delivered；每个MCP tools/call写入意图登记前检查绑定源工程摘要，丢失、不可读和链接替换与内容变化均返回revision_conflict。完成原调用后仍登记其真实回执，不因随后发生的用户修改丢弃已知结果。最终交付前再检查，不把启动时一次检查当作运行期间版本稳定证明。该候选不构成内存GUI版本、跨状态根工程锁或完整桌面会话竞争的验收，9.3.2保持开放。技能源修改不覆盖插件已发布固定技能。
 
 跨账本源工程认领（9.3.2候选）：`project_claims.py`使用固定用户目录`.local/share/craft-tasks/effectcraft-project-claims`，不随公开state-root改变。路径键及device/inode文件对象键覆盖原路径换文件与硬链接；全局互斥内先核对全部旧认领，再写显式effectcraft-project-claim/v1和新任务。原账本、taskId、identityHash、nonce与任务内projectClaims互相核对。写认领后、写任务前崩溃留下未确认占用，不自动清理；活跃／unknown／缺失原状态／坏认领均阻止新任务。开始、逐调用和交付前只读核对原认领，只有完整可核对且无attempted操作的终态可让出。没有共享材料的旧冻结运行时不补造协调证明；真实GUI内存变化、旧版本并行及完整桌面会话竞争仍属于未完成9.3.2。
+
+文件对象代际修复（9.3.2候选）：dev.57 Linux CI暴露临时源工程删除后device/inode复用与旧账本缺失共同造成误占用。新认领在对象键中加入创建时间的整数秒／纳秒身份：macOS、Windows、FreeBSD读取原生birth time，Linux读取statx的STATX_BTIME且复核设备与inode。缺少支持时失败关闭，不回退到会随编辑变化的ctime/mtime。旧任务继续使用原双键；新认领遇到旧inode键仍保守核对，未知材料不自动清理。新增任务显式保存代际算法版本，避免静默改变旧记录的恢复依据。旧冻结执行器的双向并行协调仍未验收。
+
+受管理桌面版本保护（9.3.2候选）：`desktop_revision.py`在owned desktop工厂绑定任务身份、会话nonce、工程修订／路径／活动项／选择／dirty与完整editor.state，显式effectcraft-desktop-revision/v1落盘。初始化只接受空会话且无原步骤；已有或损坏／缺失材料不重新定基线。每次调用前核对源任务及内存上下文；execute_command、batch、open_project、save_project与run_script在同一次原生脚本中稳定比较预期token再执行，保留原工具成功返回类型及脚本output。run_script使用同一解释器的eval；原生禁止脚本递归执行script.run，已通过固定0.4.0验证。明确只读工具可原调用后复核，期间版本变化保全未决回执。其他未映射工具在发送前拒绝，提示使用引擎命令或受保护脚本，不以事后检测替代写入前保护。
+
+```mermaid
+flowchart TD
+    A[受管理桌面调用] --> B{原会话材料完整且版本相同}
+    B -->|否| C[拒绝 保全原状态]
+    B -->|是| D{受保护写入或已确认只读工具}
+    D -->|未映射| C
+    D -->|受保护写入| E[先登记attempted]
+    E --> F[原生同次脚本比较token并执行]
+    F -->|版本冲突| G[保存冲突回执 保留attempted]
+    F -->|成功| H[保存新token后结算原操作回执]
+    D -->|只读| I[登记后原调用 再核对token]
+    I -->|变化| G
+    I -->|未变| H
+```
+
+原生原子检查冲突证明单独保存在原操作desktop-conflict回执中，尚不自动改写reconcile结算规则；响应丢失或无法确认的编辑不重发。当前证据区分headless映射、真实签名桌面独立控制连接修改、公开Shell已安装单技能组合与宿主自然语言派发。控制连接修改不写成物理人手GUI点击证据；旧冻结版本双向竞争、全部高层写工具、其他目标原生系统及完整9.3.2仍开放。

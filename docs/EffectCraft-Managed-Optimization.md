@@ -1,6 +1,6 @@
 # EffectCraft optimization candidate
 
-Current distribution: plugin dev.59 pins source dev.57 (`1d4fd8e5eb213e67e09e6a2a7e88f75791e72e29`). Source revision and shared-project claim increments are distributed; candidate evidence retains its original timestamp and baseline. Desktop in-memory guard remains unimplemented; task9.3.2 and 70 V1 tasks remain open.
+Current distribution: plugin dev.60 pins source dev.58 (`d9ded4f4c5efc9d9aabd0ddc0123cd1bcf2f738d`). This increment includes file creation-generation claims and the bounded atomic desktop version guard. Candidate evidence retains its original timestamp and baseline. Physical GUI competition, legacy sessions, task 9.3.2 and 70 V1 tasks remain open.
 
 Plugin dev.39 consumes the immutable dev.37 skill source recorded in skills.lock.json. Earlier candidate reports below retain their own snapshot identities. This change updates the existing establish-v1-plugin specification, traceability, and source-candidate validator. The source tag and commit are verified before vendoring; complete platform/host qualification remains open.
 
@@ -407,3 +407,7 @@ The current task9.3.2 candidate checks the bound source digest at start, before 
 ## Project ownership across task stores
 
 New tasks claim canonical source paths and file objects in a shared user directory. Changing the state root, task ID, output or hardlink alias cannot bypass active ownership. Claims bind the original store and task identity; missing/corrupt/unknown owners are preserved rather than cleared by PID disappearance or timeout. Historical tasks receive no synthesized proof. In-memory GUI changes and parallel legacy runtimes remain open. See [shared project candidate evidence](evidence/shared-project-claims-candidate-20261009.json).
+
+File-generation repair candidate: source claims now bind creation time with the file number, preserve legacy unconfirmed claims and reject unavailable creation identity. Linux uses verified-descriptor statx; native birth time is used elsewhere. [Evidence](evidence/project-creation-generation-candidate-20261009.json) distinguishes local container contracts from pinned Python, native creative and host gates. Source57/plugin59 remain the immutable published baseline;9.3.2 remains open.
+
+Local desktop revision candidate: owned managed sessions persist project/editor context and atomically guard execute_command, batch, open/save and run_script. Unmapped helpers are refused before sending; confirmed read tools are checked again afterward. [Evidence](evidence/desktop-native-revision-candidate-20261009.json) separates native mapping, owned desktop control edits and installed public-entry checks from model dispatch and physical GUI input. Old published snapshots remain unchanged; full9.3.2 and V1 remain open.
