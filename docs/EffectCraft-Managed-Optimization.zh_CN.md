@@ -461,3 +461,26 @@ sequenceDiagram
     G-->>S: Actual business exit + stopped receipt
   end
 ```
+
+## 控制器重启后的取消结算
+
+未发布的取消恢复候选（基于source51／plugin53）：启动租约仍占用时保留cancel_requested；重启后核对原停止回执，保留未知编辑。版本化退出记录区分强制组停止与已核对业务退出。12项目标、536项回归（498通过／38条件跳过）及当前只读独立技能真实原生取消／监督器中断／重启核对通过。已发布快照不变；完整父子取消终态、其他平台、宿主及V1仍开放。 [证据](evidence/cancel-restart-candidate-20261009.json)。
+
+```mermaid
+flowchart TD
+  C[Cancel request] --> L{Planned and no execution evidence or lease?}
+  L -->|Yes| Z[Cancel before execution]
+  L -->|No| Q[Persist cancel_requested]
+  Q --> R[Restart reconciliation]
+  R --> K{Supervisor worker lifecycle locks free?}
+  K -->|No| P[Preserve request and original files]
+  K -->|Yes| V{Original stopped receipt and resources valid?}
+  V -->|No| P
+  V -->|Yes| E[Record explicit process exit source]
+  E --> U{Unresolved attempted operation?}
+  U -->|Yes| X[Confirmed stopped but reconciling; no editing replay]
+  U -->|No| D[Cancelled after verified stop]
+```
+
+
+父子取消终态屏障（开发版source52／plugin54）：根取消意图与后代身份先落盘，后代仍活跃／缺少停止证明时保持cancel_requested；各子任务经原控制器核对后，未知编辑传播为父任务reconciling。未启动证明只在原取消时取得全部执行租约后生成，重启不补造。27项取消测试及真实macOS原生父子中断恢复通过；完整崩溃／GUI矩阵、其他原生平台、固定宿主与V1仍开放。证据：`docs/evidence/cancel-family-candidate-20261009.json`。

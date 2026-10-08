@@ -352,3 +352,7 @@ Judge v2源码候选验收：`docs/evidence/judge-v2-candidate-20261008.json`。
 - [x] 9.30 [EC-TX-005] 沙箱空进程组停止核对的macOS组件：先用内核信号0核对本任务原自有组，明确不存在无需ps；EPERM保留有效成员枚举路径，双重核对失败继续unknown。10项目标测试（含真实禁止联网沙箱、监督器被杀、忽略TERM后代和无关进程保全）及516项回归（478通过／38条件跳过）通过；原unknown任务93文件完全不变，公开reconcile继续拒绝。证据 `docs/evidence/process-group-probe-candidate-20261009.json`。不关闭完整9.3或跨平台／宿主门禁。
 
 - [x] 9.31 [EC-TX-005] POSIX进程组持有与独立业务回执的macOS组件：私有控制EOF终止自有组，业务退出后仍保有组归属清理抗TERM后代；nonce绑定有界结果、丢失归属拒绝旧PID信号；强制取消在组停止核对后记录负执行器退出且业务未验证，不伪造成功。18项目标与524项回归（486通过／38条件跳过）、当前只读离线安装副本公开原生重开／12帧完整解码通过；原unknown93文件保全不重放。证据 `docs/evidence/group-ownership-release51-20261009.json`。只关闭此组件，完整9.3、跨平台原生与固定宿主及V1保持开放。
+
+- [x] 9.32 [EC-TX-005] 启动窗口和控制器重启后取消的macOS组件：planned但执行租约占用或已有生命周期材料时仅cancel_requested；三把执行锁释放、有效原停止回执和资源核对后结算，无未决操作才cancelled，未知编辑保持原操作及reconciling。显式effectcraft-managed-process-exit/v1区分业务结果与强制组停止，无业务回执时workerExitCode为null；损坏/冲突材料只读拒绝。12项目标（含真实抗TERM监督进程组合）、536项回归498通过／38条件跳过，以及当前只读单技能真实原生取消→监督器中断→reconcile/resume不重发编辑通过；原unknown93文件保全。证据 `docs/evidence/cancel-restart-candidate-20261009.json`。完整父子终态屏障、崩溃／GUI并发矩阵、其他平台及固定宿主、9.3与V1仍开放；该项为历史候选检查点；后续开发版发布不替代尚未完成的验收。
+
+- [x] 9.33 [EC-TX-005] 父子取消终态屏障组件：固定后代身份及父链，先持久化根取消意图；全部后代停止前保持 cancel_requested，未知编辑使父任务保持 reconciling。版本化未启动证明仅在取消时取得全部租约后生成；损坏／缺失／身份变化拒绝且保留现场。27项取消测试、当前只读独立副本的真实macOS原生父子取消→控制器中断→公开reconcile/resume不重放、历史unknown93文件保全通过。证据 `docs/evidence/cancel-family-candidate-20261009.json`。仅关闭该组件，完整9.3.4崩溃／GUI并发矩阵、其他原生平台、固定宿主与V1仍开放。

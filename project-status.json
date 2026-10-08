@@ -83,7 +83,9 @@
     "9.29.1": "docs/evidence/task-bound-entry-candidate-20261009.json",
     "9.30": "docs/evidence/process-group-probe-candidate-20261009.json",
     "9.5.1": "docs/evidence/independent-offline15-candidate-20261009.json",
-    "9.31": "docs/evidence/group-ownership-release51-20261009.json"
+    "9.31": "docs/evidence/group-ownership-release51-20261009.json",
+    "9.32": "docs/evidence/cancel-restart-candidate-20261009.json",
+    "9.33": "docs/evidence/cancel-family-candidate-20261009.json"
   },
   "hostValidationEvidence": "docs/evidence/craft-full-command-fixed-first-use-20261007.json",
   "hostValidationStatus": "fixed-five-plugin58-discovery-and-standalone-desktop-passed",
@@ -143,5 +145,6 @@
   "releaseReadinessEvidence": "docs/evidence/release-readiness-source50-20261009.json",
   "processGroupProbeCandidateEvidence": "docs/evidence/process-group-probe-candidate-20261009.json",
   "independentOfflineSkillsCandidateEvidence": "docs/evidence/independent-offline15-candidate-20261009.json",
-  "groupOwnershipReleaseEvidence": "docs/evidence/group-ownership-release51-20261009.json"
+  "groupOwnershipReleaseEvidence": "docs/evidence/group-ownership-release51-20261009.json",
+  "cancelRestartCandidateEvidence": "docs/evidence/cancel-restart-candidate-20261009.json"
 }

@@ -146,3 +146,26 @@
 本机双隔离Python完整发行升级证据见9.28；其正常升级成功不等于新前端安装失败时仍可恢复旧任务。9.29须在不执行当前Python的条件下，从原任务私有资源验证启动材料及原解释器身份，才派发原控制器；不得直接执行未核验的任务路径、重建旧快照，或把当前版本作为旧任务的隐式前置条件。原生运行时参数亦须保持绑定身份，跨状态根清理继续单独验收。
 
 9.29实现约束：新增显式v2执行绑定，身份摘要包含启动描述的SHA-256。冻结时在同一原子发布目录写入原身份JSON与固定字段TSV启动描述；两公开入口在准备当前Python前选择已有任务，核对顶层身份与identityHash、描述摘要、原平台／系统下限及原解释器完整载荷，然后仅执行当前安装包内的只读派发校验器。校验器重读原任务／完整快照并核对描述与绑定一致，才交接原控制器及runtimeHome；Windows沿用stdin所有权与门控Job监督。无描述的历史记录不自动补建或迁移；新建任务继续走当前安装入口。此为本地用户目录内的完整性检查，不引入签名或抵抗同一用户同时重写所有身份和摘要的安全声明。
+
+### 启动窗口与取消重启组件
+
+planned并非进程未启动的证明；取消在账本锁内非阻塞核对监督器、生命周期及worker租约，已存在执行材料或租约占用则持久请求停止。reconcile按监督器→生命周期→worker→账本的顺序取得锁，只核对原stopped回执及资源；无未决操作才cancelled，未知操作保持reconciling、原身份与回执。`effectcraft-managed-process-exit/v1`记录退出来源、业务结果核对状态和观察时间，强制组停止的业务退出码为null；老无扩展记录保持原读取合同。完整任务族终态屏障和各目标平台仍由9.3.4等开放门禁负责。
+
+```mermaid
+flowchart TD
+  C[Cancel request] --> L{Planned and no execution evidence or lease?}
+  L -->|Yes| Z[Cancel before execution]
+  L -->|No| Q[Persist cancel_requested]
+  Q --> R[Restart reconciliation]
+  R --> K{Supervisor worker lifecycle locks free?}
+  K -->|No| P[Preserve request and original files]
+  K -->|Yes| V{Original stopped receipt and resources valid?}
+  V -->|No| P
+  V -->|Yes| E[Record explicit process exit source]
+  E --> U{Unresolved attempted operation?}
+  U -->|Yes| X[Confirmed stopped but reconciling; no editing replay]
+  U -->|No| D[Cancelled after verified stop]
+```
+
+
+父子取消终态屏障（开发版source52／plugin54）：根取消意图与后代身份先落盘，后代仍活跃／缺少停止证明时保持cancel_requested；各子任务经原控制器核对后，未知编辑传播为父任务reconciling。未启动证明只在原取消时取得全部执行租约后生成，重启不补造。27项取消测试及真实macOS原生父子中断恢复通过；完整崩溃／GUI矩阵、其他原生平台、固定宿主与V1仍开放。证据：`docs/evidence/cancel-family-candidate-20261009.json`。

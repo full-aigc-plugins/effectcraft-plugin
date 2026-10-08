@@ -374,3 +374,26 @@ sequenceDiagram
     G-->>S: Actual business exit + stopped receipt
   end
 ```
+
+## Cancellation after controller restart
+
+Unpublished cancellation-recovery candidate beyond source51/plugin53: active startup leases retain cancel_requested; restart reconciliation confirms the original stopped lifecycle and preserves unknown edits. A versioned process-exit record separates forced group stop from a verified business exit. 12 targeted tests, 536 regressions (498 passes / 38 conditional skips), and a current readonly installed-skill native cancellation/crash/reconciliation case pass. Published snapshots stay unchanged; full task-family cancellation, other platforms, hosts and V1 remain open. [Evidence](evidence/cancel-restart-candidate-20261009.json).
+
+```mermaid
+flowchart TD
+  C[Cancel request] --> L{Planned and no execution evidence or lease?}
+  L -->|Yes| Z[Cancel before execution]
+  L -->|No| Q[Persist cancel_requested]
+  Q --> R[Restart reconciliation]
+  R --> K{Supervisor worker lifecycle locks free?}
+  K -->|No| P[Preserve request and original files]
+  K -->|Yes| V{Original stopped receipt and resources valid?}
+  V -->|No| P
+  V -->|Yes| E[Record explicit process exit source]
+  E --> U{Unresolved attempted operation?}
+  U -->|Yes| X[Confirmed stopped but reconciling; no editing replay]
+  U -->|No| D[Cancelled after verified stop]
+```
+
+
+Cancellation family barrier (development source52/plugin54): persist root intent and descendant identities first. Active descendants or missing stop proof retain cancel_requested; original controllers reconcile children, and unknown edits retain parent reconciling. Not-started proof is captured only at original cancellation under all execution leases. 27 cancellation tests and real macOS native parent/child crash recovery pass; complete crash/GUI matrix, other native platforms, fixed hosts and V1 remain open. Evidence: `docs/evidence/cancel-family-candidate-20261009.json`.

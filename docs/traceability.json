@@ -351,13 +351,17 @@
         "9.12",
         "9.13",
         "9.14",
-        "9.30"
+        "9.30",
+        "9.31",
+        "9.32",
+        "9.33"
       ],
       "owner": "Harness owner",
       "status": "in-progress",
       "commandPngRevisionCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json",
       "processGroupProbeCandidateEvidence": "docs/evidence/process-group-probe-candidate-20261009.json",
-      "groupOwnershipReleaseEvidence": "docs/evidence/group-ownership-release51-20261009.json"
+      "groupOwnershipReleaseEvidence": "docs/evidence/group-ownership-release51-20261009.json",
+      "cancelRestartCandidateEvidence": "docs/evidence/cancel-restart-candidate-20261009.json"
     },
     {
       "requirement": "EC-QA-003",
