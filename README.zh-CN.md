@@ -1,5 +1,7 @@
 # EffectCraft Agent Plugin
 
+四领域RT-001运行时来源与完整性已完成当前全部场景验收，固定技能字节保持不变；运行时升级与完整首版仍开放。[验收架构](docs/Craft-Fixed-Runtime-Integrity-Architecture.zh_CN.md)。
+
 文字、图形与镜头需求进入，交付可编辑 `.ecproj`、依赖素材和渲染结果。
 
 当前插件：`0.1.0-dev.38`；技能源：`0.1.0-dev.34`；15 个独立技能。

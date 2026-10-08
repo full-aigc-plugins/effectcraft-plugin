@@ -1,5 +1,7 @@
 # EffectCraft Agent Plugin
 
+Four-domain RT-001 runtime source/integrity acceptance now covers every current scenario; existing pinned skill bytes remain unchanged. Runtime upgrades and fullV1 remain open. [Acceptance architecture](docs/Craft-Fixed-Runtime-Integrity-Architecture.md).
+
 Turn text, graphics and footage into an editable `.ecproj`, dependencies and rendered media.
 
 Current plugin: `0.1.0-dev.38`; skill source: `0.1.0-dev.34`; 15 independent skills.
