@@ -227,3 +227,21 @@ flowchart TD
 ```
 
 原生原子检查冲突证明单独保存在原操作desktop-conflict回执中，尚不自动改写reconcile结算规则；响应丢失或无法确认的编辑不重发。当前证据区分headless映射、真实签名桌面独立控制连接修改、公开Shell已安装单技能组合与宿主自然语言派发。控制连接修改不写成物理人手GUI点击证据；旧冻结版本双向竞争、全部高层写工具、其他目标原生系统及完整9.3.2仍开放。
+
+桌面原子冲突核对使用内部 effectcraft-desktop-conflict/v2，绑定任务 identityHash、operationId、operation、argumentsHash、sessionNonce 及原 desktop-revision.json 摘要。reconcile 在取得三把执行租约及核对停止材料后只读验证原基线与证明，返回逐操作 not_executed／unknown；不改原 attempted 或 succeeded 回执，也不将失败桌面会话视为可续跑会话。v1 缺少完整绑定仅作 unknown 诊断。该组件不替代完整9.3.3/9.3.4验收。
+
+```mermaid
+flowchart TD
+  A[reconcile取得三把原执行租约] --> B{生命周期确认停止}
+  B -- 否 --> C[保留现场并拒绝核对]
+  B -- 是 --> D[核对冲突证明与原任务操作基线]
+  D --> E{材料完整且匹配}
+  E -- 否 --> C
+  E -- 是 --> F{v2原子拒绝且所属桌面已停止}
+  F -- 是 --> G[该操作报告not_executed]
+  F -- 否 --> H[该操作保持unknown]
+  G --> I[保留attempted和原回执 任务继续reconciling]
+  H --> I
+```
+
+完成登记窗口恢复由内部 effectcraft-command-completion/v1 承载。worker仅在commands／desktop成功返回、全部原生步骤回执成功时，持久化原任务／原运行时绑定、原请求、成功日志、输出目录身份与产物清单、全部步骤及回执摘要，再登记完成证明引用。缺少引用的悬空证明不自动接管。reconcile取得原三把执行租约，短暂持账本锁读取身份，释放账本锁后进行只读原生重开和媒体检查，重新持锁复核取消、版本与所有原材料后提交review_ready。正常执行与恢复共用同一完成证明验证器；任何阶段均不重发创作。该路径与未完成普通编辑及分段渲染恢复分别核验。

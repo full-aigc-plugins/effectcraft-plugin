@@ -1,0 +1,51 @@
+{
+  "schema": "effectcraft-plugin-release-validation/v1",
+  "pluginVersion": "0.1.0-dev.61",
+  "source": {
+    "ref": "v0.1.0-dev.59",
+    "sha": "6209b28518cb1fcd7f3072b79adfdd060119358f",
+    "skillDigests": {
+      "effectcraft-use": "ba134f99c8bca663a2258bedd03bc7e30cf0d50b1a9fdb24ed453645d4106894",
+      "effectcraft-cli": "03b864570567be6f2d6ceb1f0a9d6094ed36c821ce9c9038f4b0c25f0b9b174c",
+      "effectcraft-cli-setup": "7eecc3d58c1fab70512e300e2cd09e9452ad0f909b385a442943c14a3aa88b9e",
+      "effectcraft-cli-project": "873486187ce971d97ae55eaae9a8ac6d0993f220a35320431220ad20ff0f0bab",
+      "effectcraft-cli-footage": "ee48c8f20631dac1cab57b4044564528da0d9bdb15947eff25acdb5bfeaab5ea",
+      "effectcraft-cli-composition": "aa541cc3bd818d116585d4a47e385423bed07a62f12c47235fe7599434f02165",
+      "effectcraft-cli-layers": "55d8ed0306f5b436b042e50124e9f474c87227431944b02729d098fcd64254f7",
+      "effectcraft-cli-animation": "fde49b13843d6612c91cb4bad634f9b30eb2d911865031078747a239ceab033f",
+      "effectcraft-cli-effects": "10bc978ac8873ffaca1ffb533673af2bd2c79a8863b50c9c67297c02daf289f8",
+      "effectcraft-cli-masks": "2e39cce15729f983429f6b9e6e0b91051f6c7e75619bb3074ec3930fb416c89b",
+      "effectcraft-cli-expressions": "886a421e67a52e2e498dd89ae011c3fcd925b6e8c8b4b81f1ad8f930b3edc9a1",
+      "effectcraft-cli-camera": "693191062e627cb624b89ed8c2c1fa7239871f84c667ec67d9aad5e6ffe786c5",
+      "effectcraft-cli-export": "713fba0d6e5e0b8cfa264c9b7e80a4c1ceeb7bd2cce044e5010562202e3e5db8",
+      "effectcraft-cli-tracking": "7e3d3b12fa92486ef09446adef3fabf9d6be511f3d682f8a208f865e77cf11b8",
+      "effectcraft-cli-puppet": "a5ed7d47fa6c12247b8856ea040811c3caf33f9ae1cb7374fd35342828178a02"
+    }
+  },
+  "lockSha256": "7b8e0fcae84f03dda0aaea4455253095adde5138aecec70e65db6441d304603f",
+  "pluginTests": {
+    "total": 24,
+    "passed": 24,
+    "logSha256": "c06105f2c62d9cfe2a8f02b2eb0a12493aad536dc3ba3e9710a9fd1582dbb497"
+  },
+  "documentation": {
+    "status": "passed",
+    "scope": "documentation structure, local links, status honesty and spec/task traceability only",
+    "markdownFiles": 408,
+    "capabilities": 7,
+    "requirements": 26,
+    "scenarios": 156,
+    "openImplementationTasks": 70,
+    "errors": []
+  },
+  "strictOpenSpec": "PASS",
+  "offlineSnapshotCheck": "PASS",
+  "initialSourcePlanGate": {
+    "status": "FAIL",
+    "reason": "source plan still referenced previous source snapshot; updated sourceRef and sourceSha to current published immutable lock",
+    "logSha256": "22c90f0e727d37f444ff4c486e34fe5bef16d62b4f369a7948821d19db7d5736"
+  },
+  "fullV1": "NOT_RUN",
+  "marketplaceEligible": false,
+  "ci": "NOT_RUN at capture; final CI and archive identity attached to release separately"
+}

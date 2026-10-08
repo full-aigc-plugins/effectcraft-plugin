@@ -2,12 +2,12 @@
 
 从文字、图形和素材创建可编辑 `.ecproj` 工程、依赖和媒体。当前为开发版，完整 V1 未完成；已发布版本与本地文档候选分别记录。
 
-当前插件：`0.1.0-dev.60`；技能源：`0.1.0-dev.58`；15 个独立技能。
+当前插件：`0.1.0-dev.61`；技能源：`0.1.0-dev.59`；15 个独立技能。
 
 | Field | Value |
 | --- | --- |
-| Metadata version | 0.1.0-dev.60 |
-| Skills source | effectcraft-skills / v0.1.0-dev.58 |
+| Metadata version | 0.1.0-dev.61 |
+| Skills source | effectcraft-skills / v0.1.0-dev.59 |
 | Acceptance | Development; full V1 OPEN |
 
 
@@ -93,3 +93,7 @@ source56／plugin58修正新增测试的Windows默认编码依赖，显式读取
 文件代际修复候选：文件对象键加入创建时间，旧未知认领保全，无法取得可靠代际时拒绝。Linux以核对过的文件描述符读取statx，其他平台使用原生birth time。[证据](docs/evidence/project-creation-generation-candidate-20261009.json)区分本地容器合同与锁定Python、原生创作、宿主验收。source57/plugin59已发布快照不变，9.3.2保持开放。
 
 本地桌面版本候选：受管理自有会话持久化工程和编辑上下文，原子保护execute_command、batch、打开／保存与run_script；未映射工具发送前拒绝，已确认只读工具调用后再核对。[证据](docs/evidence/desktop-native-revision-candidate-20261009.json)分别记录原生映射、桌面独立控制修改和已安装公开入口，不等同模型派发或物理GUI操作。已发布快照保持不变，完整9.3.2及V1仍开放。
+
+桌面原子冲突核对候选：`docs/evidence/desktop-conflict-reconcile-candidate-20261009.json`。v2证明绑定任务、操作参数、会话基线及已停止的所属桌面；公开reconcile/resume可报告单个操作未执行，原attempted与成功回执保全。旧v1、非原子变化或缺停止证明保持unknown；任务未决时拒绝新任务绕过。本增量尚未发布，完整9.3.3／9.3.4及V1继续开放。
+
+本次 source59／plugin61 开发发行包含桌面原子冲突核对和版本化命令完成证明。完成证明仅支持核对原结果后补齐交付登记；缺失、损坏或产物改变时拒绝恢复，取消期间不登记迟到交付。旧候选报告是其记录时点的证据，当前发行验证另见 `docs/evidence/release59-validation-20261009.json`；完整9.3.3／9.3.4、其他原生平台、宿主与V1保持开放。

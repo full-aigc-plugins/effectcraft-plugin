@@ -498,3 +498,7 @@ flowchart TD
 文件代际修复候选：文件对象键加入创建时间，旧未知认领保全，无法取得可靠代际时拒绝。Linux以核对过的文件描述符读取statx，其他平台使用原生birth time。[证据](evidence/project-creation-generation-candidate-20261009.json)区分本地容器合同与锁定Python、原生创作、宿主验收。source57/plugin59已发布快照不变，9.3.2保持开放。
 
 本地桌面版本候选：受管理自有会话持久化工程和编辑上下文，原子保护execute_command、batch、打开／保存与run_script；未映射工具发送前拒绝，已确认只读工具调用后再核对。[证据](evidence/desktop-native-revision-candidate-20261009.json)分别记录原生映射、桌面独立控制修改和已安装公开入口，不等同模型派发或物理GUI操作。已发布快照保持不变，完整9.3.2及V1仍开放。
+
+桌面原子冲突核对候选：`docs/evidence/desktop-conflict-reconcile-candidate-20261009.json`。v2证明绑定任务、操作参数、会话基线及已停止的所属桌面；公开reconcile/resume可报告单个操作未执行，原attempted与成功回执保全。旧v1、非原子变化或缺停止证明保持unknown；任务未决时拒绝新任务绕过。本增量尚未发布，完整9.3.3／9.3.4及V1继续开放。
+
+source59／plugin61开发发行新增版本化命令完成证明，在核对全部原结果、停止身份、原生工程副本和实际媒体后只补齐交付登记；取消或材料变化不发布迟到结果。完整崩溃、普通编辑恢复及V1仍开放。当前验证见[发行证据](evidence/release59-validation-20261009.json)。

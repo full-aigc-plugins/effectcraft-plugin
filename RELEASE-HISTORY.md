@@ -1,5 +1,11 @@
 # Version-bound release records
 
+## dev.61 — 2026-10-09
+
+桌面原子冲突逐操作核对及命令完成证明恢复；15份独立资源同步。恢复只登记已核验的原交付，不重发编辑。当前证据见 [发行验证](docs/evidence/release59-validation-20261009.json)。完整V1与目标平台／宿主验收仍开放。
+
+Atomic desktop conflict reconciliation and completion-seal recovery; development release, full V1 remains open.
+
 ## dev.59 — 2026-10-09
 
 消费技能源dev.57不可变快照：源工程版本检查与跨账本工程认领保护。同步增量OpenSpec、设计、任务及原始候选证据；9.3.2不勾选，完整V1仍有70项开放。桌面内存版本保护未实现，未纳入本次发行。
