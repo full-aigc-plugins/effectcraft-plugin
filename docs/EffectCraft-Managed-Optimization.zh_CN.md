@@ -207,3 +207,23 @@ flowchart TD
 ## 开发版 dev.42 发布范围
 
 通过维护中的快照导入器固定技能源dev.40（`ef2b4d41e1e8588bfe732717713e8be861e04e55`），核对15项整技能摘要。限定任务9.21具备当前原生及公开拒绝路径证据；75项任务仍开放。源码315通过/38条件跳过。新固定分发尚无模型派发验收，marketplaceEligible保持false，OpenSpec变更保持活动。
+
+## 命令与桌面Judge候选
+
+受管理commands/desktop复用既有Judge v2及不可覆盖任务族账本，内部观察适配保持公开命令计划/回执和用户输出兼容。`scope.contexts`分别绑定合成、原生修订、素材身份、时间基准与所需帧；每个媒体声明context，必须分别覆盖各作品样本并实际观察全部请求媒体，不混合帧覆盖。缺能力/覆盖保留NOT_RUN而不结算评分，重复回执幂等、冲突或过期拒绝；历史PASS不能覆盖当前工程/技术失败，用户接受独立。
+
+10项目标和363项回归（325通过/38条件跳过）通过。当前单技能公开命令及自有桌面原生创建/保存/重开两个运动合成，Codex实际查看8张绑定PNG并比较各合成的两个时刻，随后公开导入评价；两模式各7项拒绝/幂等/当前门禁验证通过，原件/评分保全。只证明具体样本，不声明全帧或插值质量。限定9.22完成；局部revise、视频/序列、固定宿主派发和完整V1保持开放。已发布source40/plugin42快照不变。[证据](evidence/command-judge-candidate-20261008.json)。
+
+```mermaid
+flowchart TD
+  A[Current command or desktop delivery] --> B[Native reopen and actual PNG checks]
+  B -->|PASS| C[Judge v2 separate context scopes]
+  C --> D[Codex views exact media samples]
+  D --> E[Validate identity and per-context coverage]
+  E -->|Missing capability or samples| F[NOT_RUN attempt no score]
+  E -->|Valid receipt| G[Immutable family ledger]
+  G --> H[Best version reference user acceptance independent]
+  B -->|FAIL or NOT_RUN| I[Preserve original no creative acceptance]
+```
+
+本次分发：技能源dev.41／插件dev.43包含任务9.22。任务9.23仅为规格及本地在制工作，未完成修订代码排除在不可变技能源快照之外；完整V1及新固定宿主验收仍开放。

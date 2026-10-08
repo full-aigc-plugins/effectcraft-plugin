@@ -159,3 +159,23 @@ flowchart TD
 ## Development release dev.42
 
 Pins source dev.40 (`ef2b4d41e1e8588bfe732717713e8be861e04e55`) through the maintained snapshot importer. All15 skill-tree digests are checked. Scoped task9.21 has current native and public rejection evidence; 75 tasks remain open. Source:315 passes/38 conditional skips. The new fixed distribution has no model-dispatch acceptance; marketplace eligibility stays false and OpenSpec stays active.
+
+## Command and desktop Judge candidate
+
+Managed commands/desktop reuse Judge v2 and the immutable task-family ledger, preserving public plans/receipts and original outputs. `scope.contexts` independently binds each composition/native revision/dependency identity, timebase and required samples. Media references its context; every requested path must be observed and each context must meet its own frame coverage. Missing capability/coverage stays NOT_RUN without settlement. Identical imports are idempotent; conflicting/stale receipts are rejected. Historical PASS does not replace failed current engineering/technical checks; user acceptance stays independent.
+
+10 targeted tests and363 regressions pass:325 passes/38 conditional skips. A current standalone skill creates/saves/reopens two moving compositions through public commands and owned desktop; Codex actually views all8 bound PNGs and compares both declared times per composition, then imports the receipts publicly. Seven rejection/idempotency/current-gate checks per mode preserve originals and settled scores. Only these samples are accepted; no all-frame/interpolation claim. Scoped9.22 closes; local revise, video/sequence, fixed-host dispatch and full V1 stay open. Published source40/plugin42 snapshots are unchanged. [Evidence](evidence/command-judge-candidate-20261008.json).
+
+```mermaid
+flowchart TD
+  A[Current command or desktop delivery] --> B[Native reopen and actual PNG checks]
+  B -->|PASS| C[Judge v2 separate context scopes]
+  C --> D[Codex views exact media samples]
+  D --> E[Validate identity and per-context coverage]
+  E -->|Missing capability or samples| F[NOT_RUN attempt no score]
+  E -->|Valid receipt| G[Immutable family ledger]
+  G --> H[Best version reference user acceptance independent]
+  B -->|FAIL or NOT_RUN| I[Preserve original no creative acceptance]
+```
+
+Release distribution: source dev.41 / plugin dev.43 includes task9.22. Task9.23 is specification and local work in progress only; unfinished revision code is excluded from the immutable source snapshot. Complete V1 and new fixed-host acceptance remain open.

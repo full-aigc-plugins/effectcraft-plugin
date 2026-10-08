@@ -1,5 +1,7 @@
 # Version-bound release records
 
+Plugin dev.43 pins source dev.41. Task9.22 command/desktop Judge v2 and immutable ledger integration has bounded macOS native sampled-review evidence. 76 tasks remain open; task9.23 local revision is excluded from the runtime snapshot. Full V1 and new installed-host acceptance remain open.
+
 Plugin dev.42 pins source dev.40. Saved-project/PNG command and owned-desktop quality component task9.21 passes on macOS arm64. 75 tasks remain open; new installed-host dispatch and full V1 remain unaccepted.
 
 Plugin dev.40 pins source dev.38 (0f7d95b6be9eeb45060dce1170f786dc859474ac): Judge v2, immutable review ledgers, sequence verification and rejected-review diagnostics. Source regression: 260 passed / 38 conditional skips out of 298. Complete V1, fixed-host and other-platform creation acceptance remain open.
