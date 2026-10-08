@@ -1,10 +1,13 @@
 # EffectCraft Agent Plugin
 
+> Development release dev.39 pins source dev.37: isolated Python, durable managed execution, owned segment recovery, shared retry accounting and UTF-8 contracts. [Implementation and open gates](docs/EffectCraft-Managed-Optimization.md). Earlier acceptance records below apply only to their own versions; complete V1 and other platform/host qualification remain open.
+
+
 Four-domain RT-001 runtime source/integrity acceptance now covers every current scenario; existing pinned skill bytes remain unchanged. Runtime upgrades and fullV1 remain open. [Acceptance architecture](docs/Craft-Fixed-Runtime-Integrity-Architecture.md).
 
 Turn text, graphics and footage into an editable `.ecproj`, dependencies and rendered media.
 
-Current plugin: `0.1.0-dev.38`; skill source: `0.1.0-dev.34`; 15 independent skills.
+Current plugin: `0.1.0-dev.39`; skill source: `0.1.0-dev.37`; 15 independent skills.
 
 Verified first-use platform: macOS arm64 and Python 3.11+. Pinned runtimes install into the user data directory; skill files stay in their host-loaded directory. These are development releases; complete V1 acceptance and generic Skills CLI installation remain open.
 
@@ -17,8 +20,8 @@ Invoke **`effectcraft-use`** in your host. For direct CLI use, set `SKILL_DIR` t
 <!-- CRAFT_FIRST_USE_START -->
 ```bash
 : "${SKILL_DIR:?Set to the actual loaded skill directory}"
-python3 -I -B "$SKILL_DIR/scripts/cli.py" -- --version
-python3 -I -B "$SKILL_DIR/scripts/cli.py" -- commands --json
+sh "$SKILL_DIR/scripts/launch.sh" doctor
+sh "$SKILL_DIR/scripts/launch.sh" run --plan "$SKILL_DIR/examples/brand-intro.json" --output "$PWD/effectcraft-result"
 ```
 <!-- CRAFT_FIRST_USE_END -->
 
@@ -97,9 +100,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.38 |
+| Metadata version | 0.1.0-dev.39 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.34 |
+| Skills source | effectcraft-skills / v0.1.0-dev.37 |
 | Execution | Upstream CLI; ArtCraft uses child adapters |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |

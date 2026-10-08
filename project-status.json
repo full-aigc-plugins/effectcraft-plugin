@@ -53,7 +53,16 @@
     "1.5": "docs/evidence/craft-fixed-setup-boundary-20261008.json",
     "1.6": "docs/evidence/craft-fixed-setup-boundary-20261008.json",
     "2.2": "docs/evidence/craft-fixed-runtime-integrity-20261008.json",
-    "2.3": "docs/evidence/craft-fixed-runtime-integrity-20261008.json"
+    "2.3": "docs/evidence/craft-fixed-runtime-integrity-20261008.json",
+    "9.7": "docs/evidence/managed-supervisor-component-20261008.json",
+    "9.8": "docs/evidence/managed-process-guard-integration-20261008.json",
+    "9.9": "docs/evidence/managed-segment-resume-validation-20261008.json",
+    "9.10": "docs/evidence/managed-ancestor-stop-component-20261008.json",
+    "9.11": "docs/evidence/managed-resource-component-20261008.json",
+    "9.12": "docs/evidence/managed-resource-location-component-20261008.json",
+    "9.13": "docs/evidence/effectcraft39-fixed-managed-release-20261008.json",
+    "9.14": "docs/evidence/effectcraft39-fixed-managed-release-20261008.json",
+    "9.15": "docs/evidence/effectcraft39-fixed-managed-release-20261008.json"
   },
   "hostValidationEvidence": "docs/evidence/craft-full-command-fixed-first-use-20261007.json",
   "hostValidationStatus": "fixed-five-plugin58-discovery-and-standalone-desktop-passed",
@@ -94,5 +103,6 @@
   "advancedDesktopFirstUseEvidence": "docs/evidence/craft-full-command-fixed-first-use-20261007.json",
   "ownedDesktopAcceptance": "bounded-first-use-and-advanced-desktop-passed; exhaustive commands and full V1 remain open",
   "skillSourceContractEvidence": "docs/evidence/vendor-self-contained-20261008.json",
-  "skillSourceContractStatus": "current fixed source and self-contained snapshot boundaries verified; complete V1 remains in progress"
+  "skillSourceContractStatus": "current fixed source and self-contained snapshot boundaries verified; complete V1 remains in progress",
+  "managedFixedReleaseEvidence": "docs/evidence/effectcraft39-fixed-managed-release-20261008.json"
 }

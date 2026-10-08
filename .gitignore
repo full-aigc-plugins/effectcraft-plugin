@@ -10,3 +10,6 @@ __pycache__/
 .openspec-cache/
 .codex/
 .claude/
+
+# 本地代码图索引不属于发布快照
+/.codegraph/

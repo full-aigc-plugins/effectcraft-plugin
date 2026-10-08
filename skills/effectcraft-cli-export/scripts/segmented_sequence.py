@@ -83,18 +83,18 @@ def atomic_json(path, value):
 @contextmanager
 def output_lock(root):
     # 内核锁在进程退出时释放；不通过删除锁文件抢占仍在运行的生产器。
-    import fcntl
+    platform_adapter = module('platform_support')
     path = root/'render.lock'
     regular_path(path)
     with path.open('a+b') as stream:
         try:
-            fcntl.flock(stream, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            platform_adapter.lock_stream(stream)
         except BlockingIOError as error:
             raise ValueError('segment_render_busy') from error
         try:
             yield
         finally:
-            fcntl.flock(stream, fcntl.LOCK_UN)
+            platform_adapter.unlock_stream(stream)
 
 
 def render_segment(cli, project, composition, directory, part):
@@ -117,7 +117,7 @@ def render_segment(cli, project, composition, directory, part):
         source.rename(directory/f'frame_{index:05d}.png')
 
 
-def render_segments(cli, project, composition, output, chunk_bytes=CHUNK_BYTES):
+def render_segments(cli, project, composition, output, chunk_bytes=CHUNK_BYTES, before_segment=None,before_native=None,after_native=None):
     """只有与当前输入绑定且重新通过像素核验的段允许复用。"""
     parts = plan_segments(composition, chunk_bytes)
     cli, project, output = Path(cli).absolute(), Path(project).absolute(), Path(output).absolute()
@@ -133,7 +133,7 @@ def render_segments(cli, project, composition, output, chunk_bytes=CHUNK_BYTES):
         checkpoint = output/'checkpoint.json'
         regular_path(checkpoint)
         if checkpoint.exists():
-            if checkpoint.stat().st_size > 2*1024*1024 or json.loads(checkpoint.read_text()) != binding:
+            if checkpoint.stat().st_size > 2*1024*1024 or json.loads(checkpoint.read_text(encoding='utf-8')) != binding:
                 raise ValueError('segment_binding_conflict')
         else:
             atomic_json(checkpoint, binding)
@@ -144,7 +144,7 @@ def render_segments(cli, project, composition, output, chunk_bytes=CHUNK_BYTES):
         regular_path(ledger_path)
         if ledger_path.exists() and ledger_path.stat().st_size > 2*1024*1024:
             raise ValueError('segment_checkpoint_invalid')
-        ledger = json.loads(ledger_path.read_text()) if ledger_path.exists() else {}
+        ledger = json.loads(ledger_path.read_text(encoding='utf-8')) if ledger_path.exists() else {}
         if not isinstance(ledger, dict) or any(k not in {str(i) for i in range(len(parts))} or not isinstance(v, str) or len(v) != 64 for k, v in ledger.items()):
             raise ValueError('segment_checkpoint_invalid')
         completion = output/'segments.json'
@@ -152,6 +152,7 @@ def render_segments(cli, project, composition, output, chunk_bytes=CHUNK_BYTES):
         completion.unlink(missing_ok=True)
         records, total = [], 0
         for index, part in enumerate(parts):
+            if before_segment:before_segment()
             if sha(project) != binding['projectSha256'] or sha(cli) != binding['runtimeSha256']:
                 raise ValueError('segment_input_changed')
             directory = output/f'segment_{index:05d}'
@@ -170,7 +171,7 @@ def render_segments(cli, project, composition, output, chunk_bytes=CHUNK_BYTES):
                     regular_path(directory/'sequence.json')
                     if sha(directory/'sequence.json') != ledger.get(str(index)):
                         raise ValueError('segment_receipt_changed')
-                    saved = json.loads((directory/'sequence.json').read_text())
+                    saved = json.loads((directory/'sequence.json').read_text(encoding='utf-8'))
                     # 检查器要求只有帧；验证副本不修改已完成的段。
                     with tempfile.TemporaryDirectory(prefix='effect-segment-check-') as temp:
                         copy = Path(temp)
@@ -184,12 +185,16 @@ def render_segments(cli, project, composition, output, chunk_bytes=CHUNK_BYTES):
             if manifest is None:
                 with tempfile.TemporaryDirectory(dir=output.parent, prefix='.effect-segment-') as temp:
                     stage = Path(temp)
-                    render_segment(cli, project, composition, stage, part)
-                    manifest = sequence.inspect_sequence(stage, comp)
-                    atomic_json(stage/'sequence.json', manifest)
-                    if directory.exists():
-                        shutil.rmtree(directory)
-                    stage.rename(directory)
+                    if before_native:before_native(stage,directory,part,composition)
+                    try:
+                        render_segment(cli, project, composition, stage, part)
+                        manifest = sequence.inspect_sequence(stage, comp)
+                        atomic_json(stage/'sequence.json', manifest)
+                        if directory.exists():
+                            shutil.rmtree(directory)
+                        stage.rename(directory)
+                    finally:
+                        if after_native:after_native(stage)
                 ledger[str(index)] = sha(directory/'sequence.json')
                 atomic_json(ledger_path, ledger)
             total += sum(frame['bytes'] for frame in manifest['frames'])
@@ -206,6 +211,10 @@ def render_segments(cli, project, composition, output, chunk_bytes=CHUNK_BYTES):
 
 
 def main():
+    # 固定重定向输出编码，Windows默认代码页也能返回中文帮助和回执。
+    import sys
+    for stream in (sys.stdout,sys.stderr):
+        if hasattr(stream,"reconfigure"):stream.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--project', type=Path, required=True)
     parser.add_argument('--composition', type=Path, required=True)
@@ -214,14 +223,14 @@ def main():
     parser.add_argument('--runtime-home', default=os.environ.get('CRAFT_RUNTIME_HOME', str(Path.home()/'.local/share/craft-runtimes')))
     args = parser.parse_args()
     try:
-        composition = json.loads(args.composition.read_text())
+        composition = json.loads(args.composition.read_text(encoding='utf-8'))
         plan_segments(composition)
         chunk_bytes = CHUNK_BYTES
         if args.chunk_frames is not None:
             if not 1 <= args.chunk_frames <= 10000:
                 raise ValueError('segment_budget_invalid')
             chunk_bytes = min(CHUNK_BYTES, args.chunk_frames*composition['width']*composition['height']*4)
-        installed = module('bootstrap').install(json.loads(Path(__file__).with_name('runtime.lock.json').read_text()), args.runtime_home)
+        installed = module('bootstrap').install(json.loads(Path(__file__).with_name('runtime.lock.json').read_text(encoding='utf-8')), args.runtime_home)
         result = render_segments(installed['executable'], args.project, composition, args.output, chunk_bytes)
         print(json.dumps({'state': result['state'], 'frameCount': result['frameCount'], 'segments': len(result['segments'])}))
         return 0

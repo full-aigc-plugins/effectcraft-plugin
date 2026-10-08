@@ -21,6 +21,23 @@
 - **WHEN** 只有 OpenSpec 校验与文档检查通过
 - **THEN** 状态保持 documentation-baseline，所有实现任务仍未完成
 
+#### Scenario: 已安装技能的宿主派发
+
+- **WHEN** Codex 宿主收到自然语言安装、创作、故障恢复或交付请求
+- **THEN** 验收 SHALL 使用实际安装的独立技能，记录模型选择技能、调用公开入口、任务回执、原生工程与媒体结果；手工直接调用脚本不构成自动派发证据
+- **AND** 其他宿主未运行相同链路时保持待验收，不借用 Codex 结论
+
+#### Scenario: 候选与固定发行边界
+
+- **WHEN** 技能源候选通过本地测试但尚无正式固定来源版本，或插件快照与锁不一致
+- **THEN** 发布校验 SHALL 拒绝将候选标成已发布；版本、技能摘要、运行时身份、协议引用和场景证据均须绑定当前来源
+- **AND** 提交、推送、市场更新和正式发布按各自动作的授权执行；发布本身不替代目标平台及宿主验收
+
+#### Scenario: EffectCraft 到 FilmCraft 的透明序列交接
+
+- **WHEN** 向 FilmCraft 交付透明动画序列
+- **THEN** 验收 SHALL 检查实际帧、时间基准、alpha 和来源摘要，并验证下游导入及保全；缺少任一证据时不得宣称完整交接
+
 ### Requirement: EC-RL-002 权限与秘密边界
 
 运行 SHALL 限定素材读取与工程写入根目录；模型输出和素材元数据均为不可信输入；密钥通过宿主秘密引用传入，不进入日志、计划、包或技能。
@@ -39,3 +56,15 @@
 ## Implementation evidence (non-normative)
 
 `docs/evidence/codex-current-release.json` binds current fixed releases to two actual Codex CLI/app-server versions, five enabled namespaced skills, installed public workflow outcomes and explicit exclusions. The corresponding bilingual Host-Verification-Architecture documents specify the repeatable check. RL-001 tasks remain unchecked until their full P0 prerequisites and scenarios pass.
+
+#### Scenario: 当前能力矩阵与公共协议兼容
+
+- **WHEN** 生成候选或正式分发说明
+- **THEN** 当前能力矩阵 SHALL 从锁文件及绑定当前来源的有效证据生成；历史报告与当前支持状态分开显示，规格任务的实现路径须对应真实独立技能源
+- **AND** 保留 craft-task/v1、craft-artifact/v1 的既有所有权与读取兼容性，领域信息只做兼容扩展，不另建平行公共协议
+
+#### Scenario: 完整完成门禁
+
+- **WHEN** 判断本优化或整个 V1 是否完成
+- **THEN** 每个目标平台与能力 SHALL 具备自己的真实证据；静态检查、模拟测试、历史报告、文档校验或发布成功不得替代原生任务与实际宿主验收
+- **AND** 未通过项 SHALL 保持开放，全部实现、验证与规格同步条件满足前不得归档整个 establish-v1-plugin

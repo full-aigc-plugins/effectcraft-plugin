@@ -1,7 +1,7 @@
 # Contributing / 贡献
 
-This repository currently delivers documentation and OpenSpec planning artifacts. Product behavior is not implemented.
-本仓当前交付文档与 OpenSpec 规划，产品行为尚未实现。
+This repository distributes pinned development skill snapshots and maintains OpenSpec contracts, tests and version-bound evidence. Implementation is in progress; individual local passes do not establish complete V1 or all-platform/host acceptance.
+本仓分发固定的开发版技能快照，维护OpenSpec合同、测试及版本绑定证据。当前仍在实施阶段，局部本机通过不代表完整V1或全部平台/宿主验收。
 
 1. Read AGENTS.md, the bilingual README, and the active OpenSpec change.
 2. Propose behavioral changes in OpenSpec before implementation; retain one normative source.
