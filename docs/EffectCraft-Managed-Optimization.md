@@ -1,5 +1,7 @@
 # EffectCraft optimization candidate
 
+Current distribution: plugin dev.59 pins source dev.57 (`1d4fd8e5eb213e67e09e6a2a7e88f75791e72e29`). Source revision and shared-project claim increments are distributed; candidate evidence retains its original timestamp and baseline. Desktop in-memory guard remains unimplemented; task9.3.2 and 70 V1 tasks remain open.
+
 Plugin dev.39 consumes the immutable dev.37 skill source recorded in skills.lock.json. Earlier candidate reports below retain their own snapshot identities. This change updates the existing establish-v1-plugin specification, traceability, and source-candidate validator. The source tag and commit are verified before vendoring; complete platform/host qualification remains open.
 
 The independent skills repository owns the isolated Python bootstrap, seven pinned native artifacts, durable managed tasks, artifact review and bounded revisions. The pinned 0.4.0 catalog contains 655 commands; new commands remain NOT_RUN until exercised.
@@ -397,3 +399,11 @@ flowchart TD
 
 
 Cancellation family barrier (development source52/plugin54): persist root intent and descendant identities first. Active descendants or missing stop proof retain cancel_requested; original controllers reconcile children, and unknown edits retain parent reconciling. Not-started proof is captured only at original cancellation under all execution leases. 27 cancellation tests and real macOS native parent/child crash recovery pass; complete crash/GUI matrix, other native platforms, fixed hosts and V1 remain open. Evidence: `docs/evidence/cancel-family-candidate-20261009.json`.
+
+## Source changes while a task runs
+
+The current task9.3.2 candidate checks the bound source digest at start, before each new operation intent and before delivery. External saves, missing/unreadable files and link replacements raise revision_conflict without sending the next edit. Existing receipts, identity and the user's new source remain intact. See [candidate evidence](evidence/source-revision-conflict-candidate-20261009.json) for an actual independent native save. In-memory GUI changes, complete session competition, cross-state-root single-writer and other platforms remain open. The published plugin snapshot is unchanged.
+
+## Project ownership across task stores
+
+New tasks claim canonical source paths and file objects in a shared user directory. Changing the state root, task ID, output or hardlink alias cannot bypass active ownership. Claims bind the original store and task identity; missing/corrupt/unknown owners are preserved rather than cleared by PID disappearance or timeout. Historical tasks receive no synthesized proof. In-memory GUI changes and parallel legacy runtimes remain open. See [shared project candidate evidence](evidence/shared-project-claims-candidate-20261009.json).

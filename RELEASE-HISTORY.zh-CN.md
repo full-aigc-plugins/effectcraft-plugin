@@ -1,5 +1,11 @@
 # 版本绑定的历史发行记录
 
+## dev.59 — 2026-10-09
+
+消费技能源dev.57不可变快照：源工程版本检查与跨账本工程认领保护。同步增量OpenSpec、设计、任务及原始候选证据；9.3.2不勾选，完整V1仍有70项开放。桌面内存版本保护未实现，未纳入本次发行。
+
+Pinned source dev.57 adds source revision checks and shared project ownership. Desktop in-memory guards, full native platform/host acceptance and marketplace admission remain open.
+
 ## dev.58 — 2026-10-09
 
 修正新增派发测试在Windows cp1252下读取中文技能清单失败：显式UTF-8，不修改技能运行载荷。替代source55／plugin57发行配对，保留旧标签与失败CI。完整V1仍有70项开放。

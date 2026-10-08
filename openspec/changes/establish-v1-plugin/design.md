@@ -202,3 +202,7 @@ flowchart TD
 
 
 默认写入指引通过三模式显式选择进入现有受管理执行层，旧CLI保留兼容入口。9.3.1的15技能／45预检／18历史状态组合及未变执行资源原生绑定见 `docs/evidence/managed-default-routing-20261009.json`；指引更新不提升宿主自然语言派发证据。source55／plugin57分发采用先发布技能源再锁定快照，原候选证据保留采集时点。
+
+源工程运行期冲突保护（9.3.2候选）：同一只读核对函数用于start、begin_step及delivered；每个MCP tools/call写入意图登记前检查绑定源工程摘要，丢失、不可读和链接替换与内容变化均返回revision_conflict。完成原调用后仍登记其真实回执，不因随后发生的用户修改丢弃已知结果。最终交付前再检查，不把启动时一次检查当作运行期间版本稳定证明。该候选不构成内存GUI版本、跨状态根工程锁或完整桌面会话竞争的验收，9.3.2保持开放。技能源修改不覆盖插件已发布固定技能。
+
+跨账本源工程认领（9.3.2候选）：`project_claims.py`使用固定用户目录`.local/share/craft-tasks/effectcraft-project-claims`，不随公开state-root改变。路径键及device/inode文件对象键覆盖原路径换文件与硬链接；全局互斥内先核对全部旧认领，再写显式effectcraft-project-claim/v1和新任务。原账本、taskId、identityHash、nonce与任务内projectClaims互相核对。写认领后、写任务前崩溃留下未确认占用，不自动清理；活跃／unknown／缺失原状态／坏认领均阻止新任务。开始、逐调用和交付前只读核对原认领，只有完整可核对且无attempted操作的终态可让出。没有共享材料的旧冻结运行时不补造协调证明；真实GUI内存变化、旧版本并行及完整桌面会话竞争仍属于未完成9.3.2。

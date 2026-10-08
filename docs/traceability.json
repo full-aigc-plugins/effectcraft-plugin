@@ -364,7 +364,9 @@
       "cancelRestartCandidateEvidence": "docs/evidence/cancel-restart-candidate-20261009.json",
       "publicInterfaceCandidateEvidence": "docs/evidence/managed-public-interface-candidate-20261009.json",
       "threeModeCompositionEvidence": "docs/evidence/managed-three-mode-composition-20261009.json",
-      "defaultManagedRoutingEvidence": "docs/evidence/managed-default-routing-20261009.json"
+      "defaultManagedRoutingEvidence": "docs/evidence/managed-default-routing-20261009.json",
+      "sourceRevisionConflictCandidateEvidence": "docs/evidence/source-revision-conflict-candidate-20261009.json",
+      "sharedProjectClaimsCandidateEvidence": "docs/evidence/shared-project-claims-candidate-20261009.json"
     },
     {
       "requirement": "EC-QA-003",
