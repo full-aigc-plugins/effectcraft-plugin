@@ -1,5 +1,11 @@
 # 版本绑定的历史发行记录
 
+## dev.56 — 2026-10-09
+
+锁定已发布技能源v0.1.0-dev.54／29fddc504ca2231bcc2d8de7bd7e589142ab656b的15个技能摘要。严格回执身份与统一管理入口9.3.5验收完成，完整V1剩余72项；历史15技能报告不覆盖新载荷，当前完整能力矩阵保持NOT_RUN。
+
+Pins the released source dev.54 for all15 independent skills. Public interface task9.3.5 is verified; complete V1, native platform and fixed-host gates remain open. [Evidence](docs/evidence/managed-public-interface-candidate-20261009.json).
+
 ## dev.55 — 2026-10-09
 
 插件 dev.55 消费不可变技能源 dev.53：完整载荷能力证据绑定、历史任务只读保护、直接取消交接原控制器。完整 V1、其他原生平台和宿主验收继续开放。

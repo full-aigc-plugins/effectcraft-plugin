@@ -361,7 +361,8 @@
       "commandPngRevisionCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json",
       "processGroupProbeCandidateEvidence": "docs/evidence/process-group-probe-candidate-20261009.json",
       "groupOwnershipReleaseEvidence": "docs/evidence/group-ownership-release51-20261009.json",
-      "cancelRestartCandidateEvidence": "docs/evidence/cancel-restart-candidate-20261009.json"
+      "cancelRestartCandidateEvidence": "docs/evidence/cancel-restart-candidate-20261009.json",
+      "publicInterfaceCandidateEvidence": "docs/evidence/managed-public-interface-candidate-20261009.json"
     },
     {
       "requirement": "EC-QA-003",

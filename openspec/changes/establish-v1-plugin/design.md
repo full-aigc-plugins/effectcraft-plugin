@@ -178,3 +178,22 @@ flowchart TD
 维护者生成器为技能源 `scripts/build_capability_matrix.py`，当前产物为两仓 `docs/current-capabilities.json`。`effectcraft-capability-matrix/v2` 为内部文档格式，保留平台字段并增加显式证据绑定；不是公共 craft 协议。完整技能载荷须与当前原始只读安装报告的文件／模式清单摘要对应，Python、原生制品和报告摘要亦须匹配。证据失效时输出 NOT_RUN 和原因；插件 `scripts/capability_reference.py` 只校验分发文档，不承担执行。README 保留当前入口和精确门禁，原文移入同仓 `README-HISTORY-20261009*.md`，由版本历史链接。
 
 公共协议仍以 `docs/contracts-reference.json` 固定的 ArtCraft 标签、提交与四份文件为权威。当前源代码及 Git 对象校验通过不关闭其他平台／宿主或 V1。
+
+
+### v2 操作回执读取与中断结算
+
+技能源 `task_store.py` 在读取 v2 记录时先验证操作 ID，再检查完整 receipts 目录；回执版本、任务、操作与 argumentsHash 必须与原 attempted 绑定，成功步骤还绑定 resultHash。无归属文件、非普通文件及链接保留现场并拒绝写入。已写回执但状态尚未结算属于合法中断：读取保持 attempted，不能推断编辑未执行。finish_step 只能用同一原结果完成结算，保留既有回执文件；不同结果拒绝覆盖。旧 v1 保留只读诊断合同。
+
+```mermaid
+flowchart TD
+    A[读取原任务和操作身份] --> B{回执集合及版本绑定有效}
+    B -->|否| C[保留现场并拒绝写入]
+    B -->|是| D{步骤是否成功}
+    D -->|是| E[核对原结果摘要]
+    D -->|attempted 且有回执| F[保留未决身份 禁止自动重发]
+    F --> G{显式结算结果与原回执相同}
+    G -->|是| H[仅结算状态 保留回执文件]
+    G -->|否| C
+```
+
+9.3.5 验收对应管理接口职责与错误语义；本机公开 workflow 正向及三个模式预检/未知重放拒绝与历史材料拒绝分别留证。9.3.6 的三模式完整适配器组合、各目标平台原生验收和固定宿主自动派发仍独立开放，不从本机管理合同验收推导完成。
