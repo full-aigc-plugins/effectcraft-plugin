@@ -112,3 +112,25 @@ Explicit v2 requests/receipts bind task, project/media, criteria and evaluation-
 Current Codex inspected five video samples before/after revision plus transparent previews, changed only the clipped title via public review/revise/review, and verified reopen/decode, non-target preservation, best-version identity and receipt idempotence. Ten contract tests, 23 ledger/revision tests and 292 regressions (254 passed, 38 conditional skips) passed. Bounded tasks9.18/9.4.3/9.4.4 are closed. Full9.4.2 still needs stale-receipt current-status CLI evidence;9.4.1/9.4 and V1 remain open. Sampled PASS is not all-frame acceptance, user acceptance is false, and no independent paid model dependency was added. Source bytes match the observed copy; the locked plugin remains dev.39. See [candidate evidence](evidence/judge-v2-candidate-20261008.json).
 
 Task 9.4.2 public rejection diagnostics verified: 260 passed / 38 conditional skips out of 298 regressions. Current native delivery changes reject old review receipts with technical FAIL / creative NOT_RUN and preserve history/state. [Evidence](evidence/review-rejection-candidate-20261008.json).
+
+Task 9.19 video/dependency technical component passes: 9 actual-media and 5 dependency tests; 274 passed / 38 conditional skips out of 312 regressions. Current standalone native creation, collected assets and public review negatives passed. Task 9.4.1 and fixed-release acceptance stay open; plugin dev.40 snapshot is unchanged. [Evidence](evidence/video-assets-review-candidate-20261008.json).
+
+Current workflow engineering review uses the task-bound installed runtime, copies the native project and declared assets to an isolated temporary package, reopens it, checks missing footage and compares the exact native structure. Original hashes are verified before/after. Missing runtime/timeouts remain NOT_RUN; native/structure failures fail. Historical PASS receipts never replace current verification. revise repeats the check before spending a round. Independent userAcceptance remains NOT_RUN, with the accepted boolean preserved. Regression: 287 passed / 38 conditional skips out of 325; current standalone native creation and one sampled visual revision loop pass. Commands/desktop normalization, task 9.4.1, fixed distribution and other targets remain open. [Evidence](evidence/engineering-review-candidate-20261008.json).
+
+```mermaid
+flowchart LR
+  A[review / revise] --> B[Runtime identity]
+  B --> C[Temporary project + assets]
+  C --> D[Native reopen + footage check]
+  D --> E[Compare composition and layers]
+  E --> F[Recheck original hashes]
+  F --> G[Engineering PASS / FAIL / NOT_RUN]
+  G --> H[Independent media and creative gates]
+  H --> I[User acceptance NOT_RUN]
+```
+
+## Development release dev.41 scope
+
+This release pins source dev.39 (3552034d420df3028228df60abd07718983f7965), verified by tag, commit and all15 whole-skill digests. It includes task9.19 video/asset verification and task9.20 isolated current-project reopening. Source regression:287 passes and38 conditional skips out of325. Native/visual evidence remains scoped to the bytes bound in engineering-review-candidate-20261008.json. Earlier candidate statements about unchanged fixed releases retain their historical meaning; this section records the distribution update without claiming new host or cold-install acceptance.
+
+FullV1 and75 tasks remain open, including equivalent commands/desktop quality review, other target platforms and final host dispatch. marketplaceEligible remainsfalse; the OpenSpec change is not archived.

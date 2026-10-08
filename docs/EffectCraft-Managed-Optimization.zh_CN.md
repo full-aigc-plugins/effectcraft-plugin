@@ -160,3 +160,25 @@ flowchart TD
 当前Codex实际查看前后各5帧视频及透明预览，经公开入口仅改标题修复裁切，重开/解码/非目标保全、最佳版本和重复回执验证通过；10项合同、23项账本/修订及292项回归（254通过/38条件跳过）通过。闭合9.18、9.4.3、9.4.4限定门禁，完整9.4.2仍待核验过期回执当前状态的CLI输出，9.4.1/9.4与V1保持开放。抽样PASS不代表全帧验收，用户接受false；无新增独立付费模型依赖。当前源与实际验收副本逐文件一致，固定插件仍为dev.39。见[当前候选证据](evidence/judge-v2-candidate-20261008.json)。
 
 9.4.2公开CLI拒绝状态补证通过；298项回归260通过/38条件跳过，真实已评价工程变化后返回技术FAIL、创作NOT_RUN并保全历史和任务。 [Evidence](evidence/review-rejection-candidate-20261008.json).
+
+9.19视频/素材技术组件通过：9项真实媒体与5项素材测试，312项回归274通过/38条件跳过；当前单技能原生及公开review正反例通过。9.4.1及固定发行保持开放，插件dev.40快照不修改。 [Evidence](evidence/video-assets-review-candidate-20261008.json).
+
+当前workflow工程检查已使用任务绑定的已安装运行时，临时复制工程及声明素材，实际重开/缺失素材检查/原生结构比较，并前后核对原件摘要。缺运行时或超时NOT_RUN；原生错误/结构变化FAIL；旧PASS回执只保留历史证据，不提升本次创作。revise在扣轮数前执行相同核验；userAcceptance独立NOT_RUN，accepted布尔兼容。325项回归287通过/38条件跳过，当前单技能原生及视觉1轮修订闭环通过。commands/desktop归一化复检、9.4.1、固定分发与其他目标平台继续开放。 [Evidence](evidence/engineering-review-candidate-20261008.json).
+
+```mermaid
+flowchart LR
+  A[review / revise] --> B[Runtime identity]
+  B --> C[Temporary project + assets]
+  C --> D[Native reopen + footage check]
+  D --> E[Compare composition and layers]
+  E --> F[Recheck original hashes]
+  F --> G[Engineering PASS / FAIL / NOT_RUN]
+  G --> H[Independent media and creative gates]
+  H --> I[User acceptance NOT_RUN]
+```
+
+## 开发版 dev.41 发布范围
+
+本版固定技能源 dev.39（3552034d420df3028228df60abd07718983f7965），通过来源标签、提交及15项整技能摘要获取快照。包含9.19视频／素材技术校验与9.20当前工程隔离重开；325项源码回归中287通过、38条件跳过。原生与视觉证据的有效范围以 engineering-review-candidate-20261008.json 所绑定字节为准。历史候选中的“固定发行未更新”描述保留当时状态，本节记录本次分发更新；不追加未执行的宿主或冷安装验收。
+
+完整V1与75项任务仍开放，尤其commands/desktop等价质量复检、其他目标平台与最终宿主派发；marketplaceEligible保持false，不归档OpenSpec变更。
