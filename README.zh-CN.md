@@ -1,15 +1,15 @@
 # EffectCraft Agent Plugin
 
-开发版dev.41固定技能源dev.39，包含实际视频帧数／时间戳／alpha与素材校验、当前工程隔离重开及独立验收状态。已完成组件保留限定原生证据；75项任务仍开放，发布不代表完整V1或新安装宿主验收通过。[证据](docs/evidence/engineering-review-candidate-20261008.json)。
+开发版dev.42固定技能源dev.40：受管理命令／桌面保存工程与命名PNG质量复检绑定原生修订号和实际素材字节。限定任务9.21完成，75项任务仍开放；发布不代表完整V1或新安装宿主验收通过。[证据](docs/evidence/command-delivery-candidate-20261008.json)。
 
-> 开发版dev.41固定技能源dev.39：隔离Python、持久任务、自有分段恢复、共享重试预算及UTF-8合同。[实现与开放门禁](docs/EffectCraft-Managed-Optimization.zh_CN.md)。下文历史验收仅适用于各自版本，完整V1及其他平台/宿主验收继续开放。
+> 开发版dev.42固定技能源dev.40：隔离Python、持久任务、自有分段恢复、共享重试预算及UTF-8合同。[实现与开放门禁](docs/EffectCraft-Managed-Optimization.zh_CN.md)。下文历史验收仅适用于各自版本，完整V1及其他平台/宿主验收继续开放。
 
 
 四领域RT-001运行时来源与完整性已完成当前全部场景验收，固定技能字节保持不变；运行时升级与完整首版仍开放。[验收架构](docs/Craft-Fixed-Runtime-Integrity-Architecture.zh_CN.md)。
 
 文字、图形与镜头需求进入，交付可编辑 `.ecproj`、依赖素材和渲染结果。
 
-当前插件：`0.1.0-dev.41`；技能源：`0.1.0-dev.39`；15 个独立技能。
+当前插件：`0.1.0-dev.42`；技能源：`0.1.0-dev.40`；15 个独立技能。
 
 已验证首次使用平台：macOS arm64、Python 3.11+。固定运行时安装在用户数据目录，技能文件保留在宿主加载目录。当前为开发版本；完整首版验收及通用 Skills CLI 实际安装仍未完成。
 
@@ -102,9 +102,9 @@ Intent + assets
 | Property | Value |
 | :--- | :--- |
 | Plugin ID | effectcraft |
-| Metadata version | 0.1.0-dev.41 |
+| Metadata version | 0.1.0-dev.42 |
 | Stage | implementation-in-progress |
-| Skills source | effectcraft-skills / v0.1.0-dev.39 |
+| Skills source | effectcraft-skills / v0.1.0-dev.40 |
 | Execution | 上游 CLI；ArtCraft 使用子适配器 |
 | Host compatibility | Codex development install/discovery pass; GUI and other hosts pending |
 | License | Apache-2.0 (original repository content) |

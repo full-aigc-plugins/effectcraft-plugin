@@ -134,3 +134,28 @@ flowchart LR
 This release pins source dev.39 (3552034d420df3028228df60abd07718983f7965), verified by tag, commit and all15 whole-skill digests. It includes task9.19 video/asset verification and task9.20 isolated current-project reopening. Source regression:287 passes and38 conditional skips out of325. Native/visual evidence remains scoped to the bytes bound in engineering-review-candidate-20261008.json. Earlier candidate statements about unchanged fixed releases retain their historical meaning; this section records the distribution update without claiming new host or cold-install acceptance.
 
 FullV1 and75 tasks remain open, including equivalent commands/desktop quality review, other target platforms and final host dispatch. marketplaceEligible remainsfalse; the OpenSpec change is not archived.
+
+## Command and desktop quality observation candidate
+
+Scoped task9.21 passes. Managed commands and owned desktop share pre-call native snapshots, native revision IDs and actual footage hashes before/after rendering, stored only in task state. Public command plans/receipts and user outputs stay compatible. Review independently reopens every current saved project and compares all compositions/layers and isolated dependency copies; named PNGs use their own render context for actual dimensions/alpha checks. A later project cannot substitute for an unsaved render version. Uncovered outputs remain NOT_RUN.
+
+```mermaid
+flowchart TD
+  A[Managed task] --> B[Commands or owned desktop]
+  B --> C[Readonly native snapshot]
+  C --> D[Original command called once]
+  D --> E[Actual output and dependency hashes]
+  E --> F[Task observation bound to success receipt]
+  F --> G[Review original bytes and records]
+  G --> H[Isolated native reopen of every project]
+  G --> I[PNG decode and render version matching]
+  H --> J[Separate engineering technical creative user states]
+  I --> J
+  G -->|Missing or changed| K[Reject acceptance preserve scene no replay]
+```
+
+28 targeted tests and353 regressions pass with315 passes/38 conditional skips. The current standalone skill runs both public launch modes with two saved projects, two transparent PNGs and imported footage. Fourteen public-review negative cases preserve original task/output bytes; restoring test originals recovers engineering/technical PASS. Owned listener and process exit are verified. Prepared caches are reused; this is not cold-install or model-dispatch evidence. Video/sequence, Judge and automatic command revision, tasks9.3.6/9.4.1 and fullV1 remain open; creative/user acceptance remain NOT_RUN. This distribution is source dev.40/plugin dev.42; new installed-host dispatch remains unaccepted. [Candidate evidence](evidence/command-delivery-candidate-20261008.json).
+
+## Development release dev.42
+
+Pins source dev.40 (`ef2b4d41e1e8588bfe732717713e8be861e04e55`) through the maintained snapshot importer. All15 skill-tree digests are checked. Scoped task9.21 has current native and public rejection evidence; 75 tasks remain open. Source:315 passes/38 conditional skips. The new fixed distribution has no model-dispatch acceptance; marketplace eligibility stays false and OpenSpec stays active.

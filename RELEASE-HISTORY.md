@@ -1,5 +1,7 @@
 # Version-bound release records
 
+Plugin dev.42 pins source dev.40. Saved-project/PNG command and owned-desktop quality component task9.21 passes on macOS arm64. 75 tasks remain open; new installed-host dispatch and full V1 remain unaccepted.
+
 Plugin dev.40 pins source dev.38 (0f7d95b6be9eeb45060dce1170f786dc859474ac): Judge v2, immutable review ledgers, sequence verification and rejected-review diagnostics. Source regression: 260 passed / 38 conditional skips out of 298. Complete V1, fixed-host and other-platform creation acceptance remain open.
 
 Plugin dev.39 pins source dev.37 (8babe4b187b2f8d6de6f494d1bf1437e794946c5): isolated Python, managed task control and owned segment recovery with shared retry accounting. Bounded macOS native evidence and 213 source passes / 38 skips; complete V1 and other target platforms/hosts remain open. [Evidence](docs/evidence/managed-orphan-retry-component-20261008.json).
