@@ -436,3 +436,8 @@ Source dev.63 / plugin dev.65 distributes source-producer guards and public arti
 
 
 Resource discovery release increment: native_resources.py observes saved font declarations and supported LUT properties for workflow, commands and owned desktops. Content identities bind actual LUT bytes; unresolved font binaries/fallback/licensing, dynamic resource values and file-LUT runtime paths remain NOT_RUN. Legacy absent extensions preserve their original identities. Evidence: [source64/plugin66](evidence/native-resources-release64-20261009.json). No broad V1 task is closed by this component.
+
+
+### File LUT validation candidate
+
+Unpublished file-LUT review candidate: public command/owned-desktop reviews now verify declared packaged LUT inputs in isolated native copies, compare decoded sample frames and preserve originals. Each review render reserves durable task-family resources before execution; unknown resources, missing frames or exhausted budgets keep the engineering gate NOT_RUN, while mismatches fail it. Bound absolute declarations can relink to verified relative package content after relocation without reading the old location. Workflow routing is implemented but its native file-LUT creation/review acceptance remains open. The plugin still consumes released source64/plugin66; published CI and old native reports do not validate this candidate. See [candidate evidence](evidence/file-lut-validation-candidate-20261009.json). Tasks5.1–5.3 and69 V1 tasks remain open.

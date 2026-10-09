@@ -367,3 +367,23 @@ flowchart LR
 ### 原生字体与LUT观察
 
 技能源共享 `native_resources.py` 只读取保存的 schema1 工程；生成版本化的 `effectcraft-native-resources/v1` 观察，随工作流清单或命令产物映射绑定，并在 review 中分别输出 dependencyClosure 与 fidelity。字体声明不具备真实字体文件摘要，保留明确未验证原因；LUT仅以实际内联或包内文件字节构造公共依赖。包外、链接和缺失资源不读取。文件LUT运行时相对路径及字体fallback的实际解析不由静态闭合证明。旧扩展缺失时保持原版本算法和只读身份，不自动迁移。
+
+
+### 文件LUT只读原生核验
+
+`resource_validation.py`消费当前绑定的资源观察与渲染上下文，在临时副本中重关联包内LUT／媒体，使用锁定引擎渲染原采样合成与时间，比较实际RGBA与尺寸。原项目及资源不写入，副本只允许重关联目标资源地址；引擎改写副本或原件变化均拒绝。绝对LUT搬迁重关联要求工程摘要、同属性声明摘要及相对包文件摘要同时匹配；禁止借旧地址读取包外内容。
+
+每次审阅渲染通过`reserve_review`追加根任务族预算，历史无该字段的资源账本保持兼容。重复review是新资源尝试，不退还失败消耗；原编辑不会重放。静态资源闭合、采样运行证明、字体fallback、完整时序及创作分别记录。工作流路由的真实文件LUT输入制作能力仍需单独验收。
+
+```mermaid
+flowchart TD
+    Review[公开review] --> Binding[当前工程、资源和帧绑定核对]
+    Binding -->|已知包内资源| Copy[隔离副本重关联]
+    Binding -->|未知或无匹配帧| NotRun[NOT_RUN 工程门禁关闭]
+    Copy --> Budget[先持久登记任务族渲染消耗]
+    Budget -->|预算允许| Native[锁定原生引擎采样渲染]
+    Budget -->|预算不足| NotRun
+    Native --> Decode[实际RGBA、尺寸与原件摘要比较]
+    Decode -->|一致| Pass[采样组件PASS，其他验收独立]
+    Decode -->|不一致或改写| Fail[FAIL 工程门禁关闭]
+```

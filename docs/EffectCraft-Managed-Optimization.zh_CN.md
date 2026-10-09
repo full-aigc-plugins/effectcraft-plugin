@@ -523,3 +523,8 @@ source59／plugin61开发发行新增版本化命令完成证明，在核对全�
 
 
 依赖发现发行增量：native_resources.py 为 workflow、commands 和自有桌面观察保存的字体声明及支持的 LUT 属性。内容身份绑定实际 LUT 字节；字体二进制、fallback、许可、动态资源和文件LUT运行路径保留 NOT_RUN。旧无扩展记录保持原身份。证据：[source64/plugin66](evidence/native-resources-release64-20261009.json)。此组件不关闭完整 V1 门禁。
+
+
+### 文件LUT核验候选
+
+未发布文件LUT审阅候选：公开命令／自有桌面review在隔离原生副本重关联已声明、打包的LUT输入，比较解码采样帧并保全原件。每次核验渲染先持久预占任务族预算；未知资源、缺帧或预算耗尽使工程门禁保持NOT_RUN，摘要／像素不符则FAIL。绑定的绝对声明可在搬迁后按相对包内容重关联，不读取旧地址。工作流已接通路由，但其文件LUT创建与review真实验收仍开放。插件继续消费已发布source64／plugin66，既有CI及原生报告不能证明本候选。证据：[文件LUT候选](evidence/file-lut-validation-candidate-20261009.json)。5.1–5.3及69项V1任务继续开放。

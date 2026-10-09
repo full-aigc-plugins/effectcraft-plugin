@@ -193,18 +193,25 @@
           "skills/effectcraft-use/scripts/task_store.py",
           "skills/effectcraft-use/scripts/native_resources.py",
           "skills/effectcraft-use/scripts/command_artifact.py",
-          "skills/effectcraft-use/scripts/command_delivery.py"
+          "skills/effectcraft-use/scripts/command_delivery.py",
+          "skills/effectcraft-use/scripts/resource_validation.py",
+          "skills/effectcraft-use/scripts/engineering_review.py",
+          "skills/effectcraft-use/scripts/resource_budget.py",
+          "skills/effectcraft-use/scripts/review_ledger.py"
         ],
         "tests": [
           "tests/test_workflow_artifact_lineage.py",
           "tests/test_workflow_artifact_lineage_native.py",
           "tests/test_native_resources.py",
-          "tests/test_native_resources_native.py"
+          "tests/test_native_resources_native.py",
+          "tests/test_file_lut_validation.py",
+          "tests/test_file_lut_validation_native.py"
         ],
         "scope": "workflow, command and owned desktop resource observations; font binary/fallback and file LUT path fidelity NOT_RUN; full tasks5.1/5.2/5.3 in progress"
       },
       "commandArtifactCandidateEvidence": "docs/evidence/command-artifact-lineage-candidate-20261009.json",
-      "nativeResourceEvidence": "docs/evidence/native-resources-release64-20261009.json"
+      "nativeResourceEvidence": "docs/evidence/native-resources-release64-20261009.json",
+      "fileLutCandidateEvidence": "docs/evidence/file-lut-validation-candidate-20261009.json"
     },
     {
       "requirement": "EC-AR-002",

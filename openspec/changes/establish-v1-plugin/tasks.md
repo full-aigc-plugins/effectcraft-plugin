@@ -76,7 +76,7 @@
 ## 5. artifact-delivery
 
 - [ ] 5.1 [EC-AR-001] 编写能暴露“产物血缘与包完整性”缺失的正向与失败测试并确认预期失败。责任：Harness owner；前置：技能/运行时合同已确定；业务调用依赖对应适配器。产物：fixture、断言及失败日志；验证：失败原因必须是目标行为缺失。
-- [ ] 5.2 [EC-AR-001] 在独立技能源 scripts/artifact_lineage.py、native_resources.py、command_artifact.py、command_delivery.py、workflow.py、quality_review.py、managed.py、task_store.py 与既有 exchange_loss.py／公开交付校验 实现“产物血缘与包完整性”的最小行为，不扩大支持范围。责任：Harness owner；前置：5.1。产物：对应源码/独立技能源/锁定材料；验证：目标测试和受影响回归通过。
+- [ ] 5.2 [EC-AR-001] 在独立技能源 scripts/artifact_lineage.py、native_resources.py、resource_validation.py、engineering_review.py、resource_budget.py、command_artifact.py、command_delivery.py、workflow.py、quality_review.py、managed.py、task_store.py 与既有 exchange_loss.py／公开交付校验 实现“产物血缘与包完整性”的最小行为，不扩大支持范围。责任：Harness owner；前置：5.1。产物：对应源码/独立技能源/锁定材料；验证：目标测试和受影响回归通过。
 - [ ] 5.3 [EC-AR-001] 完成“产物血缘与包完整性”真实边界验收并记录版本、平台、输入输出摘要及未验证项。责任：QA owner；前置：5.2。产物：evidence/ec-ar-001/；验证：规范所有场景有证据，且 README 能力状态与证据一致。
 - [x] 5.4 [EC-AR-002] 编写能暴露“原生工程与交换损失”缺失的正向与失败测试并确认预期失败。责任：Harness owner；前置：技能/运行时合同已确定；业务调用依赖对应适配器。产物：fixture、断言及失败日志；验证：失败原因必须是目标行为缺失。
 - [x] 5.5 [EC-AR-002] 在独立技能源 exchange_loss.py 与公开交付校验 实现“原生工程与交换损失”的最小行为，不扩大支持范围。责任：Harness owner；前置：5.4。产物：对应源码/独立技能源/锁定材料；验证：目标测试和受影响回归通过。
@@ -428,3 +428,6 @@ EC-AR-001命令／自有桌面映射增量：本次发行 source dev.63／plugin
 
 
 EC-AR-001字体／LUT依赖观察增量（source64／plugin66）：`native_resources.py` 接入 workflow、commands 与自有桌面产物映射及 review；解析原生文字基样式、字符样式、关键帧和支持的 LUT 属性。字体二进制、fallback、许可、动态值、文件LUT运行路径和搬迁保真仍明确 NOT_RUN，不伪造字体摘要。旧无扩展清单／映射只读兼容，读取不改变身份。验证见 `docs/evidence/native-resources-release64-20261009.json`。5.1–5.3仍进行中，69项未完成，不归档。
+
+
+EC-AR-001文件LUT候选：`resource_validation.py`接入命令／自有桌面review与工作流engineering路由；隔离副本按绑定包内容重关联文件LUT并比较原生采样帧，`resource_budget.reserve_review`在每次渲染前追加不可返还的任务族预算。未知／预算不足保持工程NOT_RUN，像素或完整性不符FAIL；旧绝对地址不得读取。当前证据见 `docs/evidence/file-lut-validation-candidate-20261009.json`。仅命令／自有桌面的真实文件LUT验收；工作流原生文件LUT、字体二进制与fallback、完整时序／故障矩阵、其他平台与宿主继续开放。5.1–5.3仍进行中；不新增完成复选框，不归档，插件锁定source64快照不变。
