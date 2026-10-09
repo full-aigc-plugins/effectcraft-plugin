@@ -197,7 +197,8 @@
           "tests/test_workflow_artifact_lineage_native.py"
         ],
         "scope": "workflow component; full requirement and tasks5.1/5.2/5.3 remain in progress"
-      }
+      },
+      "commandArtifactCandidateEvidence": "docs/evidence/command-artifact-lineage-candidate-20261009.json"
     },
     {
       "requirement": "EC-AR-002",
@@ -391,7 +392,8 @@
       "desktopNativeRevisionCandidateEvidence": "docs/evidence/desktop-native-revision-candidate-20261009.json",
       "desktopConflictReconcileCandidateEvidence": "docs/evidence/desktop-conflict-reconcile-candidate-20261009.json",
       "commandCompletionCrashCandidateEvidence": "docs/evidence/command-completion-crash-candidate-20261009.json",
-      "nativeFamilyCancellationCandidateEvidence": "docs/evidence/native-family-cancellation-candidate-20261009.json"
+      "nativeFamilyCancellationCandidateEvidence": "docs/evidence/native-family-cancellation-candidate-20261009.json",
+      "sourceProducerGuardCandidateEvidence": "docs/evidence/source-producer-guard-candidate-20261009.json"
     },
     {
       "requirement": "EC-QA-003",

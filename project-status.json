@@ -156,6 +156,8 @@
   "groupOwnershipReleaseEvidence": "docs/evidence/group-ownership-release51-20261009.json",
   "cancelRestartCandidateEvidence": "docs/evidence/cancel-restart-candidate-20261009.json",
   "candidateEvidence": {
-    "EC-AR-001": "docs/evidence/workflow-artifact-lineage-candidate-20261009.json"
+    "EC-AR-001": "docs/evidence/workflow-artifact-lineage-candidate-20261009.json",
+    "EC-TX-005-source-producer": "docs/evidence/source-producer-guard-candidate-20261009.json",
+    "EC-AR-001-command-artifacts": "docs/evidence/command-artifact-lineage-candidate-20261009.json"
   }
 }
