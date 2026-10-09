@@ -158,6 +158,7 @@
   "candidateEvidence": {
     "EC-AR-001": "docs/evidence/workflow-artifact-lineage-candidate-20261009.json",
     "EC-TX-005-source-producer": "docs/evidence/source-producer-guard-candidate-20261009.json",
-    "EC-AR-001-command-artifacts": "docs/evidence/command-artifact-lineage-candidate-20261009.json"
+    "EC-AR-001-command-artifacts": "docs/evidence/command-artifact-lineage-candidate-20261009.json",
+    "EC-AR-001-native-resources": "docs/evidence/native-resources-release64-20261009.json"
   }
 }

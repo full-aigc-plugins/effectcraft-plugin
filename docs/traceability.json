@@ -190,15 +190,21 @@
           "skills/effectcraft-use/scripts/workflow.py",
           "skills/effectcraft-use/scripts/quality_review.py",
           "skills/effectcraft-use/scripts/managed.py",
-          "skills/effectcraft-use/scripts/task_store.py"
+          "skills/effectcraft-use/scripts/task_store.py",
+          "skills/effectcraft-use/scripts/native_resources.py",
+          "skills/effectcraft-use/scripts/command_artifact.py",
+          "skills/effectcraft-use/scripts/command_delivery.py"
         ],
         "tests": [
           "tests/test_workflow_artifact_lineage.py",
-          "tests/test_workflow_artifact_lineage_native.py"
+          "tests/test_workflow_artifact_lineage_native.py",
+          "tests/test_native_resources.py",
+          "tests/test_native_resources_native.py"
         ],
-        "scope": "workflow component; full requirement and tasks5.1/5.2/5.3 remain in progress"
+        "scope": "workflow, command and owned desktop resource observations; font binary/fallback and file LUT path fidelity NOT_RUN; full tasks5.1/5.2/5.3 in progress"
       },
-      "commandArtifactCandidateEvidence": "docs/evidence/command-artifact-lineage-candidate-20261009.json"
+      "commandArtifactCandidateEvidence": "docs/evidence/command-artifact-lineage-candidate-20261009.json",
+      "nativeResourceEvidence": "docs/evidence/native-resources-release64-20261009.json"
     },
     {
       "requirement": "EC-AR-002",

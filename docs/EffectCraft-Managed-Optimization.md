@@ -433,3 +433,6 @@ Unpublished source-producer guard: copying/moving a managed workflow package or 
 
 
 Source dev.63 / plugin dev.65 distributes source-producer guards and public artifacts for commands and owned desktop sessions: separate projects retain actual task identity, immutable package versions, native projects, matching PNGs and media dependencies. Legacy delivery remains readable. Portable mapping does not replace technical, creative or user acceptance. Prior candidates retain their observation-time scope; see [release validation](evidence/release63-validation-20261009.json). Font/LUT discovery, complete fault matrices, other native platforms and fixed-host dispatch remain open;5.1–5.3 remain unchecked and V1 has69 unfinished tasks.
+
+
+Resource discovery release increment: native_resources.py observes saved font declarations and supported LUT properties for workflow, commands and owned desktops. Content identities bind actual LUT bytes; unresolved font binaries/fallback/licensing, dynamic resource values and file-LUT runtime paths remain NOT_RUN. Legacy absent extensions preserve their original identities. Evidence: [source64/plugin66](evidence/native-resources-release64-20261009.json). No broad V1 task is closed by this component.

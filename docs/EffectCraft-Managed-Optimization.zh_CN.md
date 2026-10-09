@@ -520,3 +520,6 @@ source59／plugin61开发发行新增版本化命令完成证明，在核对全�
 
 
 本次发行 source dev.63／plugin dev.65 包含来源生产任务保护及 commands／自有桌面的公共产物映射：多工程分别登记真实任务、不可变包版本、原生工程、匹配PNG和媒体依赖；旧交付只读兼容。映射可随整包移动重验，不能替代技术、创作或用户验收。原候选报告保留观察时范围；当前发行证据见 [发行验证](evidence/release63-validation-20261009.json)。字体／LUT发现、完整故障矩阵、其他原生平台与固定宿主派发继续开放；5.1–5.3不勾选，V1仍有69项未完成，不归档。
+
+
+依赖发现发行增量：native_resources.py 为 workflow、commands 和自有桌面观察保存的字体声明及支持的 LUT 属性。内容身份绑定实际 LUT 字节；字体二进制、fallback、许可、动态资源和文件LUT运行路径保留 NOT_RUN。旧无扩展记录保持原身份。证据：[source64/plugin66](evidence/native-resources-release64-20261009.json)。此组件不关闭完整 V1 门禁。
