@@ -181,7 +181,23 @@
         "5.3"
       ],
       "owner": "Harness owner",
-      "status": "planned"
+      "status": "in-progress",
+      "workflowArtifactLineageCandidateEvidence": "docs/evidence/workflow-artifact-lineage-candidate-20261009.json",
+      "candidateImplementation": {
+        "repository": "full-aigc-skills/effectcraft-skills",
+        "files": [
+          "skills/effectcraft-use/scripts/artifact_lineage.py",
+          "skills/effectcraft-use/scripts/workflow.py",
+          "skills/effectcraft-use/scripts/quality_review.py",
+          "skills/effectcraft-use/scripts/managed.py",
+          "skills/effectcraft-use/scripts/task_store.py"
+        ],
+        "tests": [
+          "tests/test_workflow_artifact_lineage.py",
+          "tests/test_workflow_artifact_lineage_native.py"
+        ],
+        "scope": "workflow component; full requirement and tasks5.1/5.2/5.3 remain in progress"
+      }
     },
     {
       "requirement": "EC-AR-002",

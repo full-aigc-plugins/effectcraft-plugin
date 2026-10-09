@@ -424,3 +424,6 @@ Technical gate9.4.1 accepted: [evidence](evidence/technical-gate-acceptance-2026
 
 
 技能源dev.61／插件dev.63发布9.36与9.4.1验收增量；此前未发布候选陈述为各自历史检查点。当前69项V1任务开放，执行资源与source60字节一致。 / Source dev.61 and plugin dev.63 publish the9.36 and9.4.1 acceptance increments. Earlier candidate statements retain historical scope.69 V1 tasks remain open; execution resources are unchanged from source60.
+
+
+Local artifact-lineage candidate (EC-AR-001;5.1–5.3 in progress): workflows add the ArtCraft-owned craft-artifact/v1 object to the compatible manifest, binding logical identity, immutable whole-package version, actual task, parent version, native project, renditions and collected media. Review and moved-source revision verify every bound file; same-name replacement, stale versions, reference mismatches and links are rejected. Source-package binding persists in task authorization and is checked before subsequent edits and delivery. Direct CLI execution explicitly uses standalone identity; legacy packages contribute content-verifiable native references without invented task provenance. This is unpublished source work; the plugin remains pinned to released source61. Command/desktop public artifact mapping, font/LUT discovery and complete fixed-release protocol qualification remain open;5.1–5.3 are not checked off.

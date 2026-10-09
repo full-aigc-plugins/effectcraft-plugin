@@ -511,3 +511,6 @@ source59／plugin61开发发行新增版本化命令完成证明，在核对全�
 
 
 技能源dev.61／插件dev.63发布9.36与9.4.1验收增量；此前未发布候选陈述为各自历史检查点。当前69项V1任务开放，执行资源与source60字节一致。 / Source dev.61 and plugin dev.63 publish the9.36 and9.4.1 acceptance increments. Earlier candidate statements retain historical scope.69 V1 tasks remain open; execution resources are unchanged from source60.
+
+
+本地血缘候选（EC-AR-001，5.1–5.3进行中）：工作流在兼容的manifest中生成ArtCraft持有的craft-artifact/v1，绑定逻辑身份、不可变整包版本、实际任务、源版本、原生工程、派生引用和已收集媒体依赖。review和移动源包修订重验完整文件表；同名内容替换、旧版本复用、引用错配及链接拒绝。源包完整绑定写入任务授权，登记后清单／依赖变化在下一次编辑和交付前阻止。独立CLI显式standalone，旧包引用只登记可验证的legacy工程内容。当前为未发布技能源候选，插件仍锁定已发布source61；命令／桌面公共产物映射、字体／LUT依赖发现、固定发行和完整协议原生验收尚未完成，5.1–5.3不提前勾选。

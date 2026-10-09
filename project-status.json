@@ -154,5 +154,8 @@
   "processGroupProbeCandidateEvidence": "docs/evidence/process-group-probe-candidate-20261009.json",
   "independentOfflineSkillsCandidateEvidence": "docs/evidence/independent-offline15-candidate-20261009.json",
   "groupOwnershipReleaseEvidence": "docs/evidence/group-ownership-release51-20261009.json",
-  "cancelRestartCandidateEvidence": "docs/evidence/cancel-restart-candidate-20261009.json"
+  "cancelRestartCandidateEvidence": "docs/evidence/cancel-restart-candidate-20261009.json",
+  "candidateEvidence": {
+    "EC-AR-001": "docs/evidence/workflow-artifact-lineage-candidate-20261009.json"
+  }
 }
