@@ -203,7 +203,8 @@
         "6.3"
       ],
       "owner": "Harness owner",
-      "status": "planned"
+      "status": "planned",
+      "technicalGateAcceptanceEvidence": "docs/evidence/technical-gate-acceptance-20261009.json"
     },
     {
       "requirement": "EC-QA-002",
@@ -356,7 +357,8 @@
         "9.32",
         "9.33",
         "9.34",
-        "9.35"
+        "9.35",
+        "9.36"
       ],
       "owner": "Harness owner",
       "status": "in-progress",
@@ -372,7 +374,8 @@
       "projectCreationGenerationCandidateEvidence": "docs/evidence/project-creation-generation-candidate-20261009.json",
       "desktopNativeRevisionCandidateEvidence": "docs/evidence/desktop-native-revision-candidate-20261009.json",
       "desktopConflictReconcileCandidateEvidence": "docs/evidence/desktop-conflict-reconcile-candidate-20261009.json",
-      "commandCompletionCrashCandidateEvidence": "docs/evidence/command-completion-crash-candidate-20261009.json"
+      "commandCompletionCrashCandidateEvidence": "docs/evidence/command-completion-crash-candidate-20261009.json",
+      "nativeFamilyCancellationCandidateEvidence": "docs/evidence/native-family-cancellation-candidate-20261009.json"
     },
     {
       "requirement": "EC-QA-003",
@@ -389,11 +392,13 @@
         "9.20",
         "9.21",
         "9.22",
-        "9.23"
+        "9.23",
+        "9.4.1"
       ],
       "owner": "Harness owner",
       "status": "in-progress",
-      "commandPngRevisionCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json"
+      "commandPngRevisionCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json",
+      "technicalGateAcceptanceEvidence": "docs/evidence/technical-gate-acceptance-20261009.json"
     }
   ]
 }

@@ -1,0 +1,66 @@
+{
+  "schema": "effectcraft-plugin-release-validation/v1",
+  "observedAt": "2026-10-09T00:06:52.842222+00:00",
+  "sourceVersion": "0.1.0-dev.61",
+  "sourceTag": "v0.1.0-dev.61",
+  "sourceSHA": "649fb3d98e7a17e4c2f483da8202a9fa4dab6cd7",
+  "sourceRelease": "https://github.com/full-aigc-skills/effectcraft-skills/releases/tag/v0.1.0-dev.61",
+  "pluginVersion": "0.1.0-dev.63",
+  "status": "PASS_BOUNDED_VALIDATION",
+  "tests": {
+    "total": 24,
+    "passed": 24,
+    "logSha256": "86d4f3b836a9bce0937e524e5a1ba1cf9a33528fcb80ce58e16a94d6964c4c5a"
+  },
+  "documents": {
+    "status": "passed",
+    "scope": "documentation structure, local links, status honesty and spec/task traceability only",
+    "markdownFiles": 408,
+    "capabilities": 7,
+    "requirements": 26,
+    "scenarios": 157,
+    "openImplementationTasks": 69,
+    "errors": []
+  },
+  "strictOpenSpec": "PASS",
+  "immutableSnapshotCheck": "PASS",
+  "lockedSkills": {
+    "effectcraft-use": "097fc07a2a3a5acd3edccf209e54c2160601dba88126f0ae5b61902ed6f08125",
+    "effectcraft-cli": "2a3bb09b1dad2957465e30625c72733703d0492062c9d6dc37e56d32146bb6ee",
+    "effectcraft-cli-setup": "b2be78af53dfad479ec38d28d42e8a52b2030d9a7d46c4b55e16cec51e8cd44d",
+    "effectcraft-cli-project": "9c6eb20b13d51a8dc6c60858340ccb4e9ad6e6effa650592f54e3bb09b76326b",
+    "effectcraft-cli-footage": "eefbdd9162bb3932ee7026953926ce5a45ef85b16c52762d58db7852a37702ae",
+    "effectcraft-cli-composition": "de975423f820ab6a10c488cb6ab4aa2f22f2c19d8d5eb873a16d1e444e00770f",
+    "effectcraft-cli-layers": "e1f04e4cd51e8eb06dacb85cb6fc1662044038ae7d0cdcc4e5454f3fdb7c788f",
+    "effectcraft-cli-animation": "d6d882cae9768728f2ad10efa1cc7a129e3028d1d2c18fc19b63bffaf2eacad0",
+    "effectcraft-cli-effects": "3542bea82da1583e89f33b1a409ef549ea6ae0543f786208a7f0905618ad000f",
+    "effectcraft-cli-masks": "f3d8a6f162046651a2d756fa06ef3ee8bad0e6e7ffc1cace9c554d7d61728380",
+    "effectcraft-cli-expressions": "c1b6ed64365e8e1d6045a7371314596eda8f7d0ded59d93991de46b1d36911ff",
+    "effectcraft-cli-camera": "d880f147c6d2016873ce35c2e624d88e929b48427c66de3470de2febf3d98ddd",
+    "effectcraft-cli-export": "9a5a4a0abfa543659d8fe0bab491ff57c62cd4ab9580853623cb06443c15c8bc",
+    "effectcraft-cli-tracking": "6811bea2eb720831c7818529886ff001ddd1f6e6168064059ba0d0c5cfb686bf",
+    "effectcraft-cli-puppet": "db3d7994b2a1df4b75d389bc0dea108ff9e375ec86aa709bcbc3e9982efba8c4"
+  },
+  "sourceValidation": {
+    "path": "docs/evidence/release61-validation-20261009.json",
+    "sha256": "531413b77640105c4a6ca338760682095406f3fdaab7019b34b708f28547c58b"
+  },
+  "completedTasks": [
+    "9.36",
+    "9.4.1"
+  ],
+  "nativeCases": 10,
+  "fullV1": "NOT_RUN",
+  "openImplementationTasks": 69,
+  "marketplaceEligible": false,
+  "currentReleaseCI": "NOT_RUN",
+  "limits": [
+    "Original candidate reports retain their observation-time source60/plugin62 lock and unpublished status.",
+    "This release binds unchanged skill payload and acceptance tests to published source61.",
+    "Full target-platform, installed-host and creative acceptance remain separate open gates."
+  ],
+  "validationCorrections": [
+    "Removed duplicate9.4.1 task mapping from EC-QA-001; requirement evidence reference retained.",
+    "First plugin rerun failed due to exhausted disk; regenerated release ZIP caches were removed, then all24 tests passed."
+  ]
+}

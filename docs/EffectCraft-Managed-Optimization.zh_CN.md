@@ -504,3 +504,10 @@ flowchart TD
 source59／plugin61开发发行新增版本化命令完成证明，在核对全部原结果、停止身份、原生工程副本和实际媒体后只补齐交付登记；取消或材料变化不发布迟到结果。完整崩溃、普通编辑恢复及V1仍开放。当前验证见[发行证据](evidence/release59-validation-20261009.json)。
 
 本地真实进程故障候选（9.35）：命令和自有桌面分别验证完成证明写入前、写入后引用未保存、引用保存后三个SIGKILL窗口。无证明及悬空证明不自动接管；完整原证明仅在真实停止、只读重开和实际PNG解码后补齐交付，原文件／回执与预算保全。同时修复损坏ownership导致公开核对输出traceback的问题，保留非POSIX缺字段兼容。见[候选证据](evidence/command-completion-crash-candidate-20261009.json)。其他目标平台、完整9.3.3／9.3.4与V1保持开放。
+
+本地父子原生取消验收（9.36）完成：命令与自有桌面分别覆盖正常取消、取消落盘后监督器强杀。原冻结公开入口重启核对，父项等待子项，保存响应未登记继续未知；原工程／媒体／成功回执、截止／修订预算、共享资源及无关进程保全。四个原生案例与27项取消合同通过，4项默认原生条件跳过。[证据](evidence/native-family-cancellation-candidate-20261009.json)保留夹具修正历史与明确边界：父项已登记未调度，非完整修订父工程；缓存复用，Python3.13.5，只有macOS arm64。生产代码未改，source60／plugin62固定快照不变；新测试／证据未提交发布。完整9.3.4及70项V1继续开放。
+
+当前技术门禁9.4.1已验收：[证据](evidence/technical-gate-acceptance-20261009.json)。带真实收集素材的MP4、普通与分段透明序列从独立只读技能公开入口完成保存／重开、解码和恢复幂等核对；坏视频／缺素材／坏工程的真实交付副本分别被拒绝，高分回执不能覆盖技术失败。六个原生正反例通过；78项目标回归72通过／6条件跳过。工程、媒体技术、创作及用户接受分列，后两项保持NOT_RUN。macOS arm64、隔离Python3.13.16与已校验缓存复用，不替代其他平台、模型派发或逐命令全部输出验收。当前V1尚有69项开放；生产快照source60／plugin62不变，新验收未提交发布。
+
+
+技能源dev.61／插件dev.63发布9.36与9.4.1验收增量；此前未发布候选陈述为各自历史检查点。当前69项V1任务开放，执行资源与source60字节一致。 / Source dev.61 and plugin dev.63 publish the9.36 and9.4.1 acceptance increments. Earlier candidate statements retain historical scope.69 V1 tasks remain open; execution resources are unchanged from source60.
