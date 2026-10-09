@@ -107,7 +107,12 @@
       ],
       "owner": "Domain owner",
       "status": "in-progress",
-      "evidence": "docs/evidence/effect-assets-tests.json"
+      "evidence": "docs/evidence/effect-assets-tests.json",
+      "testEvidence": "docs/evidence/release68-validation-20261009.json",
+      "remaining": [
+        "4.2 complete command/desktop domain mapping",
+        "4.3 complete native boundary qualification"
+      ]
     },
     {
       "requirement": "EC-DM-002",
@@ -406,7 +411,8 @@
       "desktopConflictReconcileCandidateEvidence": "docs/evidence/desktop-conflict-reconcile-candidate-20261009.json",
       "commandCompletionCrashCandidateEvidence": "docs/evidence/command-completion-crash-candidate-20261009.json",
       "nativeFamilyCancellationCandidateEvidence": "docs/evidence/native-family-cancellation-candidate-20261009.json",
-      "sourceProducerGuardCandidateEvidence": "docs/evidence/source-producer-guard-candidate-20261009.json"
+      "sourceProducerGuardCandidateEvidence": "docs/evidence/source-producer-guard-candidate-20261009.json",
+      "stopObservationCandidateEvidence": "docs/evidence/stop-observation-candidate-20261009.json"
     },
     {
       "requirement": "EC-QA-003",

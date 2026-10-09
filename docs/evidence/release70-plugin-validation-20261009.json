@@ -1,0 +1,83 @@
+{
+  "schema": "effectcraft-plugin-release-validation/v1",
+  "observedAt": "2026-10-09T03:43:30.469911+00:00",
+  "release": "v0.1.0-dev.70",
+  "source": {
+    "package": "effectcraft-skills",
+    "repo": "https://github.com/full-aigc-skills/effectcraft-skills.git",
+    "ref": "v0.1.0-dev.68",
+    "sha": "a2d83134ce81d32e3c56db741cddfb87f5ca146c",
+    "skills": [
+      "effectcraft-use",
+      "effectcraft-cli",
+      "effectcraft-cli-setup",
+      "effectcraft-cli-project",
+      "effectcraft-cli-footage",
+      "effectcraft-cli-composition",
+      "effectcraft-cli-layers",
+      "effectcraft-cli-animation",
+      "effectcraft-cli-effects",
+      "effectcraft-cli-masks",
+      "effectcraft-cli-expressions",
+      "effectcraft-cli-camera",
+      "effectcraft-cli-export",
+      "effectcraft-cli-tracking",
+      "effectcraft-cli-puppet"
+    ],
+    "dest": "skills/",
+    "sha256": {
+      "effectcraft-use": "1e9970606df33394884bf50f7a43165bc1430fb3a17e1c1eb32e809683892e8d",
+      "effectcraft-cli": "af970eb97c1f1b74f364136c7162e23193be0a97892c3062b86e15fdcb76f2f3",
+      "effectcraft-cli-setup": "417afdd2e194ae86e13443c5a05dc624810b3299443d44c384c19d5d8dc94b7d",
+      "effectcraft-cli-project": "04df38226020e9d5bf7dde5dd971245f5c662af5ca892e181c3101e9476234c2",
+      "effectcraft-cli-footage": "cf0c83518a3e2c45ecf15f560441059e28f625e9700ea0d209c42048a5406dca",
+      "effectcraft-cli-composition": "605fdce14ede06243eaa4a62447b59fe0b7408069a50f66ff0d6fb54472779d4",
+      "effectcraft-cli-layers": "b55e24faad78d592799497a7d08a0d0af8f20bb3b4c1df835a24814d4e8eac9b",
+      "effectcraft-cli-animation": "0fed284bd74e4ac37ffb9a001211c544b0c0d6b48997d96a7705d8cc5fd49a0f",
+      "effectcraft-cli-effects": "3828645590585e29f41610fbd3be4cbd1c1afd2041096b4bc6ccf75dd3dea6ca",
+      "effectcraft-cli-masks": "c2348a6402d16866c31858ed218c8b6f9f52e522b6d48410b4e8569801a1e142",
+      "effectcraft-cli-expressions": "a028076d037b6fb8be06005f688075b7f252185c6de8d075e060e27ea9576f45",
+      "effectcraft-cli-camera": "ac28b01aa6502d1f75ba1c18e312ef80a5816bb689f5a47b026a76645cfb5ec6",
+      "effectcraft-cli-export": "fd1ea8a20caaab71620807e24845724a24907021b0b7a4d8afccc523ad871221",
+      "effectcraft-cli-tracking": "90c89a861c0135c6efe6f7afa965b5b0ab219deffb90ec7c67f0c1f5f9351f97",
+      "effectcraft-cli-puppet": "a2a4b9536d83a088c7615033288d95e5bf6abe17f0391022a572fa6bb3e3d5f1"
+    }
+  },
+  "status": "PASS_COMPONENT",
+  "tests": {
+    "total": 24,
+    "passed": 24,
+    "logSha256": "92ad667dffd64725ccaf83850947d088286c6e51ee50d3c50e8e75db230971f2"
+  },
+  "documents": {
+    "status": "passed",
+    "scope": "documentation structure, local links, status honesty and spec/task traceability only",
+    "markdownFiles": 408,
+    "capabilities": 7,
+    "requirements": 26,
+    "scenarios": 168,
+    "openImplementationTasks": 68,
+    "errors": []
+  },
+  "strictOpenSpec": "PASS",
+  "remoteVendorCheck": "PASS",
+  "lockSha256": "1d825e3d0cad5b0f8fc812ab5c205a5ad16ccb43cb4d1f6da5b90a37ad0e41a2",
+  "sourceEvidenceSha256": "0e10de25dded7c3e65ed25d50b9310f0dbaeb46dacf2f425ab8ede5865a29827",
+  "openSpecFiles": {
+    "openspec/changes/establish-v1-plugin/.openspec.yaml": "c956e2a907cf0aa23d948e300827f91e46ab77d64e288d98285dfe990bb0d989",
+    "openspec/changes/establish-v1-plugin/README.md": "bef1ad5538e5cbf84fdf5553afc8f1c1091f33db2d91205fde50fce2403dbe68",
+    "openspec/changes/establish-v1-plugin/design.md": "53f5d707e6a5f65f7267873abe6a79715028a4b4718760913e66e768696bb40e",
+    "openspec/changes/establish-v1-plugin/proposal.md": "5621718474ac69fabc85a1d5937c3639b45fbec0afc386e106d7ea85de30fd4a",
+    "openspec/changes/establish-v1-plugin/specs/artifact-delivery/spec.md": "f555999fd8954c6afd705bf8d6ae3651e23e25c0c0380cf6fc466177b401f09f",
+    "openspec/changes/establish-v1-plugin/specs/domain-workflow/spec.md": "f4e1228e8dc1c9f3e0f8dc2e027757ed8a16811bd3f294470c080384c379e4ca",
+    "openspec/changes/establish-v1-plugin/specs/quality-review/spec.md": "c5cdb7c1e54746ce32596f4e5d4537f21aa06e961d3da0c9a56365c74c912fd9",
+    "openspec/changes/establish-v1-plugin/specs/release-compatibility/spec.md": "ebba62e7383595ed9385dd696cb46d38f204e61e62fd021ffd0873f8ac29166f",
+    "openspec/changes/establish-v1-plugin/specs/runtime-distribution/spec.md": "66c93dfbe0e1817119dca4e65f9bfe0c488e700c9d532cf974d8cad35f368b35",
+    "openspec/changes/establish-v1-plugin/specs/skills-distribution/spec.md": "39dbc8e49cd5ad12c41ad1ffeb56ad821175a4ab8d02bfbab286fe499dc3dec7",
+    "openspec/changes/establish-v1-plugin/specs/task-execution/spec.md": "c6d4687a98e606e5faecebcf77cc8e10ae46b8f54ab6b898c074d98811303103",
+    "openspec/changes/establish-v1-plugin/tasks.md": "36efa00d7d7fb712d39756b88abb0afe2cd5ce2073ef54862ecccb085646d118"
+  },
+  "marketplaceEligible": false,
+  "fullV1": "NOT_RUN",
+  "ci": "NOT_RUN before publication"
+}

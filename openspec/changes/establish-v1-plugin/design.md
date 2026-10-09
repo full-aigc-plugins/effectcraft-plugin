@@ -387,3 +387,8 @@ flowchart TD
     Decode -->|一致| Pass[采样组件PASS，其他验收独立]
     Decode -->|不一致或改写| Fail[FAIL 工程门禁关闭]
 ```
+
+停止观察增量：POSIX组守护在原5秒停止观察窗口内对`process_tree_inspection_failed`进行有界只读重查，第一次有效“整组已停止”观察后才结算。业务退出码继续来自原nonce管道；强制组停止且无业务回执时只记录负组退出码，workerResultVerified保持false。窗口到期仍无法取得有效观察时保留unknown与原异常；其他错误不被该重查吸收。
+
+
+合成配置门禁（EC-DM-001）：workflow独立推导锁定上游的254016000000 ticks/秒、有理帧率和时长吸附，在保存前和重开后核对尺寸、帧率、时长及工作区。原生0.4.0 editor.state当前时间从按active_comp索引的times整数tick读取；不把研究HEAD的返回形式当作发行合同。高层workArea严格验证；原生comp.workArea保留边界裁剪与CTI快捷操作。兼容新增composition-validation.json随包摘要绑定。commands/desktop完整领域计划适配与平台验收仍开放。

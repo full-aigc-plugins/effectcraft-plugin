@@ -441,3 +441,9 @@ Resource discovery release increment: native_resources.py observes saved font de
 ### File LUT validation candidate
 
 Unpublished file-LUT review candidate: public command/owned-desktop reviews now verify declared packaged LUT inputs in isolated native copies, compare decoded sample frames and preserve originals. Each review render reserves durable task-family resources before execution; unknown resources, missing frames or exhausted budgets keep the engineering gate NOT_RUN, while mismatches fail it. Bound absolute declarations can relink to verified relative package content after relocation without reading the old location. Workflow routing is implemented but its native file-LUT creation/review acceptance remains open. The plugin still consumes released source64/plugin66; published CI and old native reports do not validate this candidate. See [candidate evidence](evidence/file-lut-validation-candidate-20261009.json). Tasks5.1–5.3 and69 V1 tasks remain open.
+
+
+Stop-observation candidate / 停止观察候选：原5秒窗口内只读重查；成员表为空／畸形或连续查询错误不构成停止证明。保留nonce绑定的原业务结果、负强制组退出码与未知状态区别。当前仅本地候选，完整平台／故障验收不提升。证据：`docs/evidence/stop-observation-candidate-20261009.json`。
+
+
+Workflow composition gates now map pinned native timing, preserve work-area shortcuts and refuse configuration drift before render. Test task4.1 is complete; complete domain mapping4.2 and native boundary qualification4.3 remain open. Distribution: source68/plugin70. Evidence: [release68-validation](evidence/release68-validation-20261009.json).

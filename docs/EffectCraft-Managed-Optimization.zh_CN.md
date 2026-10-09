@@ -528,3 +528,9 @@ source59／plugin61开发发行新增版本化命令完成证明，在核对全�
 ### 文件LUT核验候选
 
 未发布文件LUT审阅候选：公开命令／自有桌面review在隔离原生副本重关联已声明、打包的LUT输入，比较解码采样帧并保全原件。每次核验渲染先持久预占任务族预算；未知资源、缺帧或预算耗尽使工程门禁保持NOT_RUN，摘要／像素不符则FAIL。绑定的绝对声明可在搬迁后按相对包内容重关联，不读取旧地址。工作流已接通路由，但其文件LUT创建与review真实验收仍开放。插件继续消费已发布source64／plugin66，既有CI及原生报告不能证明本候选。证据：[文件LUT候选](evidence/file-lut-validation-candidate-20261009.json)。5.1–5.3及69项V1任务继续开放。
+
+
+Stop-observation candidate / 停止观察候选：原5秒窗口内只读重查；成员表为空／畸形或连续查询错误不构成停止证明。保留nonce绑定的原业务结果、负强制组退出码与未知状态区别。当前仅本地候选，完整平台／故障验收不提升。证据：`docs/evidence/stop-observation-candidate-20261009.json`。
+
+
+Workflow composition gates now map pinned native timing, preserve work-area shortcuts and refuse configuration drift before render. Test task4.1 is complete; complete domain mapping4.2 and native boundary qualification4.3 remain open. Distribution: source68/plugin70. Evidence: [release68-validation](evidence/release68-validation-20261009.json).

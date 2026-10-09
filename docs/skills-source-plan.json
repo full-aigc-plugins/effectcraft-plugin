@@ -22,6 +22,6 @@
   "sourceOfTruth": "independent skills repository",
   "packaging": "immutable vendored snapshot with tag, commit and whole-tree checksums",
   "suiteManifest": "https://github.com/full-aigc-skills/effectcraft-skills/blob/main/skill-suite.json",
-  "sourceRef": "v0.1.0-dev.67",
-  "sourceSha": "b50e5f28c3e59580b5a59657907b29e9eccc1fdc"
+  "sourceRef": "v0.1.0-dev.68",
+  "sourceSha": "a2d83134ce81d32e3c56db741cddfb87f5ca146c"
 }
