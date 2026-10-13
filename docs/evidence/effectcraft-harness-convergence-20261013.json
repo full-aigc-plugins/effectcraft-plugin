@@ -1,0 +1,30 @@
+{
+ "schema": "effectcraft-architecture-evidence/v1",
+ "date": "2026-10-13",
+ "scope": "Task 10.2 (EC-SK-003) execution-payload convergence: upstream layout, plugin re-vendor and offline snapshot verification; no new native, creative, platform or host acceptance",
+ "change": {
+  "summary": "收敛重复执行实现为内置 effectcraft-harness：共享执行脚本只保留一份，15 个领域技能瘦身为薄文档技能并按名称路由到 harness",
+  "upstreamRepository": "https://github.com/full-aigc-skills/effectcraft-skills",
+  "upstreamTag": "v0.1.0-dev.69",
+  "upstreamCommit": "c9efdde083831859367d3d9de83c1be42f492dfc",
+  "harnessSkill": "skills/effectcraft-harness",
+  "harnessDocumentedEntries": ["scripts/launch.sh", "scripts/launch.ps1", "scripts/cli.py", "scripts/commands.py", "scripts/workflow.py", "scripts/bootstrap.py"],
+  "harnessScriptFiles": 70,
+  "harnessReferenceContracts": ["references/command-coverage.json", "references/native-command-snapshot.json", "references/bridge-tools.json", "references/commands.json"],
+  "domainSkillsSlimmed": 15,
+  "removedOrphanPayload": ["additional_platforms.py", "additional-platforms.lock.json", "tests/test_additional_platforms.py"],
+  "behaviorPreservation": "69/70 个 harness 脚本与 v0.1.0-dev.68 逐字节一致；唯一差异是 runtime_binding.py 执行清单移除孤儿锁文件名一行；六个入口与动态依赖闭包一个不少"
+ },
+ "verification": {
+  "pluginLock": {
+   "repo": "https://github.com/full-aigc-skills/effectcraft-skills.git",
+   "ref": "v0.1.0-dev.69",
+   "sha": "c9efdde083831859367d3d9de83c1be42f492dfc",
+   "vendoredSkills": 16,
+   "vendorCheckOffline": "pass — skill vendor check: all managed skills match the lockfile (offline)"
+  },
+  "upstreamRegression": "764 项测试全部通过（74 项显式 opt-in 跳过）；sync_skill_suite --check、build_command_coverage --check、build_capability_matrix --check 通过",
+  "harnessSmoke": "runtime_binding.prepare 于 harness 目录成功（74 项执行清单，无孤儿条目）；managed.py plan 预检返回 VALID；launch.sh doctor 正常返回"
+ },
+ "boundaries": "本收敛不证明任何命令的原生执行验收、目标平台验收或宿主验收；能力矩阵维持 current=false（证据仍绑定历史载荷）；发布推送与 CI 在线核验另行授权"
+}

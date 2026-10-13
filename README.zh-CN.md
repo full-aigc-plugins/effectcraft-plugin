@@ -7,8 +7,12 @@
 | Field | Value |
 | --- | --- |
 | Metadata version | 0.1.0-dev.70 |
-| Skills source | effectcraft-skills / v0.1.0-dev.68 |
+| Skills source | effectcraft-skills / v0.1.0-dev.69 |
 | Acceptance | Development; full V1 OPEN |
+
+## 插件边界
+
+Agent Plugins 1.0.0 通过根 `plugin.json` 发现本包及其 15 个技能。命令和钩子如果提供，属于客户端扩展，不是可移植核心组件。官方 EffectCraft CLI 执行原生编辑；宿主智能体负责规划、观察实际媒体并决定创作修订。当前技能脚本承担固定首次安装和确定性的执行、恢复检查。本包没有根 `mcp.json`，因此尚未提供可移植 MCP 服务，尽管上游 CLI 自身支持 MCP。跨平台 MCP 启动及宿主验收仍开放；见[架构决策](openspec/changes/establish-v1-plugin/design.md#agent-plugin-边界2026-10-09)。
 
 
 ## 首次使用

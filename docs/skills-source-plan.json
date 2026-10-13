@@ -17,11 +17,12 @@
     "effectcraft-cli-camera",
     "effectcraft-cli-export",
     "effectcraft-cli-tracking",
-    "effectcraft-cli-puppet"
+    "effectcraft-cli-puppet",
+    "effectcraft-harness"
   ],
   "sourceOfTruth": "independent skills repository",
-  "packaging": "immutable vendored snapshot with tag, commit and whole-tree checksums",
+  "packaging": "immutable vendored snapshot with tag, commit and whole-tree checksums; execution payload converges in the bundled effectcraft-harness skill",
   "suiteManifest": "https://github.com/full-aigc-skills/effectcraft-skills/blob/main/skill-suite.json",
-  "sourceRef": "v0.1.0-dev.68",
-  "sourceSha": "a2d83134ce81d32e3c56db741cddfb87f5ca146c"
+  "sourceRef": "v0.1.0-dev.69",
+  "sourceSha": "c9efdde083831859367d3d9de83c1be42f492dfc"
 }

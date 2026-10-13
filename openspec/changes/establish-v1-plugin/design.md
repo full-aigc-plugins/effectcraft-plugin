@@ -19,6 +19,16 @@
 5. 公共协议由 ArtCraft 规范持有，领域仓只拥有自己的 payload 与映射。替代方案每个插件独立定义公共 JSON 将导致不兼容。
 6. 技术验证与创作评估分离，已有有效用户授权持续生效；只在超范围动作或修改授权约束时要求新的授权。
 
+## Agent Plugin 边界（2026-10-09）
+
+Agent Plugins 1.0.0 的可移植包由根 `plugin.json` 发现 `skills/` 和可选的根 `mcp.json`。命令、钩子及其触发时机属于具体客户端的扩展，不作为所有宿主都会执行的核心能力。`effectcraft-plugin` 负责清单、固定技能快照、宿主扩展和分发校验；它不是第二套创作引擎。十五个技能继续承担任务触发、参数知识、工作步骤和验收指导，并保持单独安装可用。
+
+EffectCraft 官方 CLI 与 `effectcraft-cli mcp` 是原生编辑和工具事实源。宿主智能体负责理解用户意图、规划、选择工具、观察实际媒体、给出创作评价和决定预算内修订；代码只承担可确定性核验的安装完整性、参数/授权范围、操作身份、未知结果保全、原生工程与媒体技术检查。已有 Python 受管理入口是这些已确认合同的实现细节，不能把它或重复的任务编排说成 Agent Plugins 规范所要求的组件。减少执行代码时须先逐条证明上述合同与旧公开入口保持兼容，不用提示词替代未知编辑的防重放保障。
+
+标准 `mcp.json` 的 `stdio.command` 只能是一个包内可执行文件或系统可解析的单个程序名，不支持按操作系统选择命令，也不能在 `command` 中展开 `${PLUGIN_ROOT}`。当前同时要求 Windows、macOS、Linux 无系统 Python/EffectCraft 的首次使用，不能把一个平台的 Shell/PowerShell 脚本或系统 `effectcraft-cli` 当作跨平台 MCP 启动器。新增可移植 `mcp.json` 前，须提供真实打包且各目标平台可启动的单个入口，或明确限制并验证目标平台；宿主专有启动配置单独置于对应客户端扩展。技能直接使用已验证的原生 CLI 仍是有效路径。MCP 接入、实际工具发现、调用和断线语义须在目标宿主分别验收；目前没有根 `mcp.json`，不得宣称已提供标准 MCP 组件。
+
+单技能独立安装要求其启动和锁定资源自足，但不要求在十五份技能内手工维护十五套执行实现。现有生成同步可保留，后续收敛应以发行快照、单技能离线启动、旧任务恢复和全部平台代表任务为回归门禁。测试、证据生成和快照工具属于开发/发布侧，不随宿主创作请求运行。对外状态必须区分插件结构符合规范、技能可发现、MCP 可连接、原生任务完成以及创作验收。
+
 ## Component design
 
 完整中英文运行时设计位于 [中文架构](../../../docs/EffectCraft-Runtime-Architecture.zh_CN.md) 和 [English architecture](../../../docs/EffectCraft-Runtime-Architecture.md)。领域计划对象包括 CompositionPlan, Composition, Layer, PropertyPath, Keyframe，以下能力逐项编译：

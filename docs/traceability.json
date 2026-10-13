@@ -30,8 +30,7 @@
       "tasks": [
         "2.1",
         "2.2",
-        "2.3",
-        "9.27"
+        "2.3"
       ],
       "owner": "Runtime owner",
       "status": "verified",
@@ -43,15 +42,8 @@
       "requirement": "EC-RT-002",
       "capability": "runtime-distribution",
       "tasks": [
-        "2.4",
-        "2.5",
-        "2.6",
         "2.9",
-        "2.10",
-        "9.2",
-        "9.24",
-        "9.25",
-        "9.26"
+        "2.10"
       ],
       "owner": "Runtime owner",
       "status": "in-progress",
@@ -63,64 +55,25 @@
       "runtimeUpgradeComponentCandidateEvidence": "docs/evidence/runtime-upgrade-component-candidate-20261009.json"
     },
     {
-      "requirement": "EC-TX-001",
-      "capability": "task-execution",
-      "tasks": [
-        "3.1",
-        "3.2",
-        "3.3",
-        "3.13",
-        "3.14"
-      ],
-      "owner": "Harness owner",
-      "status": "planned"
-    },
-    {
-      "requirement": "EC-TX-002",
-      "capability": "task-execution",
-      "tasks": [
-        "3.4",
-        "3.5",
-        "3.6"
-      ],
-      "owner": "Harness owner",
-      "status": "planned"
-    },
-    {
-      "requirement": "EC-TX-003",
-      "capability": "task-execution",
-      "tasks": [
-        "3.7",
-        "3.8",
-        "3.9"
-      ],
-      "owner": "Harness owner",
-      "status": "planned"
-    },
-    {
       "requirement": "EC-DM-001",
       "capability": "domain-workflow",
       "tasks": [
         "4.1",
-        "4.2",
-        "4.3"
+        "4.2"
       ],
       "owner": "Domain owner",
       "status": "in-progress",
       "evidence": "docs/evidence/effect-assets-tests.json",
       "testEvidence": "docs/evidence/release68-validation-20261009.json",
       "remaining": [
-        "4.2 complete command/desktop domain mapping",
-        "4.3 complete native boundary qualification"
+        "4.2 complete command/desktop domain mapping"
       ]
     },
     {
       "requirement": "EC-DM-002",
       "capability": "domain-workflow",
       "tasks": [
-        "4.4",
-        "4.5",
-        "4.6"
+        "4.5"
       ],
       "owner": "Domain owner",
       "status": "in-progress",
@@ -130,9 +83,8 @@
       "requirement": "EC-DM-003",
       "capability": "domain-workflow",
       "tasks": [
-        "4.7",
         "4.8",
-        "4.9"
+        "4.19"
       ],
       "owner": "Domain owner",
       "status": "in-progress",
@@ -142,9 +94,8 @@
       "requirement": "EC-DM-004",
       "capability": "domain-workflow",
       "tasks": [
-        "4.10",
         "4.11",
-        "4.12"
+        "4.20"
       ],
       "owner": "Domain owner",
       "status": "in-progress",
@@ -154,9 +105,7 @@
       "requirement": "EC-DM-005",
       "capability": "domain-workflow",
       "tasks": [
-        "4.13",
         "4.14",
-        "4.15",
         "4.25",
         "4.26",
         "4.27"
@@ -169,86 +118,26 @@
       "requirement": "EC-DM-006",
       "capability": "domain-workflow",
       "tasks": [
-        "4.16",
-        "4.17",
-        "4.18"
+        "4.17"
       ],
       "owner": "Domain owner",
       "status": "in-progress",
       "evidence": "docs/evidence/effect-assets-tests.json"
     },
     {
-      "requirement": "EC-AR-001",
-      "capability": "artifact-delivery",
-      "tasks": [
-        "5.1",
-        "5.2",
-        "5.3"
-      ],
-      "owner": "Harness owner",
-      "status": "in-progress",
-      "workflowArtifactLineageCandidateEvidence": "docs/evidence/workflow-artifact-lineage-candidate-20261009.json",
-      "candidateImplementation": {
-        "repository": "full-aigc-skills/effectcraft-skills",
-        "files": [
-          "skills/effectcraft-use/scripts/artifact_lineage.py",
-          "skills/effectcraft-use/scripts/workflow.py",
-          "skills/effectcraft-use/scripts/quality_review.py",
-          "skills/effectcraft-use/scripts/managed.py",
-          "skills/effectcraft-use/scripts/task_store.py",
-          "skills/effectcraft-use/scripts/native_resources.py",
-          "skills/effectcraft-use/scripts/command_artifact.py",
-          "skills/effectcraft-use/scripts/command_delivery.py",
-          "skills/effectcraft-use/scripts/resource_validation.py",
-          "skills/effectcraft-use/scripts/engineering_review.py",
-          "skills/effectcraft-use/scripts/resource_budget.py",
-          "skills/effectcraft-use/scripts/review_ledger.py"
-        ],
-        "tests": [
-          "tests/test_workflow_artifact_lineage.py",
-          "tests/test_workflow_artifact_lineage_native.py",
-          "tests/test_native_resources.py",
-          "tests/test_native_resources_native.py",
-          "tests/test_file_lut_validation.py",
-          "tests/test_file_lut_validation_native.py"
-        ],
-        "scope": "workflow, command and owned desktop resource observations; font binary/fallback and file LUT path fidelity NOT_RUN; full tasks5.1/5.2/5.3 in progress"
-      },
-      "commandArtifactCandidateEvidence": "docs/evidence/command-artifact-lineage-candidate-20261009.json",
-      "nativeResourceEvidence": "docs/evidence/native-resources-release64-20261009.json",
-      "fileLutCandidateEvidence": "docs/evidence/file-lut-validation-candidate-20261009.json"
-    },
-    {
       "requirement": "EC-AR-002",
       "capability": "artifact-delivery",
       "tasks": [
         "5.4",
-        "5.5",
-        "5.6"
+        "5.5"
       ],
       "owner": "Harness owner",
       "status": "planned"
     },
     {
-      "requirement": "EC-QA-001",
-      "capability": "quality-review",
-      "tasks": [
-        "6.1",
-        "6.2",
-        "6.3"
-      ],
-      "owner": "Harness owner",
-      "status": "planned",
-      "technicalGateAcceptanceEvidence": "docs/evidence/technical-gate-acceptance-20261009.json"
-    },
-    {
       "requirement": "EC-QA-002",
       "capability": "quality-review",
-      "tasks": [
-        "6.4",
-        "6.5",
-        "6.6"
-      ],
+      "tasks": [],
       "owner": "Harness owner",
       "status": "planned"
     },
@@ -256,21 +145,7 @@
       "requirement": "EC-RL-001",
       "capability": "release-compatibility",
       "tasks": [
-        "7.1",
-        "7.2",
-        "7.3",
-        "9.6"
-      ],
-      "owner": "Release owner",
-      "status": "planned"
-    },
-    {
-      "requirement": "EC-RL-002",
-      "capability": "release-compatibility",
-      "tasks": [
-        "7.4",
-        "7.5",
-        "7.6"
+        "10.1"
       ],
       "owner": "Release owner",
       "status": "planned"
@@ -284,9 +159,8 @@
         "1.9",
         "1.10",
         "1.11",
-        "9.5",
-        "9.5.1",
-        "9.5.2"
+        "10.2",
+        "10.2.1"
       ],
       "owner": "Skills owner",
       "status": "partial-macOS-packaging-passed; domain and target-platform gates open",
@@ -299,7 +173,6 @@
       "tasks": [
         "8.1",
         "8.2",
-        "8.3",
         "8.4",
         "8.5",
         "8.6",
@@ -327,11 +200,7 @@
     {
       "requirement": "EC-TX-004",
       "capability": "task-execution",
-      "tasks": [
-        "3.10",
-        "3.11",
-        "3.12"
-      ],
+      "tasks": [],
       "owner": "Harness owner",
       "status": "verified-darwin-arm64",
       "candidateEvidence": "docs/evidence/failed-stage-candidate-20261007.json",
@@ -349,93 +218,6 @@
       "owner": "Desktop runtime owner",
       "status": "verified-bounded-darwin-arm64",
       "evidence": "docs/evidence/craft-full-command-fixed-first-use-20261007.json"
-    },
-    {
-      "requirement": "EC-RT-003",
-      "capability": "runtime-distribution",
-      "tasks": [
-        "9.1",
-        "9.15",
-        "9.28",
-        "9.29",
-        "9.29.1"
-      ],
-      "owner": "Runtime owner",
-      "status": "in-progress",
-      "evidence": "docs/evidence/craft-fixed-runtime-integrity-20261008.json",
-      "scope": "partial macOS component evidence only; current scenarios retain target-platform, fixed-host and bound-entry gates",
-      "doctorCapabilitiesCandidateEvidence": "docs/evidence/doctor-capabilities-candidate-20261008.json",
-      "isolatedPythonUpgradeCandidateEvidence": "docs/evidence/isolated-python-upgrade-candidate-20261009.json",
-      "taskBoundEntryCandidateEvidence": "docs/evidence/task-bound-entry-candidate-20261009.json"
-    },
-    {
-      "requirement": "EC-TX-005",
-      "capability": "task-execution",
-      "tasks": [
-        "9.3",
-        "9.7",
-        "9.3.1",
-        "9.3.2",
-        "9.3.3",
-        "9.3.4",
-        "9.3.5",
-        "9.3.6",
-        "9.8",
-        "9.9",
-        "9.10",
-        "9.11",
-        "9.12",
-        "9.13",
-        "9.14",
-        "9.30",
-        "9.31",
-        "9.32",
-        "9.33",
-        "9.34",
-        "9.35",
-        "9.36"
-      ],
-      "owner": "Harness owner",
-      "status": "in-progress",
-      "commandPngRevisionCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json",
-      "processGroupProbeCandidateEvidence": "docs/evidence/process-group-probe-candidate-20261009.json",
-      "groupOwnershipReleaseEvidence": "docs/evidence/group-ownership-release51-20261009.json",
-      "cancelRestartCandidateEvidence": "docs/evidence/cancel-restart-candidate-20261009.json",
-      "publicInterfaceCandidateEvidence": "docs/evidence/managed-public-interface-candidate-20261009.json",
-      "threeModeCompositionEvidence": "docs/evidence/managed-three-mode-composition-20261009.json",
-      "defaultManagedRoutingEvidence": "docs/evidence/managed-default-routing-20261009.json",
-      "sourceRevisionConflictCandidateEvidence": "docs/evidence/source-revision-conflict-candidate-20261009.json",
-      "sharedProjectClaimsCandidateEvidence": "docs/evidence/shared-project-claims-candidate-20261009.json",
-      "projectCreationGenerationCandidateEvidence": "docs/evidence/project-creation-generation-candidate-20261009.json",
-      "desktopNativeRevisionCandidateEvidence": "docs/evidence/desktop-native-revision-candidate-20261009.json",
-      "desktopConflictReconcileCandidateEvidence": "docs/evidence/desktop-conflict-reconcile-candidate-20261009.json",
-      "commandCompletionCrashCandidateEvidence": "docs/evidence/command-completion-crash-candidate-20261009.json",
-      "nativeFamilyCancellationCandidateEvidence": "docs/evidence/native-family-cancellation-candidate-20261009.json",
-      "sourceProducerGuardCandidateEvidence": "docs/evidence/source-producer-guard-candidate-20261009.json",
-      "stopObservationCandidateEvidence": "docs/evidence/stop-observation-candidate-20261009.json"
-    },
-    {
-      "requirement": "EC-QA-003",
-      "capability": "quality-review",
-      "tasks": [
-        "9.4",
-        "9.16",
-        "9.17",
-        "9.18",
-        "9.4.3",
-        "9.4.4",
-        "9.4.2",
-        "9.19",
-        "9.20",
-        "9.21",
-        "9.22",
-        "9.23",
-        "9.4.1"
-      ],
-      "owner": "Harness owner",
-      "status": "in-progress",
-      "commandPngRevisionCandidateEvidence": "docs/evidence/command-revision-resource-candidate-20261008.json",
-      "technicalGateAcceptanceEvidence": "docs/evidence/technical-gate-acceptance-20261009.json"
     }
   ]
 }

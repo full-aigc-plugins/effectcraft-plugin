@@ -1,0 +1,144 @@
+{
+  "schema": "effectcraft-target-validation/v1",
+  "date": "2026-10-09",
+  "status": "PASS_COMPONENT_WITH_OPEN_GATES",
+  "scope": "Source68 plus UTF-8 BOM in two PowerShell scripts only; native workflow and recovery on the user-designated WebCodex desktop. Does not qualify the newer local command-composition candidate or full V1.",
+  "environment": {
+    "plugin": "WebCodex-台式机",
+    "platform": "windows-x86_64",
+    "osBuild": "10.0.26200",
+    "powershell": "5.1.26100.7462",
+    "python": "3.13.16",
+    "effectcraft": "0.4.0",
+    "systemPythonExcluded": true,
+    "spaceInSkillPath": true
+  },
+  "input": {
+    "sourceTag": "v0.1.0-dev.68",
+    "sourceCommit": "a2d83134ce81d32e3c56db741cddfb87f5ca146c",
+    "archiveSha256": "210d524f07be6d22fa4a42f2e16b3ada207bf4fbf933159308bd6bad6677490a",
+    "singleSkillFiles": 116,
+    "candidateChanges": {
+      "launch.ps1": "391deb618d5fb7a3c22f172afd7a4861e3566a505ab8a9b9e04beb630786c48a",
+      "task_entry.ps1": "55a4929c7552fea10e340be59c8eb34ff0d57f0c1f4f44b47f25fc90a2301705"
+    },
+    "remaining114FilesUnchanged": true,
+    "skillSha256": "104db34a93966e060bad43f1196698ec1d025a3457660d545ac3cae029d60fd6",
+    "localSourceChecks": {
+      "files": {
+        "skills/effectcraft-use/scripts/launch.ps1": "391deb618d5fb7a3c22f172afd7a4861e3566a505ab8a9b9e04beb630786c48a",
+        "skills/effectcraft-use/scripts/task_entry.ps1": "55a4929c7552fea10e340be59c8eb34ff0d57f0c1f4f44b47f25fc90a2301705",
+        "skills/effectcraft-use/scripts/commands.py": "dcbd1478d4b44c60a4e4ff47dc396c4c5bb0fc909bc9096e6d40393b6c24316b",
+        "skills/effectcraft-use/scripts/command_composition.py": "3d9f267e8045249b5b18d78e7995cea5cda0e91454f7b06cee9df58d15853035",
+        "tests/test_windows_launcher_encoding.py": "f7d51ac4fd3c838e1014b10c966c94ac942773a331bb69c6d0441466736bc02d",
+        "tests/test_command_composition_contract.py": "eabd6552acdd108bca542663523702c0dffa891eb92aebae1d435b3e6da4295a",
+        "tests/test_command_composition_native.py": "9a213c658e14ebe60f9ed066a3b64ae615f4a0e63a576fe74b17aa23ffd302f4"
+      },
+      "logs": {
+        "windows-encoding-red.log": "98369bb799107d863b2d1cadb19b5bab89762be98ecbfe5f1f151b0fe1abbec9",
+        "windows-encoding-green.log": "151aa2267ce7131dea77b6ac1412c2949a20acdcdd0badc932f4c5b54b2de1f8",
+        "native-drift-current.log": "2f33f76d9d465fec32c7df57fd0d7a8681448a11f2ee5a0da87122114bd589d7",
+        "full-windows-fix.log": "6e44aa509055c42be6e2802363ca9f1756b0e71a317878bd8838a5069879b163"
+      }
+    }
+  },
+  "red": {
+    "publishedLauncher": "FAIL",
+    "error": "managed.py: error: the following arguments are required: action",
+    "legacyParserParamBlock": null,
+    "coldDoctorIncorrectlyInstalledPython": true,
+    "failureSitePreserved": true
+  },
+  "green": {
+    "legacyParser": "PASS",
+    "coldDoctorReadOnly": "PASS",
+    "isolatedPythonIntegrityAndReuse": "PASS",
+    "emptyEffectCraftCacheInstall": "PASS",
+    "nativeCreateSaveReopenRender": "PASS",
+    "completedTaskInspectReconcileResumeNoReplay": "PASS",
+    "engineering": "PASS",
+    "technical": "PASS",
+    "png": {
+      "width": 32,
+      "height": 32,
+      "bitDepth": 8,
+      "alpha": true,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "rgbaSha256": "4457b20cdb1a97d2036e4f85d95cf3ba1432a401d47976051beda9f664e64313"
+    },
+    "creative": "NOT_RUN",
+    "userAcceptance": "NOT_RUN",
+    "hostNaturalLanguageDispatch": "NOT_RUN",
+    "remainingValidationLaunchers": 0,
+    "existingRemoteRepositoriesClean": true
+  },
+  "coldPythonRetry": {
+    "status": "NOT_PASSED",
+    "reason": "Official Python download stayed at zero bytes beyond the declared 240-second download timeout; test-owned job stopped, terminal status stopped confirmed. End-to-end cold Python preparation remains open.",
+    "failureSitePreserved": true
+  },
+  "artifacts": [
+    {
+      "name": "composition-validation.json",
+      "bytes": 451,
+      "sha256": "ee6c604d19742a5160f0e33df456246b2190a5e1b71b46b060e6a1c87f05619f"
+    },
+    {
+      "name": "exchange-loss.json",
+      "bytes": 1776,
+      "sha256": "959c5c3d24a814f5406ce985f963fec1abbda994ea9a465a7af351c861d1a02a"
+    },
+    {
+      "name": "frame-0000.png",
+      "bytes": 252,
+      "sha256": "7f51af4346b804fcec26d61e255bcc4f307382dc360dd45c148acb33fe3462eb"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 4697,
+      "sha256": "443e71c1ab43a5e7b642fcc191da19f71adc2942c12303fd0fa3423e5fd3b8e5"
+    },
+    {
+      "name": "native.json",
+      "bytes": 15492,
+      "sha256": "5796688b21e7bd943cbcae485a959fe6d90d49e12a94bf510d61808678a8d41b"
+    },
+    {
+      "name": "operations.json",
+      "bytes": 21038,
+      "sha256": "ad12b33ff6876f7c86ebd1b65cad32f9175f6842963633ead94bca6b6b4c85c9"
+    },
+    {
+      "name": "plan.json",
+      "bytes": 752,
+      "sha256": "f60ef1856244130d56588e23306816c7c0bb2b995759b4a6f3092dba2b43a533"
+    },
+    {
+      "name": "project.ecproj",
+      "bytes": 36964,
+      "sha256": "0acd7cc352708ea0c392a4b35448d8d020c630a09e120d348c6e5fbea7609688"
+    }
+  ],
+  "localRegression": {
+    "tests": 775,
+    "passed": 700,
+    "skipped": 75,
+    "seconds": 352.217,
+    "windowsNativeTestOnLocalMac": "SKIPPED; remote public-entry behavior checked separately",
+    "ci": "NOT_RUN for unpublished candidate"
+  },
+  "jobs": {
+    "originalRed": "wc_job_F3-6M9ZDc_XvrNUv",
+    "coldDownloadStopped": "wc_job_0AKw86aaV4iU3l_N",
+    "native": "wc_job_1AFYFjAlgUGvXK8s",
+    "recoveryReview": "wc_job_Z12gjTDXLKxIe0bL",
+    "binding": "wc_job__kSMazZl1VjUSyXG",
+    "delta": "wc_job_aX8rjIolGRBr-x25"
+  },
+  "publication": "BOM fix is unpublished; plugin remains source68 snapshot.",
+  "fullV1": "OPEN",
+  "unclosedOpenSpecTasks": 68
+}

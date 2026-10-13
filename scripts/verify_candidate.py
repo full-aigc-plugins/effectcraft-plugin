@@ -14,14 +14,18 @@ def verify(source):
     root=subprocess.check_output(['git','-C',str(source),'rev-parse','--show-toplevel'],text=True).strip()
     if Path(root).resolve()!=source:raise ValueError('source_must_be_repository_root')
     suite=json.loads((source/'skill-suite.json').read_text())
-    if suite['pluginId']!='effectcraft' or len(suite['skills'])!=15:raise ValueError('candidate_skill_identity')
+    harness=suite['pluginId']+'-harness'
+    names=[row['name'] for row in suite['skills']]
+    if suite['pluginId']!='effectcraft' or len(names)!=16 or harness not in names:raise ValueError('candidate_skill_identity')
     for name in ('build_command_coverage.py','build_scenario_catalog.py','sync_skill_suite.py'):
         subprocess.run([sys.executable,'-I','-B',str(source/'scripts'/name),'--check'],cwd=source,check=True,stdout=subprocess.PIPE)
     identities={}
     for row in suite['skills']:
         skill=source/'skills'/row['name']
-        required=['SKILL.md','agents/openai.yaml','scripts/launch.sh','scripts/launch.ps1','scripts/managed.py','scripts/python.lock.json','scripts/runtime.lock.json']
+        # 执行实现只收敛在 harness；领域技能是薄文档，不再自带 scripts/。
+        required=['SKILL.md','agents/openai.yaml']+(['scripts/launch.sh','scripts/launch.ps1','scripts/managed.py','scripts/python.lock.json','scripts/runtime.lock.json'] if row['name']==harness else [])
         if any(not (skill/name).is_file() for name in required):raise ValueError('candidate_entry_missing: '+row['name'])
+        if row['name']!=harness and (skill/'scripts').exists():raise ValueError('candidate_domain_skill_carries_scripts: '+row['name'])
         if any(p.is_symlink() for p in skill.rglob('*')):raise ValueError('candidate_symlink')
         files={p.relative_to(skill).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(skill.rglob('*')) if p.is_file() and '__pycache__' not in p.parts}
         identities[row['name']]=hashlib.sha256(json.dumps(files,sort_keys=True,separators=(',',':')).encode()).hexdigest()

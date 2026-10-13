@@ -1,0 +1,151 @@
+{
+  "schema": "effectcraft-target-validation/v1",
+  "date": "2026-10-09",
+  "status": "PASS_COMPONENT",
+  "scope": "Windows x64 PowerShell 5.1 UTF-8 launcher and bounded Python download; source68 single skill plus exactly the launcher/BOM/download-helper changes. Newer local command-composition behavior is outside this remote evidence.",
+  "source": {
+    "baseTag": "v0.1.0-dev.68",
+    "baseCommit": "a2d83134ce81d32e3c56db741cddfb87f5ca146c",
+    "baseArchiveSha256": "210d524f07be6d22fa4a42f2e16b3ada207bf4fbf933159308bd6bad6677490a",
+    "changedScriptAndTestSha256": {
+      "skills/effectcraft-use/scripts/python_download.ps1": "e545da8fd4e0b2224d15e10ac7cccab5e98c9e52f35979bb4149753e67ed9210",
+      "skills/effectcraft-use/scripts/launch.ps1": "1f4bd3bdbe45706dc7ba2fd28cc9e2a46f2086586554507267d461ae4db2a755",
+      "skills/effectcraft-use/scripts/task_entry.ps1": "55a4929c7552fea10e340be59c8eb34ff0d57f0c1f4f44b47f25fc90a2301705",
+      "tests/test_python_download_windows.py": "4ff194f1540cc6fdb0941a55addfd8c2e2739e34b46221e8820448ccb9ff4791"
+    },
+    "binding": {
+      "identityHash": "a7d67de2efedfc7797a14bb294849408f1fce0dcc4689a8fdabb3a2f64c36e2d",
+      "allStepsSucceeded": true,
+      "skillSha256": "edb1eab7f26105cf5d512af3312ae8c5b1eb790bc1a7df5a980a981c7eb0d1b1",
+      "steps": 13,
+      "pythonVersion": "3.13.16",
+      "runtimeSha256": "79e54a87f2e4fb6ad86506b1d855195307b684489c8721cddf5b9495b3c286e7"
+    }
+  },
+  "environment": {
+    "plugin": "WebCodex-台式机",
+    "platform": "windows-x86_64",
+    "powershell": "5.1.26100.7462",
+    "python": "3.13.16",
+    "effectcraft": "0.4.0",
+    "pathWithSpaces": true,
+    "systemPythonExcluded": true
+  },
+  "red": {
+    "oldDownloader": "Invoke-WebRequest -TimeoutSec",
+    "normalResponse": "PASS",
+    "tricklingResponse": "FAIL",
+    "declaredTimeoutSeconds": 2,
+    "observedStillRunningAtSeconds": 7,
+    "testSeconds": 12.376,
+    "tests": 2,
+    "failed": 1,
+    "job": "wc_job_J625ZoH8jX2qbUem"
+  },
+  "green": {
+    "normalResponse": "PASS",
+    "tricklingResponse": "PASS",
+    "tests": 2,
+    "seconds": 6.764,
+    "partialArchivePublished": false,
+    "totalDeadlineCovers": "connection, headers and complete buffered response body",
+    "bufferLimitBytes": 67108864,
+    "productionTimeoutSeconds": 240,
+    "job": "wc_job_10t4yU-B6P6Cb3oi"
+  },
+  "publicFirstUse": {
+    "pythonInitiallyAbsent": true,
+    "officialArchiveDownloadedAndVerified": true,
+    "version": "3.13.16",
+    "seconds": 17.1630441,
+    "doctorAfterInstallation": "PASS",
+    "job": "wc_job_vrU5JMIb06NupptP"
+  },
+  "completeColdWorkflow": {
+    "pythonInitiallyAbsent": true,
+    "nativeInitiallyAbsent": true,
+    "stateInitiallyAbsent": true,
+    "mode": "workflow",
+    "entry": "launch.ps1 run",
+    "ownedFixtureOnly": true,
+    "engineering": "PASS",
+    "technical": "PASS",
+    "creative": "NOT_RUN",
+    "userAcceptance": "NOT_RUN",
+    "hostNaturalLanguageDispatch": "NOT_RUN",
+    "projectSha256": "0acd7cc352708ea0c392a4b35448d8d020c630a09e120d348c6e5fbea7609688",
+    "png": {
+      "width": 32,
+      "height": 32,
+      "bitDepth": 8,
+      "alpha": true,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "rgbaSha256": "4457b20cdb1a97d2036e4f85d95cf3ba1432a401d47976051beda9f664e64313"
+    },
+    "job": "wc_job_YRZBlmVivSeY31PS"
+  },
+  "artifacts": [
+    {
+      "sha256": "ee6c604d19742a5160f0e33df456246b2190a5e1b71b46b060e6a1c87f05619f",
+      "name": "composition-validation.json",
+      "bytes": 451
+    },
+    {
+      "sha256": "959c5c3d24a814f5406ce985f963fec1abbda994ea9a465a7af351c861d1a02a",
+      "name": "exchange-loss.json",
+      "bytes": 1776
+    },
+    {
+      "sha256": "7f51af4346b804fcec26d61e255bcc4f307382dc360dd45c148acb33fe3462eb",
+      "name": "frame-0000.png",
+      "bytes": 252
+    },
+    {
+      "sha256": "ab250aaba4281ba340018067bf70f0c9414d5d859aad6886831521bf1448c2ff",
+      "name": "manifest.json",
+      "bytes": 4687
+    },
+    {
+      "sha256": "5796688b21e7bd943cbcae485a959fe6d90d49e12a94bf510d61808678a8d41b",
+      "name": "native.json",
+      "bytes": 15492
+    },
+    {
+      "sha256": "f2df867df3ca4ca08ae2b940397d710b936ebdd10a4eb4c1b0e02eafa089b04f",
+      "name": "operations.json",
+      "bytes": 21176
+    },
+    {
+      "sha256": "f60ef1856244130d56588e23306816c7c0bb2b995759b4a6f3092dba2b43a533",
+      "name": "plan.json",
+      "bytes": 752
+    },
+    {
+      "sha256": "0acd7cc352708ea0c392a4b35448d8d020c630a09e120d348c6e5fbea7609688",
+      "name": "project.ecproj",
+      "bytes": 36964
+    }
+  ],
+  "localRegression": {
+    "status": "PASS",
+    "tests": 777,
+    "passed": 700,
+    "skipped": 77,
+    "seconds": 378.946,
+    "log": "full-download-fix.log",
+    "logSha256": "5cea7c86a8afaa32441778049b3d9c41c86a7a6dff8cf96ab0b83bdbeb6a7a2c",
+    "scope": "local macOS suite; Windows download tests passed separately on the target"
+  },
+  "publication": "UNPUBLISHED; plugin snapshot stays at source68",
+  "fullV1": "OPEN",
+  "remainingGates": [
+    "all remaining target architectures",
+    "complete install fault matrix",
+    "managed commands/desktop current candidate",
+    "host natural-language dispatch",
+    "creative judgment"
+  ]
+}

@@ -38,21 +38,6 @@
 - **WHEN** 向 FilmCraft 交付透明动画序列
 - **THEN** 验收 SHALL 检查实际帧、时间基准、alpha 和来源摘要，并验证下游导入及保全；缺少任一证据时不得宣称完整交接
 
-### Requirement: EC-RL-002 权限与秘密边界
-
-运行 SHALL 限定素材读取与工程写入根目录；模型输出和素材元数据均为不可信输入；密钥通过宿主秘密引用传入，不进入日志、计划、包或技能。
-
-#### Scenario: EC-RL-002-P 合同条件满足
-
-- **WHEN** 请求满足本需求的来源、输入、状态和证据条件
-- **THEN** 系统按本需求完成权限与秘密边界并返回可核对的结果
-- **AND** 结果绑定当前版本与执行身份，不提升未验证能力状态
-
-#### Scenario: EC-RL-002-N 边界条件
-
-- **WHEN** 素材元数据包含额外命令或路径越界请求
-- **THEN** 作为数据处理并拒绝越权执行，日志不泄露秘密
-
 ## Implementation evidence (non-normative)
 
 `docs/evidence/codex-current-release.json` binds current fixed releases to two actual Codex CLI/app-server versions, five enabled namespaced skills, installed public workflow outcomes and explicit exclusions. The corresponding bilingual Host-Verification-Architecture documents specify the repeatable check. RL-001 tasks remain unchecked until their full P0 prerequisites and scenarios pass.
@@ -68,6 +53,12 @@
 - **WHEN** 判断本优化或整个 V1 是否完成
 - **THEN** 每个目标平台与能力 SHALL 具备自己的真实证据；静态检查、模拟测试、历史报告、文档校验或发布成功不得替代原生任务与实际宿主验收
 - **AND** 未通过项 SHALL 保持开放，全部实现、验证与规格同步条件满足前不得归档整个 establish-v1-plugin
+
+#### Scenario: Agent Plugins 核心与客户端扩展边界
+
+- **WHEN** 打包或说明 EffectCraft 的 Agent Plugins 1.0.0 能力
+- **THEN** 根 `plugin.json` SHALL 是唯一可移植 manifest，`skills/` 与可选根 `mcp.json` 按规范固定位置发现；命令、钩子 SHALL 只作为明确标识的客户端扩展声明
+- **AND** 缺少根 `mcp.json` 时不得宣称包提供标准 MCP 组件；有原生 CLI 或技能内部 MCP 客户端也不能代替宿主发现和实际 MCP 调用证据
 
 #### Scenario: 当前能力矩阵拒绝过期技能和安装证据
 - **WHEN** 维护者由锁文件生成当前能力矩阵

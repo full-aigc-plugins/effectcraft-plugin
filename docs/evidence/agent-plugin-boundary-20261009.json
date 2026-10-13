@@ -1,0 +1,57 @@
+{
+  "schema": "effectcraft-architecture-evidence/v1",
+  "date": "2026-10-09",
+  "scope": "Specification and current package boundary audit only; no MCP host acceptance or runtime refactor",
+  "standard": "https://agent-plugins.org/specification",
+  "standardVersion": "1.0.0",
+  "plugin": {
+    "repository": "effectcraft-plugin",
+    "observedCommit": "f46a6e852f2df557d19162a4fe8d73a397ccbbe9",
+    "portableManifest": "plugin.json",
+    "skillsCount": 15,
+    "rootMcpConfig": "absent",
+    "clientExtension": "plugin.json extensions.com.openai"
+  },
+  "skillSource": {
+    "repository": "effectcraft-skills",
+    "observedCommit": "a2d83134ce81d32e3c56db741cddfb87f5ca146c",
+    "singleSkillRuntimeResources": "skills/effectcraft-use/scripts",
+    "nativeCliAndMcp": "Official upstream effectcraft-cli supports mcp stdio; currently invoked through skills, not exposed as a portable plugin MCP component",
+    "candidateScriptDistribution": {
+      "method": "sum regular files under each skills/*/scripts excluding __pycache__, current working tree",
+      "skills": 15,
+      "filesPerSkill": 74,
+      "bytesPerSkill": 1896367,
+      "totalScriptBytes": 28445505,
+      "interpretation": "Uncompressed duplicated source payload; not archive download size or resident memory"
+    },
+    "publishedSourceArchive": {
+      "tag": "v0.1.0-dev.68",
+      "sha256": "210d524f07be6d22fa4a42f2e16b3ada207bf4fbf933159308bd6bad6677490a",
+      "archiveBytes": 15644235,
+      "compressedScriptBytesAllSkills": 10848570,
+      "compressedScriptBytesPerSkill": 723238,
+      "method": "Python zipfile ZipInfo.compress_size over skills/*/scripts/* in the immutable local release archive"
+    },
+    "directReferenceAudit": {
+      "noSafeDeadModuleDeletionEstablished": true,
+      "apparentlyUnreferencedPublicEntries": ["additional_platforms.py", "cli.py", "task_entry.py"],
+      "dynamicallyLoadedExample": "preserved_stage.py via workflow.py load_module"
+    }
+  },
+  "decision": {
+    "portableComponents": ["skills", "optional root mcp.json"],
+    "clientSpecificComponents": ["commands", "hooks"],
+    "executionOwner": "Official EffectCraft CLI/MCP",
+    "creativeDecisionOwner": "Host agent",
+    "deterministicSupport": ["locked first-use setup", "operation identity and unknown-result preservation", "native project and media technical checks"],
+    "mcpCondition": "A single declared command must actually launch on every claimed platform, including first-use environments"
+  },
+  "status": {
+    "architectureContract": "documented",
+    "portableMcpComponent": "NOT_RUN",
+    "runtimeReduction": "NOT_RUN",
+    "hostNaturalLanguageDispatch": "NOT_RUN",
+    "fullV1": "OPEN"
+  }
+}

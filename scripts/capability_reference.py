@@ -10,7 +10,7 @@ def validate(root):
     """由插件锁定载荷独立验证已生成矩阵；失配不能冒充当前验收。"""
     root=Path(root)
     try:
-        matrix=read(root/'docs/current-capabilities.json');base=root/'skills/effectcraft-use'
+        matrix=read(root/'docs/current-capabilities.json');base=root/'skills/effectcraft-harness'
         runtime=read(base/'scripts/runtime.lock.json');python=read(base/'scripts/python.lock.json')
         path=root/'docs/evidence/current-capability-evidence.json';proof=read(path)
         if matrix['schema']!='effectcraft-capability-matrix/v2' or proof['schema']!='effectcraft-capability-evidence/v1':raise ValueError('schema mismatch')

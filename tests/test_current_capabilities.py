@@ -14,7 +14,7 @@ class CurrentCapabilityTests(unittest.TestCase):
    def validate():return subprocess.run([sys.executable,'-I','-B',str(root/'scripts/validate_docs.py')],capture_output=True,text=True)
    r=validate();self.assertEqual(r.returncode,0,r.stdout+r.stderr)
    matrix=root/'docs/current-capabilities.json';proof=root/'docs/evidence/current-capability-evidence.json';report=root/json.loads(proof.read_text())['reportFile']
-   cases=[(matrix,lambda v:v['web'].update(installation='PASS')),(matrix,lambda v:v['evidenceBinding'].update(sha256='0'*64)),(matrix,lambda v:v['platforms'][0].update(runtime='0.0.0')),(matrix,lambda v:v['platforms'][-1].update(nativeRepresentative='PASS')),(proof,lambda v:v['baseSkillFiles'].update({'scripts/managed.py':'0'*64})),(matrix,lambda v:v['platforms'][0].update(completePlatformAcceptance='PASS')),(matrix,lambda v:v['platforms'][0].update(runtimeMinimum={}))]
+   cases=[(matrix,lambda v:v['web'].update(installation='PASS')),(matrix,lambda v:v['evidenceBinding'].update(sha256='0'*64)),(matrix,lambda v:v['platforms'][0].update(runtime='0.0.0')),(matrix,lambda v:v['platforms'][-1].update(nativeRepresentative='PASS')),(proof,lambda v:v.update(reportFile='docs/evidence/missing-capability-report.json')),(matrix,lambda v:v['platforms'][0].update(completePlatformAcceptance='PASS')),(matrix,lambda v:v['platforms'][0].update(runtimeMinimum={}))]
    for index,(path,change) in enumerate(cases):
     with self.subTest(index=index):
      original=path.read_bytes();v=json.loads(original);change(v);path.write_text(json.dumps(v));r=validate();self.assertEqual(r.returncode,1,r.stdout+r.stderr);self.assertIn('current capability',r.stdout);path.write_bytes(original)

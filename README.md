@@ -2,13 +2,17 @@
 
 Create editable `.ecproj` projects, dependencies and media from text, graphics and footage. This is a development release; full V1 remains open. Published releases and local documentation candidates have separate evidence.
 
-Current plugin: `0.1.0-dev.70`; skill source: `0.1.0-dev.68`; 15 independent skills.
+Current plugin: `0.1.0-dev.70`; skill source: `0.1.0-dev.69`; 16 independent skills (15 domain + 1 bundled execution harness).
 
 | Field | Value |
 | --- | --- |
 | Metadata version | 0.1.0-dev.70 |
-| Skills source | effectcraft-skills / v0.1.0-dev.68 |
+| Skills source | effectcraft-skills / v0.1.0-dev.69 |
 | Acceptance | Development; full V1 OPEN |
+
+## Plugin boundary
+
+Agent Plugins 1.0.0 discovers this package through root `plugin.json` and its 15 skills. Commands and hooks, when provided, are client extensions rather than portable core components. The official EffectCraft CLI performs native editing; the host agent plans, observes media and decides creative revisions. Skill scripts currently provide pinned first-use setup and deterministic execution/recovery checks. The package has no root `mcp.json`, so it does not yet expose a portable MCP server, even though the upstream CLI supports MCP. Cross-platform MCP startup and host acceptance remain open; see the [architecture decision](openspec/changes/establish-v1-plugin/design.md#agent-plugin-边界2026-10-09).
 
 
 ## First use
