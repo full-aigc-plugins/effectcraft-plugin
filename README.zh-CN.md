@@ -1,4 +1,4 @@
-# EffectCraft Agent 插件
+# EffectCraft Use
 
 从文字、图形和素材创建可编辑 `.ecproj` 工程、依赖和媒体。当前为开发版，完整 V1 未完成；已发布版本与本地文档候选分别记录。
 
@@ -143,3 +143,13 @@ Source dev.67 / plugin dev.69 correct a Windows absolute-path test fixture witho
 
 
 技能源 dev.68／插件 dev.70 分发POSIX有限停止核验及工作流合成配置门禁。历史候选证据保留观察时范围。[发布证据](docs/evidence/release68-validation-20261009.json)。完整领域、其他原生目标及宿主验收保持开放，仍不具备市场准入资格。
+
+## 场景技能开发候选
+
+已增加 6 个领域场景技能及 1 个内嵌编辑器入口。详见 [场景目录](docs/scene-skills.md)。本地未发布候选，不代表全部场景的创作质量已验收。
+
+## 内嵌编辑器候选
+
+新增 MCP Apps 与宿主浏览器接入，详见 [配置与构建](docs/editor-integration.md)。`ui/dist/` 为本地生成物；首次分发须带齐生成物。
+
+插件展示使用上游官方图标；名称为 **EffectCraft Use**。图标来源与许可证保存在 `assets/official-icon-source.json` 和相邻 LICENSE 文件中。

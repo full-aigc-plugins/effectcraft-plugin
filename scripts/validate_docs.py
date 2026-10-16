@@ -19,7 +19,7 @@ capability_module = importlib.util.module_from_spec(capability_spec)
 capability_spec.loader.exec_module(capability_module)
 errors.extend(capability_module.validate(ROOT))
 markdown = sorted(ROOT.rglob('*.md'))
-markdown = [p for p in markdown if '.git' not in p.parts]
+markdown = [p for p in markdown if not {'.git', 'node_modules', 'dist', '.local'}.intersection(p.relative_to(ROOT).parts)]
 for path in markdown:
     text = path.read_text(encoding='utf-8')
     relative = str(path.relative_to(ROOT))
@@ -147,7 +147,7 @@ if en_sections!=zh_sections:
     errors.append('README languages differ in section coverage')
 
 for path in ROOT.rglob('*.json'):
-    if '.git' not in path.parts:
+    if not {'.git', 'node_modules', 'dist', '.local'}.intersection(path.relative_to(ROOT).parts):
         try:
             json.loads(path.read_text())
         except (json.JSONDecodeError,UnicodeDecodeError) as exc:
