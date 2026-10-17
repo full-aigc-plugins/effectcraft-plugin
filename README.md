@@ -14,11 +14,11 @@
 
 Create editable `.ecproj` projects, dependencies and media from text, graphics and footage. This is a development release; full V1 remains open. Published releases and local documentation candidates have separate evidence.
 
-Current plugin: `0.1.0-dev.20261017.6`; skill source: `0.1.0-dev.69`; 16 independent skills (15 domain + 1 bundled execution harness).
+Current plugin: `0.1.0-dev.20261018.1`; skill source: `0.1.0-dev.69`; 16 independent skills (15 domain + 1 bundled execution harness).
 
 | Field | Value |
 | --- | --- |
-| Metadata version | 0.1.0-dev.20261017.6 |
+| Metadata version | 0.1.0-dev.20261018.1 |
 | Skills source | effectcraft-skills / v0.1.0-dev.69 |
 | Acceptance | Development; full V1 OPEN |
 

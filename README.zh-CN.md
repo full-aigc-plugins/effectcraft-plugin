@@ -14,11 +14,11 @@
 
 从文字、图形和素材创建可编辑 `.ecproj` 工程、依赖和媒体。当前为开发版，完整 V1 未完成；已发布版本与本地文档候选分别记录。
 
-当前插件：`0.1.0-dev.70`；技能源：`0.1.0-dev.68`；15 个独立技能。
+当前插件：`0.1.0-dev.20261018.1`；技能源：`0.1.0-dev.68`；15 个独立技能。
 
 | Field | Value |
 | --- | --- |
-| Metadata version | 0.1.0-dev.20261017.6 |
+| Metadata version | 0.1.0-dev.20261018.1 |
 | Skills source | effectcraft-skills / v0.1.0-dev.69 |
 | Acceptance | Development; full V1 OPEN |
 
