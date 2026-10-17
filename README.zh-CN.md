@@ -187,4 +187,4 @@ Source dev.67 / plugin dev.69 correct a Windows absolute-path test fixture witho
 - [effectcraft-countdown-intro](skills/effectcraft-countdown-intro/SKILL.md)
 - [effectcraft-credits-roll](skills/effectcraft-credits-roll/SKILL.md)
 
-开发场景扩展：采访人物条新增底板、姓名职位段落框及透明入场/停留/退场，附独立命令参数计划。macOS两版样稿及150帧RGBA序列通过；Windows和同画面宿主验收待完成。固定基础技能源快照未修改。
+开发场景扩展：采访人物条新增底板、姓名职位段落框及透明入场/停留/退场，附独立命令参数计划。macOS两版样稿及150帧RGBA序列通过；Windows及Codex同画面标准样稿通过，真实采访素材、任意字体和其他宿主待验收。固定基础技能源快照未修改。

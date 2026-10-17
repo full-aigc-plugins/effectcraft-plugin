@@ -187,4 +187,4 @@ Plugin display name: **EffectCraft Use**. Official upstream icon provenance and 
 - [effectcraft-countdown-intro](skills/effectcraft-countdown-intro/SKILL.md)
 - [effectcraft-credits-roll](skills/effectcraft-credits-roll/SKILL.md)
 
-Development scene extension: interview lower thirds now include a separate plate, paragraph name/role boxes and opacity entrance/hold/exit. Standard and long-name native macOS checks plus a 150-frame RGBA sequence passed; Windows and same-editor host acceptance remain pending.
+Development scene extension: interview lower thirds now include a separate plate, paragraph name/role boxes and opacity entrance/hold/exit. Standard and long-name native macOS checks plus a 150-frame RGBA sequence passed; Windows standard/long-name plus RGBA sequence tests and native Codex shared-editor standard-plate checks passed; real interview footage, arbitrary fonts and other hosts remain pending.
