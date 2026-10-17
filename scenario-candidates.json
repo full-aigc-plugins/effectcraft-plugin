@@ -8,7 +8,7 @@
     },
     {
       "name": "effectcraft-logo-reveal",
-      "sha256": "266a58830c8dea50af6283d702c366ae25442a53733f650776b05341e0ee6718"
+      "sha256": "3447affa494ce589f334a9b773365f38ae60b7dabc7f420c0ae05097c25e8d1e"
     },
     {
       "name": "effectcraft-lower-thirds",
@@ -16,7 +16,7 @@
     },
     {
       "name": "effectcraft-kinetic-type",
-      "sha256": "1d6667ccce7c13a75b0c8e271618c75e756a0474fd51f5732180d7eb6a196402"
+      "sha256": "6d0d318d15f7b768ed6554f115206073b0d76597d175e73bf87c33664d515361"
     },
     {
       "name": "effectcraft-social-loop",
@@ -28,7 +28,7 @@
     },
     {
       "name": "effectcraft-motion-export",
-      "sha256": "4aca5e8e0aaf11c010f34c6e3a9fa02ac087fed605e6d35c5fc0339ebaaa81a8"
+      "sha256": "592d0780b5585296dee55fc4a3623122bad679526f094e00b77a097799cd07c0"
     }
   ]
 }
