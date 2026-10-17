@@ -1,6 +1,6 @@
 {
   "name": "effectcraft",
-  "version": "0.1.0-dev.20261017.2",
+  "version": "0.1.0-dev.20261017.3",
   "url": "https://github.com/full-aigc-plugins/effectcraft-plugin/releases/download/v0.1.0-dev.20261017.2/effectcraft-runtime.tgz",
   "sha256": "c0eb3cd0ccd589c4ebbf9f6c83ed38e25ffcc7df8f8904268d3b853ab6bdd7d2",
   "files": {
@@ -129,5 +129,6 @@
     "web-panel.js": "2c5c6b34f818121074684a57f4bf056f3e10241a2b640a510a0d8abf105bf50e",
     "web-panel.js.LEGAL.txt": "eda25878a01ef5903efe932a6e7c99e175023a47ce70b7d7f901ab2c07c06562"
   },
-  "scope": "Pinned editor artifact; bundled upstream/build provenance remains in editor/BUILD.json or config.json. This does not certify all upstream main capabilities."
+  "scope": "Pinned editor artifact; bundled upstream/build provenance remains in editor/BUILD.json or config.json. This does not certify all upstream main capabilities.",
+  "catalogSha256": "558ab578a2864fe7400d802abda8454df9726fe91c5abfbfd85a7d2947d1efa4"
 }
