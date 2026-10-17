@@ -12,7 +12,7 @@
     },
     {
       "name": "effectcraft-lower-thirds",
-      "sha256": "39dd9896d1fd8728ee4aa547f655b06a2f579e99b07c79efaab0bf2855a3c426"
+      "sha256": "bc0aee701ced1750baae5fe6b9abc54fe3fbbec63e8ae580844f4d840eb15940"
     },
     {
       "name": "effectcraft-kinetic-type",
@@ -20,11 +20,11 @@
     },
     {
       "name": "effectcraft-social-loop",
-      "sha256": "f76cd668bc59a770c4f61d69428bb8482f5a2c035dcede3ac3032ad356bbed27"
+      "sha256": "0fe8599b2cfaf7e08ef076d55c8b95a6e9c2aece48f789404ce10bf2892875ba"
     },
     {
       "name": "effectcraft-screen-composite",
-      "sha256": "1695f10b284603bf86bd6d79c9b8114ede4c4784378f0746bf0219a43c7fa0a0"
+      "sha256": "762278c0fd1bc9849291e3c33c8d59437dbd0272d7d29fc9cc012593b6026480"
     },
     {
       "name": "effectcraft-motion-export",
