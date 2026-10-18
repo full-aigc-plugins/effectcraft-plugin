@@ -8,7 +8,7 @@
 
     - id: mcp-effectcraft-effectcraft-editor
       name: '@deepseek-ai/dsh-mcp-client'
-      disabled: !!js "!process.env.DSH_MCP_EFFECTCRAFT"
+      disabled: !!js "process.env.DSH_MCP_EFFECTCRAFT === '0'"
       config:
         serverName: "effectcraft-editor"
         toolCallTimeoutMs: 60000
