@@ -1,7 +1,7 @@
 {
   "name": "effectcraft",
   "version": "0.1.0-dev.20261018.3",
-  "description": "Compositions, keyframes, expressions, cameras, masks and tracking. Layers, masks and render settings remain editable.",
+  "description": "合成、关键帧、表达式、摄像机、遮罩与跟踪；图层、遮罩与渲染设置完整保留。",
   "author": {
     "name": "Full AIGC Plugins",
     "url": "https://github.com/full-aigc-plugins"
@@ -16,7 +16,7 @@
     "development-release"
   ],
   "skills": "./skills/",
-  "displayName": "EffectCraft · Motion Graphics",
+  "displayName": "EffectCraft（动态图形）",
   "icon": "./assets/official-logo.png",
   "mcpServers": {
     "effectcraft-editor": {
@@ -33,15 +33,15 @@
     }
   },
   "displayName_i18n": {
-    "en": "EffectCraft · Motion Graphics"
+    "zh-CN": "EffectCraft（动态图形）"
   },
   "ui": {
     "surfaces": [
       {
         "id": "editor",
         "title": {
-          "en-US": "EffectCraft · Motion Graphics",
-          "zh-CN": "EffectCraft · 动态图形"
+          "en-US": "EffectCraft (Motion Graphics)",
+          "zh-CN": "EffectCraft（动态图形）"
         },
         "icon": "clapperboard",
         "server": "effectcraft-editor",
