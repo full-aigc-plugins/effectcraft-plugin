@@ -56,6 +56,20 @@ for path in markdown:
 manifest = json.loads((ROOT / 'plugin.json').read_text())
 status = json.loads((ROOT / 'project-status.json').read_text())
 lock = json.loads((ROOT / 'skills.lock.json').read_text())
+local = json.loads((ROOT / 'plugin-local-skills.json').read_text())
+locked_names = set(lock['sources'][0]['skills']) if len(lock['sources']) == 1 else set()
+local_names = set(local['skills'])
+installed_names = {path.name for path in (ROOT / 'skills').iterdir() if path.is_dir()}
+if locked_names & local_names or installed_names != locked_names | local_names:
+    errors.append('installed skills differ from locked and plugin-local inventory')
+for filename in ('README.md', 'README.zh-CN.md'):
+    readme = (ROOT / filename).read_text()
+    if 'badge/release-' + manifest['version'].replace('-', '--') + '-1A73E8' not in readme:
+        errors.append(filename + ': stale version badge')
+    if 'badge/skills-' + str(len(installed_names)) + '-00A67E' not in readme:
+        errors.append(filename + ': stale skill count badge')
+    if ('outside the lock' if filename == 'README.md' else '锁外平台') not in readme:
+        errors.append(filename + ': platform support scope missing')
 source_plan = json.loads((ROOT / 'docs/skills-source-plan.json').read_text())
 if len(lock['sources']) != 1 or any(source_plan.get(field) != lock['sources'][0].get(key) for field,key in [('package','package'),('sourceRef','ref'),('sourceSha','sha')]):
     errors.append('source plan identity differs from immutable skill lock')
