@@ -13,8 +13,8 @@
 
 > 制作可编辑的 `.ecproj` 合成：合成、文字与形状图层、关键帧、表达式、摄像机、蒙版、木偶针脚与效果，并按你的要求输出预览、成片或带透明的片段。
 
-[![版本](https://img.shields.io/badge/release-0.1.0--dev.20261018.4-1A73E8)](.codex-plugin/plugin.json)
-[![技能数](https://img.shields.io/badge/skills-16-00A67E)](#技能)
+[![版本](https://img.shields.io/badge/release-0.1.0--dev.20261018.3-1A73E8)](.codex-plugin/plugin.json)
+[![技能数](https://img.shields.io/badge/skills-26-00A67E)](#技能)
 [![MCP server](https://img.shields.io/badge/MCP%20server-1-00A67E)](#mcp-工具)
 [![许可证](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
@@ -37,7 +37,7 @@ EffectCraft Use 让编码智能体驱动原生 EffectCraft CLI：从素材规划
 
 ### 前置条件
 
-- macOS arm64。已锁定七种原生平台/架构目标，但当前验收证据只覆盖 macOS arm64；其余平台返回 `unsupported_platform`。
+- 原生 CLI 已锁定七种平台/架构目标，须使用对应固定制品；当前验收证据仅覆盖 macOS arm64。锁外平台返回 `unsupported_platform`；其余锁内平台可安装，但不据此宣称同等运行验收。受控桌面路径仅支持锁定的两种 macOS 架构。
 - 受管理入口不需要预装 Python：`launch.sh` / `launch.ps1` 会在用户数据目录准备固定的隔离 Python 3.13.16 与 EffectCraft CLI。
 - 内嵌编辑器 MCP 服务需要 Node.js 24 或更新版本。Git 检出没有 `ui/dist/`，需先按 `ui/README.md` 构建，或安装自带该目录的发布包。
 - 首次使用需要网络或固定归档。`--runtime-home` 或 `CRAFT_RUNTIME_HOME` 可迁移运行时根目录（默认 `~/.local/share/craft-runtimes`）。不需要 `sudo`，不修改 `PATH`。

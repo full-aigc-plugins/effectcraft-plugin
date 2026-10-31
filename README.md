@@ -13,8 +13,8 @@ This plugin belongs to **AIGC content creation**.
 
 > Build editable `.ecproj` compositions — comps, text and shape layers, keyframes, expressions, cameras, masks, puppet pins and effects — then render previews or finished shots with alpha where you ask for it.
 
-[![Version](https://img.shields.io/badge/release-0.1.0--dev.20261018.4-1A73E8)](.codex-plugin/plugin.json)
-[![Skills](https://img.shields.io/badge/skills-16-00A67E)](#skills)
+[![Version](https://img.shields.io/badge/release-0.1.0--dev.20261018.3-1A73E8)](.codex-plugin/plugin.json)
+[![Skills](https://img.shields.io/badge/skills-26-00A67E)](#skills)
 [![MCP server](https://img.shields.io/badge/MCP%20server-1-00A67E)](#mcp-tools)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
@@ -37,7 +37,7 @@ The native `.ecproj` project is the source of truth. There is no second document
 
 ### Prerequisites
 
-- macOS arm64. Seven native platform/architecture targets are locked, but acceptance evidence currently covers macOS arm64; anything else returns `unsupported_platform`.
+- Seven native CLI platform/architecture targets are locked; use the matching pinned artifact. Current acceptance evidence covers macOS arm64 only. Targets outside the lock return `unsupported_platform`; the other locked targets are available for installation but have no equivalent runtime acceptance claim. The owned desktop path supports only the two locked macOS architectures.
 - No preinstalled Python is required for the managed entry: `launch.sh` / `launch.ps1` provisions the pinned isolated Python 3.13.16 and the EffectCraft CLI in the user data directory.
 - Node.js 24 or newer for the embedded editor MCP server. A Git checkout has no `ui/dist/`; build it per `ui/README.md` first, or install a release bundle that ships it.
 - First use needs network or pinned archives. `--runtime-home` or `CRAFT_RUNTIME_HOME` relocates the runtime root (`~/.local/share/craft-runtimes` by default). No `sudo`, no `PATH` edits.
