@@ -37,7 +37,7 @@ The native `.ecproj` project is the source of truth. There is no second document
 
 ### Prerequisites
 
-- Seven native CLI platform/architecture targets are locked; use the matching pinned artifact. Current acceptance evidence covers macOS arm64 only. Targets outside the lock return `unsupported_platform`; the other locked targets are available for installation but have no equivalent runtime acceptance claim. The owned desktop path supports only the two locked macOS architectures.
+- Seven native CLI platform/architecture targets are locked; use the matching pinned artifact. Current acceptance evidence covers macOS arm64 only. Targets outside the lock return `unsupported_platform`; the other locked targets are available for installation but have no equivalent runtime acceptance claim. The owned desktop installer routes two macOS targets through pinned DMG packages and five Linux/Windows targets through pinned native desktop packages. Those locked paths do not establish GUI acceptance; cross-platform GUI acceptance remains `NOT_RUN`.
 - No preinstalled Python is required for the managed entry: `launch.sh` / `launch.ps1` provisions the pinned isolated Python 3.13.16 and the EffectCraft CLI in the user data directory.
 - Node.js 24 or newer for the embedded editor MCP server. A Git checkout has no `ui/dist/`; build it per `ui/README.md` first, or install a release bundle that ships it.
 - First use needs network or pinned archives. `--runtime-home` or `CRAFT_RUNTIME_HOME` relocates the runtime root (`~/.local/share/craft-runtimes` by default). No `sudo`, no `PATH` edits.

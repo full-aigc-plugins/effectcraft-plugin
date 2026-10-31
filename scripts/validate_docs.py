@@ -62,6 +62,11 @@ local_names = set(local['skills'])
 installed_names = {path.name for path in (ROOT / 'skills').iterdir() if path.is_dir()}
 if locked_names & local_names or installed_names != locked_names | local_names:
     errors.append('installed skills differ from locked and plugin-local inventory')
+runtime_targets = set(json.loads((ROOT / 'skills/effectcraft-harness/scripts/runtime.lock.json').read_text())['artifacts'])
+desktop_targets = set(json.loads((ROOT / 'skills/effectcraft-harness/scripts/desktop-platforms.lock.json').read_text())['artifacts'])
+mac_targets = {'darwin-arm64', 'darwin-x86_64'}
+if len(runtime_targets) != 7 or len(desktop_targets) != 5 or desktop_targets != runtime_targets - mac_targets:
+    errors.append('desktop and runtime platform locks differ from documented routes')
 for filename in ('README.md', 'README.zh-CN.md'):
     readme = (ROOT / filename).read_text()
     if 'badge/release-' + manifest['version'].replace('-', '--') + '-1A73E8' not in readme:
@@ -70,6 +75,8 @@ for filename in ('README.md', 'README.zh-CN.md'):
         errors.append(filename + ': stale skill count badge')
     if ('outside the lock' if filename == 'README.md' else '锁外平台') not in readme:
         errors.append(filename + ': platform support scope missing')
+    if ('five Linux/Windows targets' if filename == 'README.md' else '五个 Linux/Windows 目标') not in readme or ('cross-platform GUI acceptance remains `NOT_RUN`' if filename == 'README.md' else '跨平台 GUI 验收仍为 `NOT_RUN`') not in readme:
+        errors.append(filename + ': desktop package routes or GUI acceptance scope missing')
 source_plan = json.loads((ROOT / 'docs/skills-source-plan.json').read_text())
 if len(lock['sources']) != 1 or any(source_plan.get(field) != lock['sources'][0].get(key) for field,key in [('package','package'),('sourceRef','ref'),('sourceSha','sha')]):
     errors.append('source plan identity differs from immutable skill lock')
