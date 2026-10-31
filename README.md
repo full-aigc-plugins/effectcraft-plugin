@@ -14,7 +14,7 @@ This plugin belongs to **AIGC content creation**.
 > Build editable `.ecproj` compositions — comps, text and shape layers, keyframes, expressions, cameras, masks, puppet pins and effects — then render previews or finished shots with alpha where you ask for it.
 
 [![Version](https://img.shields.io/badge/release-0.1.0--dev.20261018.4-1A73E8)](.codex-plugin/plugin.json)
-[![Skills](https://img.shields.io/badge/skills-26-00A67E)](#skills)
+[![Skills](https://img.shields.io/badge/skills-16-00A67E)](#skills)
 [![MCP server](https://img.shields.io/badge/MCP%20server-1-00A67E)](#mcp-tools)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
@@ -28,7 +28,10 @@ The native `.ecproj` project is the source of truth. There is no second document
 
 ## Status and version
 
-`0.1.0-dev.20261018.4` · development preview · `docs/verification/release-candidate.json` → `releaseStatus: BLOCKED`, `installableDevelopmentCandidate: true`.
+`0.1.0-dev.20261018.3` · development preview · `docs/verification/release-candidate.json` → `releaseStatus: BLOCKED`, `installableDevelopmentCandidate: true`.
+
+| Metadata version | 0.1.0-dev.20261018.3 |
+| Skills source | effectcraft-skills / 0.1.0-dev.69 |
 
 ## Installation
 
