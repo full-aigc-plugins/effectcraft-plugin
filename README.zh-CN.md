@@ -14,7 +14,7 @@
 > 制作可编辑的 `.ecproj` 合成：合成、文字与形状图层、关键帧、表达式、摄像机、蒙版、木偶针脚与效果，并按你的要求输出预览、成片或带透明的片段。
 
 [![版本](https://img.shields.io/badge/release-0.1.0--dev.20261018.4-1A73E8)](.codex-plugin/plugin.json)
-[![技能数](https://img.shields.io/badge/skills-26-00A67E)](#技能)
+[![技能数](https://img.shields.io/badge/skills-16-00A67E)](#技能)
 [![MCP server](https://img.shields.io/badge/MCP%20server-1-00A67E)](#mcp-工具)
 [![许可证](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
@@ -28,7 +28,10 @@ EffectCraft Use 让编码智能体驱动原生 EffectCraft CLI：从素材规划
 
 ## 状态与版本
 
-`0.1.0-dev.20261018.4` · 开发预览 · `docs/verification/release-candidate.json` → `releaseStatus: BLOCKED`、`installableDevelopmentCandidate: true`。
+`0.1.0-dev.20261018.3` · 开发预览 · `docs/verification/release-candidate.json` → `releaseStatus: BLOCKED`、`installableDevelopmentCandidate: true`。
+
+| Metadata version | 0.1.0-dev.20261018.3 |
+| Skills source | effectcraft-skills / 0.1.0-dev.69 |
 
 ## 安装
 
