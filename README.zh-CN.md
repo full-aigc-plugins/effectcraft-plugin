@@ -37,7 +37,7 @@ EffectCraft Use 让编码智能体驱动原生 EffectCraft CLI：从素材规划
 
 ### 前置条件
 
-- 原生 CLI 已锁定七种平台/架构目标，须使用对应固定制品；当前验收证据仅覆盖 macOS arm64。锁外平台返回 `unsupported_platform`；其余锁内平台可安装，但不据此宣称同等运行验收。受控桌面路径仅支持锁定的两种 macOS 架构。
+- 原生 CLI 已锁定七种平台/架构目标，须使用对应固定制品；当前验收证据仅覆盖 macOS arm64。锁外平台返回 `unsupported_platform`；其余锁内平台可安装，但不据此宣称同等运行验收。受控桌面安装器对两个 macOS 目标使用固定 DMG，对五个 Linux/Windows 目标使用固定原生桌面包。锁定安装路径不代表 GUI 已验收；跨平台 GUI 验收仍为 `NOT_RUN`。
 - 受管理入口不需要预装 Python：`launch.sh` / `launch.ps1` 会在用户数据目录准备固定的隔离 Python 3.13.16 与 EffectCraft CLI。
 - 内嵌编辑器 MCP 服务需要 Node.js 24 或更新版本。Git 检出没有 `ui/dist/`，需先按 `ui/README.md` 构建，或安装自带该目录的发布包。
 - 首次使用需要网络或固定归档。`--runtime-home` 或 `CRAFT_RUNTIME_HOME` 可迁移运行时根目录（默认 `~/.local/share/craft-runtimes`）。不需要 `sudo`，不修改 `PATH`。
