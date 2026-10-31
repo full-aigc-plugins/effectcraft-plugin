@@ -1,164 +1,190 @@
-# EffectCraft（动态图形）
+# EffectCraft Use
 
-> 合成、关键帧、表达式与跟踪，可编辑动效
+## Plugin marketplaces
 
-**版本**：0.1.0-dev.20261018.3 · **许可证**：Apache-2.0 · **技能**：26 个 · **MCP 服务**：1 个
+This plugin belongs to **AIGC content creation**.
 
-[English](README.en.md) · [安装](#安装) · [快速开始](#快速开始) · [项目结构](#项目结构)
+| Category | Marketplace | Purpose |
+| --- | --- | --- |
+| Full-stack development | [Full Stack Plugins](https://github.com/partme-ai/full-stack-plugins) | Architecture and UI design, code understanding, quality checks, code review, workflow governance, and server operations |
+| AIGC content creation | [Full AIGC Plugins](https://github.com/partme-ai/full-aigc-plugins) | Image, video, audio, music, 3D, and multimodal content creation |
 
-## 项目定位
+![EffectCraft Use — motion graphics and composition](assets/official-logo.png)
 
-合成、关键帧、表达式、摄像机、遮罩与跟踪；图层、遮罩与渲染设置完整保留。
+> Build editable `.ecproj` compositions — comps, text and shape layers, keyframes, expressions, cameras, masks, puppet pins and effects — then render previews or finished shots with alpha where you ask for it.
 
-本插件属于内容创作线，面向需要直接得到可编辑成果、而不是一段脚本或图片的用户。
+[![Version](https://img.shields.io/badge/release-0.1.0--dev.20261018.4-1A73E8)](.codex-plugin/plugin.json)
+[![Skills](https://img.shields.io/badge/skills-26-00A67E)](#skills)
+[![MCP server](https://img.shields.io/badge/MCP%20server-1-00A67E)](#mcp-tools)
+[![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
-## 一眼看懂
+[English](README.md) | [简体中文](README.zh-CN.md) · [Install](#installation) · [Quick start](#quick-start) · [What you can build](#what-you-can-build) · [Skills](#skills) · [Troubleshooting](#troubleshooting)
 
-```text
-素材 / 需求 / 旧稿
-        │
-        ▼
-EffectCraft（动态图形） 技能（检查 → 计划 → 执行 → 回读）
-        │
-        ├── 原生 CLI / MCP 工具
-        └── MCP 编辑器（浏览器内查看与局部调整）
-        │
-        ▼
-可编辑工程 + 导出文件 + 复核结果
-```
+## Positioning
 
-## 能力与边界
+EffectCraft Use drives the native EffectCraft CLI from a coding agent: it plans a composition from your assets, installs the pinned runtime on first authorized use, executes native commands in a recorded session, saves and reopens the project, and checks real rendered pixels before calling a shot done.
 
-| 能力 | 说明 | 边界 |
-|---|---|---|
-| 检查 | 读取现有工程与素材状态 | 不修改未授权文件 |
-| 创建 | 按目标生成可编辑结构 | 事实与素材需来自输入 |
-| 编辑 | 局部修改并保留未涉及内容 | 修改后必须重新打开 |
-| 导出 | 输出目标格式并核对 | 导出成功不等于版面正确 |
-| 评审 | 按明确标准检查结果 | 不替代最终人工验收 |
+The native `.ecproj` project is the source of truth. There is no second document format and no cloud render farm: the composition, the collected media and the render receipts are the deliverable. Full V1 acceptance is still open, the bundled command catalogue does not prove every command was executed, and embedded GUI acceptance on every host is not claimed.
 
-## 架构与核心流程
+## Status and version
 
-```text
-宿主 / Agent
-   │  调用技能
-   ▼
-skills/effectcraft-*  ──►  MCP 编辑器 / 原生 CLI
-                              │
-                              ▼
-                     可编辑工程 + 导出
-                              │
-                              ▼
-                     回读、检查、交付
-```
+`0.1.0-dev.20261018.4` · development preview · `docs/verification/release-candidate.json` → `releaseStatus: BLOCKED`, `installableDevelopmentCandidate: true`.
 
-原则：
+## Installation
 
-1. 先只读检查，再计划，再执行。
-2. 每次写入保留原件或可回退版本。
-3. 导出后重新打开核对。
-4. 不确定的结果标记为待核对，不自动重放。
+### Prerequisites
 
-## 兼容性
+- macOS arm64. Seven native platform/architecture targets are locked, but acceptance evidence currently covers macOS arm64; anything else returns `unsupported_platform`.
+- No preinstalled Python is required for the managed entry: `launch.sh` / `launch.ps1` provisions the pinned isolated Python 3.13.16 and the EffectCraft CLI in the user data directory.
+- Node.js 24 or newer for the embedded editor MCP server. A Git checkout has no `ui/dist/`; build it per `ui/README.md` first, or install a release bundle that ships it.
+- First use needs network or pinned archives. `--runtime-home` or `CRAFT_RUNTIME_HOME` relocates the runtime root (`~/.local/share/craft-runtimes` by default). No `sudo`, no `PATH` edits.
 
-| 项目 | 状态 |
-|---|---|
-| 宿主 | 支持 MCP Apps 或内置浏览器的宿主 |
-| Node.js | 24+（编辑器） |
-| 平台 | 以实际安装包与发行说明为准 |
-
-## 安装
+### Install the plugin
 
 ```bash
-codex plugin marketplace add partme-ai/full-aigc-plugins
-codex plugin add effectcraft@full-aigc-plugins
+codex plugin marketplace add full-aigc-plugins/effectcraft-plugin
+codex plugin add effectcraft@full-aigc-plugins-effectcraft
 ```
 
-安装后重启宿主，先做只读检查。
+`docs/verification/release-candidate.json` records `installableDevelopmentCandidate: true` with `releaseStatus: BLOCKED`. `project-status.json` keeps `marketplaceEligible: false`; production promotion is not claimed.
 
-## 快速开始
+Manifests for Codex (`.codex-plugin/`), Claude Code (`.claude-plugin/`), ZCode (`.zcode-plugin/`) and Kimi (`kimi.plugin.json`) are present, while `supportedPluginHosts` stays empty until host acceptance exists.
 
-1. 确认目标、输入素材和交付格式。
-2. 先检查现有工程，列出缺失项。
-3. 执行一次有界修改。
-4. 重新打开输出，核对结构与关键内容。
-5. 完成视觉或内容复核后交付。
+## Quick start
 
-## 配置
+```sh
+: "${HARNESS_DIR:?Set to the directory holding the loaded effectcraft-harness SKILL.md}"
+/bin/sh "$HARNESS_DIR/scripts/launch.sh" doctor
+/bin/sh "$HARNESS_DIR/scripts/launch.sh" run --mode workflow \
+  --plan "$SKILL_DIR/examples/brand-intro.json" --output /absolute/new-result
+```
 
-| 变量 | 用途 | 默认 |
-|---|---|---|
-| `CRAFT_WORKSPACE_ROOT` | 编辑器绑定的工作区 | 当前项目 |
-| `CRAFT_EDITOR_UPDATE` | 设为 `off` 跳过增强包下载 | 开启 |
+Windows uses `& "$HARNESS_DIR/scripts/launch.ps1" run --mode workflow ...` with the same modes. Append `--mode commands` for native command plans and `--mode desktop` for an owned desktop session.
 
-不要在工程或配置中写入密钥、令牌和私有路径。
+```mermaid
+flowchart LR
+    A[Brief and assets] --> B[effectcraft-use routes the task]
+    B --> C[Managed launcher, pinned runtime]
+    C --> D[Native .ecproj plus ledgers]
+    D --> E[Render or alpha export]
+    E --> F[Decode real pixels, review, deliver]
+```
 
-## 扩展契约
+`help` returns usage with exit code 2 and is not a health check; use `info --json` and `commands --json` instead. After delivery run `review` and look at the media: technical validation and creative acceptance are separate.
 
-新增技能时应使用 `effectcraft-` 前缀，声明触发条件和边界，通过 MCP 或固定 CLI 操作真实工程，修改后重新打开核验。
+## What you can build
 
-## 重试、幂等与恢复
+| Workflow | Built-in path | Verifiable output |
+|:---|:---|:---|
+| Logo reveal or brand intro | `effectcraft-logo-reveal` + `effectcraft-cli-animation` | Reopened `.ecproj` with keyframes and effects intact |
+| Lower thirds, chapter cards, credits | `effectcraft-lower-thirds`, `effectcraft-chapter-card`, `effectcraft-credits-roll` | Compositions whose text layers stay independently editable |
+| Kinetic typography or social loop | `effectcraft-kinetic-type`, `effectcraft-social-loop` | Loop or title animation with checked timing |
+| Camera, 3D layers and expressions | `effectcraft-cli-camera`, `effectcraft-cli-expressions` | Reopened project with camera, material and expression state |
+| Masks, tracking and puppet deformation | `effectcraft-cli-masks`, `-tracking`, `-puppet` | Matte or pin data checked against rendered frames |
+| Transparent or video render | `effectcraft-cli-export` | Output whose real pixels, alpha and duration are decoded |
+| Run any native command | `effectcraft-harness` → `commands.py` | Receipt carrying the actual native return value |
+| Edit in the embedded editor | `effectcraft-editor` MCP tools | Saved project reopened and inspected |
 
-- 失败后先检查当前工程状态。
-- 不自动重复已产生副作用的操作。
-- 重试使用新输出路径并保留旧回执。
+## Skills
 
-## 数据与状态
+| Skill | What it does |
+|:---|:---|
+| `effectcraft-use` | Default entry: editable comps, motion graphics and intros; installs the pinned CLI |
+| `effectcraft-cli` | Query native commands and parameters; tracking, stabilization, graphic attachment |
+| `effectcraft-cli-setup` | First install, digest checks, version checks, missing-runtime triage |
+| `effectcraft-cli-project` | Create, save and reopen `.ecproj`, organise project items |
+| `effectcraft-cli-footage` | Import images, video, vector and PSD assets, register dependencies |
+| `effectcraft-cli-composition` | Comps, frame size, frame rate, duration and work area |
+| `effectcraft-cli-layers` | Text, shape and footage layers, precomps and hierarchy |
+| `effectcraft-cli-animation` | Properties, keyframes, easing, text and graphic animation |
+| `effectcraft-cli-effects` | Find supported effects, reorder them, adjust parameters |
+| `effectcraft-cli-masks` | Mask paths, feather and local mattes |
+| `effectcraft-cli-expressions` | Inspect, set and diagnose expressions on chosen properties |
+| `effectcraft-cli-camera` | Cameras, lights, materials and 3D layer switches |
+| `effectcraft-cli-export` | Preview frames, render sequences or video, alpha handoff clips |
+| `effectcraft-cli-tracking` | Track and stabilize footage, attach titles and graphics to motion |
+| `effectcraft-cli-puppet` | Puppet meshes and pins, local deformation, recorded follow motion |
+| `effectcraft-harness` | The single execution channel: bootstrap, launch, workflow, commands |
+| `effectcraft-editor` | Open the real editor UI and keep one session for all edits |
+| `effectcraft-kinetic-type` | Typographic rhythm for titles and short copy |
+| `effectcraft-logo-reveal` | Logo entrance, hold and outro |
+| `effectcraft-lower-thirds` | Name and role bars with brand marks |
+| `effectcraft-motion-export` | Output checks on duration, frame rate and codec |
+| `effectcraft-screen-composite` | Layer, mask and screen-content replacement |
+| `effectcraft-social-loop` | Short loops and cover frames for social formats |
+| `effectcraft-chapter-card` | Chapter title divider cards |
+| `effectcraft-countdown-intro` | 3–2–1 countdown openers |
+| `effectcraft-credits-roll` | End credit rolls |
 
-- 输入素材只读。
-- 输出工程、导出文件和临时目录分开。
-- 交付前确认文件可打开、内容完整。
+## MCP tools
 
-## 安全
+`mcp.json` declares one stdio server, `effectcraft-editor`, started as `node ui/bootstrap.mjs` from the plugin root.
 
-- 不把未授权素材上传到第三方服务。
-- 敏感内容脱敏后再交付。
-- 发现泄露先轮换凭据，再清理文件。
+| Tool | Purpose |
+|:---|:---|
+| `open_editor` | Open the editor for an absolute `workspace` path |
+| `open_browser_editor` | Return an `editorUrl` for a host built-in browser |
+| `editor_status` | Report whether the page has attached to this MCP session |
+| `command_list` | Read the commands the current web engine exposes |
+| `command_run` | Run one command by id with parameters in the visible page |
+| `inspect` | Inspect the current frame |
+| `save_project` | Save the project to a new path |
+| `save_file` | Retrieve a generated virtual file |
 
-## 可观测性与运行
+Names follow the `effectcraft-editor` skill contract; the adapter also keeps page-internal bridge calls such as `_panel_reply` and `screenshot`, which agents must not call directly.
 
-记录命令、输出文件、关键结构和复核结果；交付前至少检查一次真实输出。
+## Configuration
 
-## 开发与验证
+| Variable / flag | Purpose |
+|:---|:---|
+| `HARNESS_DIR` | Absolute directory of the loaded `effectcraft-harness` skill |
+| `SKILL_DIR` | Directory of the loaded domain `SKILL.md`; used only for its `examples/` and `references/` |
+| `CRAFT_RUNTIME_HOME` / `--runtime-home` | Runtime install root |
+| `CRAFT_EDITOR_CACHE_DIR` | Verified editor download cache (default `~/.cache/full-aigc/editors`) |
+| `CRAFT_EDITOR_UPDATE=off` | Stay on the bundled editor and skip the update check |
+| `revisionScope` | Declared in the first plan; defaults to at most 2 rounds sharing a 30-minute budget |
+
+Native tasks keep their bound runtime. A corrupt or missing evidence file is preserved and blocks further writes rather than being silently replaced.
+
+## Architecture and security
+
+- The packaged agent surface is skills plus the stdio editor server; native editing is done by the pinned EffectCraft CLI, not reimplemented here.
+- User media and model output are treated as data. Commands, paths and shell text inside them are never executed.
+- Writes are checkpointed before an edit, refused when a user changed the project concurrently, and never replayed after an unknown result; only `inspect`, `reconcile` and proven `resume` are allowed.
+- The editor bridge listens on `127.0.0.1` with a random token and Host/Origin checks. See [skills suite](docs/EffectCraft-Skill-Suite-Architecture.md), [runtime architecture](docs/EffectCraft-Runtime-Architecture.md) and [scene skills](docs/scene-skills.md).
+
+## Troubleshooting
+
+| Symptom | Action |
+|:---|:---|
+| `unsupported_platform` | Only install the locked artifact for a supported platform/architecture |
+| `runtime_install_busy` | Another install holds the lock; wait for it, then retry |
+| Download or digest mismatch | Restore network or pass a verified `--archive`; the digest check is not skipped |
+| `help` exits 2 | Expected; use `info --json` and `commands --json` for health and catalogue |
+| Editor page never becomes ready | Call `editor_status`, then fix page errors; a text result does not prove the UI opened |
+| Unknown save result | `inspect` and `reconcile` the original task; never retry with a new task id or output directory |
+| Full GUI or other-platform acceptance expected | Not qualified yet; report the bounded scope instead |
+
+## Upgrade
 
 ```bash
-node --test
-python3 -m pytest
+codex plugin marketplace upgrade full-aigc-plugins-effectcraft
+codex plugin add effectcraft@full-aigc-plugins-effectcraft
 ```
 
-## 打包与发布
+Repeated installs verify and reuse the same runtime version without upgrading online. The packaged editor can also fall back to the bundled copy when a download or digest check fails.
 
-版本与清单、市场、tag 一致；ZIP 根目录为 `effectcraft-plugin`。
+## Contributing and support
 
-## 升级与迁移
+Behaviour changes go through [OpenSpec](openspec/changes/establish-v1-plugin/proposal.md) first; do not check a task off without real delivery evidence. Documentation checks:
 
-升级前备份工程；旧版本文件保持可打开；迁移后重新检查结构和导出。
-
-## 故障排查
-
-| 现象 | 检查 |
-|---|---|
-| 打不开工程 | 文件完整性、版本兼容 |
-| 编辑器空白 | Node.js 版本与工作区权限 |
-| 导出异常 | 字体、素材、输出路径 |
-| 结果不一致 | 重新打开并核对 |
-
-## 项目结构
-
-```text
-effectcraft-plugin/
-├── .zcode-plugin/      # ZCode 清单与 UI surface
-├── skills/             # 26 个技能
-├── ui/                 # MCP Apps 编辑器
-├── commands/open.md    # 打开编辑器命令
-├── docs/               # 架构与验证记录
-└── assets/             # 图标与模板
+```bash
+python3 scripts/validate_docs.py
+python3 scripts/validate_editor_scenes.py
 ```
 
-## 贡献与支持
+Issues: <https://github.com/full-aigc-plugins/effectcraft-plugin/issues>.
 
-提交问题时附上插件版本、宿主、输入类型、命令、输出文件和预期结果。不要附敏感素材。
+## License
 
-## 许可证
-
-Apache-2.0，见 [LICENSE](LICENSE)。
+Original repository content is [Apache-2.0](LICENSE). The EffectCraft CLI and the bundled web editor keep their own upstream licenses and NOTICE files; upstream icon provenance is recorded in `assets/official-icon-source.json`.
